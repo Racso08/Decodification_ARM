@@ -1,0 +1,396 @@
+# Reading C:/modelsim_ase/tcl/vsim/pref.tcl
+# do arm_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/arm {C:/arm/controller.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:30:43 on Jul 26,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm" C:/arm/controller.sv 
+# -- Compiling module controller
+# 
+# Top level modules:
+# 	controller
+# End time: 21:30:43 on Jul 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/arm {C:/arm/arm.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:30:43 on Jul 26,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm" C:/arm/arm.sv 
+# -- Compiling module arm
+# 
+# Top level modules:
+# 	arm
+# End time: 21:30:44 on Jul 26,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/arm {C:/arm/decoder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:30:44 on Jul 26,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm" C:/arm/decoder.sv 
+# -- Compiling module decoder
+# 
+# Top level modules:
+# 	decoder
+# End time: 21:30:44 on Jul 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/arm {C:/arm/condlogic.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:30:44 on Jul 26,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm" C:/arm/condlogic.sv 
+# -- Compiling module condlogic
+# 
+# Top level modules:
+# 	condlogic
+# End time: 21:30:44 on Jul 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/arm {C:/arm/condcheck.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:30:44 on Jul 26,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm" C:/arm/condcheck.sv 
+# -- Compiling module condcheck
+# 
+# Top level modules:
+# 	condcheck
+# End time: 21:30:44 on Jul 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/arm {C:/arm/datapath.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:30:44 on Jul 26,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm" C:/arm/datapath.sv 
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	datapath
+# End time: 21:30:45 on Jul 26,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/arm {C:/arm/regfile.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:30:45 on Jul 26,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm" C:/arm/regfile.sv 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 21:30:45 on Jul 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/arm {C:/arm/adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:30:45 on Jul 26,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm" C:/arm/adder.sv 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 21:30:45 on Jul 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/arm {C:/arm/extend.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:30:45 on Jul 26,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm" C:/arm/extend.sv 
+# -- Compiling module extend
+# 
+# Top level modules:
+# 	extend
+# End time: 21:30:45 on Jul 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/arm {C:/arm/flopr.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:30:45 on Jul 26,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm" C:/arm/flopr.sv 
+# -- Compiling module flopr
+# 
+# Top level modules:
+# 	flopr
+# End time: 21:30:45 on Jul 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/arm {C:/arm/flopenr.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:30:45 on Jul 26,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm" C:/arm/flopenr.sv 
+# -- Compiling module flopenr
+# 
+# Top level modules:
+# 	flopenr
+# End time: 21:30:46 on Jul 26,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/arm {C:/arm/mux2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:30:46 on Jul 26,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm" C:/arm/mux2.sv 
+# -- Compiling module mux2
+# 
+# Top level modules:
+# 	mux2
+# End time: 21:30:46 on Jul 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/arm {C:/arm/testbench.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:30:46 on Jul 26,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm" C:/arm/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 21:30:46 on Jul 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/arm {C:/arm/top.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:30:46 on Jul 26,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm" C:/arm/top.sv 
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 21:30:46 on Jul 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/arm {C:/arm/dmem.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:30:46 on Jul 26,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm" C:/arm/dmem.sv 
+# -- Compiling module dmem
+# 
+# Top level modules:
+# 	dmem
+# End time: 21:30:46 on Jul 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+c:/arm/alu/unidad {c:/arm/alu/unidad/unidad_logico_aritmetica.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:30:46 on Jul 26,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+c:/arm/alu/unidad" c:/arm/alu/unidad/unidad_logico_aritmetica.sv 
+# -- Compiling module unidad_logico_aritmetica
+# 
+# Top level modules:
+# 	unidad_logico_aritmetica
+# End time: 21:30:46 on Jul 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+c:/arm/alu/operacioneslogicas {c:/arm/alu/operacioneslogicas/compuerta_and.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:30:46 on Jul 26,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+c:/arm/alu/operacioneslogicas" c:/arm/alu/operacioneslogicas/compuerta_and.sv 
+# -- Compiling module compuerta_and
+# 
+# Top level modules:
+# 	compuerta_and
+# End time: 21:30:46 on Jul 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+c:/arm/alu/operacioneslogicas {c:/arm/alu/operacioneslogicas/compuerta_or.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:30:46 on Jul 26,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+c:/arm/alu/operacioneslogicas" c:/arm/alu/operacioneslogicas/compuerta_or.sv 
+# -- Compiling module compuerta_or
+# 
+# Top level modules:
+# 	compuerta_or
+# End time: 21:30:47 on Jul 26,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+c:/arm/alu/operacioneslogicas {c:/arm/alu/operacioneslogicas/compuerta_xor.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:30:47 on Jul 26,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+c:/arm/alu/operacioneslogicas" c:/arm/alu/operacioneslogicas/compuerta_xor.sv 
+# -- Compiling module compuerta_xor
+# 
+# Top level modules:
+# 	compuerta_xor
+# End time: 21:30:47 on Jul 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+c:/arm/alu/operacioneslogicas {c:/arm/alu/operacioneslogicas/compuerta_not.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:30:47 on Jul 26,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+c:/arm/alu/operacioneslogicas" c:/arm/alu/operacioneslogicas/compuerta_not.sv 
+# -- Compiling module compuerta_not
+# 
+# Top level modules:
+# 	compuerta_not
+# End time: 21:30:47 on Jul 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+c:/arm/alu/operacioneslogicas {c:/arm/alu/operacioneslogicas/correr_derecha_logico.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:30:47 on Jul 26,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+c:/arm/alu/operacioneslogicas" c:/arm/alu/operacioneslogicas/correr_derecha_logico.sv 
+# -- Compiling module correr_derecha_logico
+# 
+# Top level modules:
+# 	correr_derecha_logico
+# End time: 21:30:47 on Jul 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+c:/arm/alu/operacioneslogicas {c:/arm/alu/operacioneslogicas/correr_izquierda_logico.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:30:47 on Jul 26,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+c:/arm/alu/operacioneslogicas" c:/arm/alu/operacioneslogicas/correr_izquierda_logico.sv 
+# -- Compiling module correr_izquierda_logico
+# 
+# Top level modules:
+# 	correr_izquierda_logico
+# End time: 21:30:47 on Jul 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+c:/arm/alu/unidad {c:/arm/alu/unidad/mux3a8.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:30:47 on Jul 26,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+c:/arm/alu/unidad" c:/arm/alu/unidad/mux3a8.sv 
+# -- Compiling module mux3a8
+# 
+# Top level modules:
+# 	mux3a8
+# End time: 21:30:47 on Jul 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+c:/arm/alu/operacionesaritmeticas {c:/arm/alu/operacionesaritmeticas/sumador.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:30:47 on Jul 26,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+c:/arm/alu/operacionesaritmeticas" c:/arm/alu/operacionesaritmeticas/sumador.sv 
+# -- Compiling module sumador
+# 
+# Top level modules:
+# 	sumador
+# End time: 21:30:47 on Jul 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+c:/arm/alu/operacionesaritmeticas {c:/arm/alu/operacionesaritmeticas/restador.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:30:47 on Jul 26,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+c:/arm/alu/operacionesaritmeticas" c:/arm/alu/operacionesaritmeticas/restador.sv 
+# -- Compiling module restador
+# 
+# Top level modules:
+# 	restador
+# End time: 21:30:47 on Jul 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+c:/arm/alu/operacionesaritmeticas {c:/arm/alu/operacionesaritmeticas/correr_derecha_aritmetico.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:30:48 on Jul 26,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+c:/arm/alu/operacionesaritmeticas" c:/arm/alu/operacionesaritmeticas/correr_derecha_aritmetico.sv 
+# -- Compiling module correr_derecha_aritmetico
+# 
+# Top level modules:
+# 	correr_derecha_aritmetico
+# End time: 21:30:48 on Jul 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+c:/arm/alu/operacionesaritmeticas {c:/arm/alu/operacionesaritmeticas/correr_izquierda_aritmetico.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:30:48 on Jul 26,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+c:/arm/alu/operacionesaritmeticas" c:/arm/alu/operacionesaritmeticas/correr_izquierda_aritmetico.sv 
+# -- Compiling module correr_izquierda_aritmetico
+# 
+# Top level modules:
+# 	correr_izquierda_aritmetico
+# End time: 21:30:48 on Jul 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+c:/arm/alu/unidad {c:/arm/alu/unidad/mux1a2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:30:48 on Jul 26,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+c:/arm/alu/unidad" c:/arm/alu/unidad/mux1a2.sv 
+# -- Compiling module mux1a2
+# 
+# Top level modules:
+# 	mux1a2
+# End time: 21:30:48 on Jul 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+c:/arm/alu/unidadflags {c:/arm/alu/unidadflags/flag_negativo.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:30:48 on Jul 26,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+c:/arm/alu/unidadflags" c:/arm/alu/unidadflags/flag_negativo.sv 
+# -- Compiling module flag_negativo
+# 
+# Top level modules:
+# 	flag_negativo
+# End time: 21:30:48 on Jul 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+c:/arm/alu/unidadflags {c:/arm/alu/unidadflags/flag_cero.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:30:48 on Jul 26,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+c:/arm/alu/unidadflags" c:/arm/alu/unidadflags/flag_cero.sv 
+# -- Compiling module flag_cero
+# 
+# Top level modules:
+# 	flag_cero
+# End time: 21:30:48 on Jul 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+c:/arm/alu/unidadflags {c:/arm/alu/unidadflags/flag_overflow.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:30:48 on Jul 26,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+c:/arm/alu/unidadflags" c:/arm/alu/unidadflags/flag_overflow.sv 
+# -- Compiling module flag_overflow
+# 
+# Top level modules:
+# 	flag_overflow
+# End time: 21:30:48 on Jul 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+c:/arm/alu/unidadflags {c:/arm/alu/unidadflags/flag_carry.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:30:48 on Jul 26,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+c:/arm/alu/unidadflags" c:/arm/alu/unidadflags/flag_carry.sv 
+# -- Compiling module flag_carry
+# 
+# Top level modules:
+# 	flag_carry
+# End time: 21:30:48 on Jul 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/arm {C:/arm/imem.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:30:48 on Jul 26,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm" C:/arm/imem.sv 
+# -- Compiling module imem
+# 
+# Top level modules:
+# 	imem
+# End time: 21:30:49 on Jul 26,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 21:30:58 on Jul 26,2020
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.arm
+# Loading work.controller
+# Loading work.decoder
+# Loading work.condlogic
+# Loading work.flopenr
+# Loading work.condcheck
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.adder
+# Loading work.regfile
+# Loading work.extend
+# Loading work.unidad_logico_aritmetica
+# Loading work.compuerta_and
+# Loading work.compuerta_or
+# Loading work.compuerta_xor
+# Loading work.compuerta_not
+# Loading work.correr_derecha_logico
+# Loading work.correr_izquierda_logico
+# Loading work.mux3a8
+# Loading work.sumador
+# Loading work.restador
+# Loading work.correr_derecha_aritmetico
+# Loading work.correr_izquierda_aritmetico
+# Loading work.mux1a2
+# Loading work.flag_negativo
+# Loading work.flag_cero
+# Loading work.flag_overflow
+# Loading work.flag_carry
+# Loading work.imem
+# Loading work.dmem
+# ** Warning: (vsim-3015) C:/arm/datapath.sv(37): [PCDPC] - Port size (4) does not match connection size (2) for port 'ALUControl'. The port definition is at: c:/arm/alu/unidad/unidad_logico_aritmetica.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/arm/dp/alu File: c:/arm/alu/unidad/unidad_logico_aritmetica.sv
+# ** Warning: (vsim-3015) c:/arm/alu/unidad/unidad_logico_aritmetica.sv(40): [PCDPC] - Port size (32) does not match connection size (1) for port 'result7'. The port definition is at: c:/arm/alu/unidad/mux3a8.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/arm/dp/alu/MuxA File: c:/arm/alu/unidad/mux3a8.sv
+# ** Warning: (vsim-3015) c:/arm/alu/unidad/unidad_logico_aritmetica.sv(40): [PCDPC] - Port size (32) does not match connection size (1) for port 'result8'. The port definition is at: c:/arm/alu/unidad/mux3a8.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/arm/dp/alu/MuxA File: c:/arm/alu/unidad/mux3a8.sv
+add wave -position end  sim:/testbench/DataAdr
+add wave -position 0  sim:/testbench/MemWrite
+add wave -position 0  sim:/testbench/WriteData
+add wave -position 0  sim:/testbench/clk
+add wave -position 0  sim:/testbench/reset
+run -all
+# Break key hit
+# Simulation stop requested.
+# End time: 21:32:32 on Jul 26,2020, Elapsed time: 0:01:34
+# Errors: 0, Warnings: 3

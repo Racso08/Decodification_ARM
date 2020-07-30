@@ -1,5 +1,3 @@
-# Operador a nivel de bits XOR: ^
-
 def codificacionXOR(a_string):
 
     ASCII_values = []
@@ -30,6 +28,7 @@ def decodificacionXOR(codificado):
         descodificado.append(hex(int(y,16) ^ llave))
 
     ASCII_descodificado = ''
+
     for z in descodificado:
         bytes_object = bytes.fromhex(z[2:])
         ascii_string = bytes_object.decode("ASCII")
@@ -46,7 +45,7 @@ def codificacionNOT(a_string):
     HEX_values = []
     for i in ASCII_values:
         HEX_values.append(hex(i))
-
+        
     codificado = ['0x01']
     for x in HEX_values:
         codificado.append(hex(~int(x,16)))
@@ -63,6 +62,7 @@ def decodificacionNOT(codificado):
         descodificado.append(hex(~int(y,16)))
 
     ASCII_descodificado = ''
+
     for z in descodificado:
         bytes_object = bytes.fromhex(z[2:])
         ascii_string = bytes_object.decode("ASCII")
@@ -139,7 +139,9 @@ def decodificador(codificado):
     else:
         return decodificacionROR(codificado)
     
+    
+print(codificacionROR("Hola me llamo Racso"))    
 
-print(decodificador(codificacionXOR("Hola me llamo Racso")))
-print(decodificador(codificacionNOT("Hola me llamo Racso")))
+#print(decodificador(codificacionXOR("Hola me llamo Racso")))
+#print(decodificador(codificacionNOT("Hola me llamo Racso")))
 print(decodificador(codificacionROR("Hola me llamo Racso")))

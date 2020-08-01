@@ -1,0 +1,9 @@
+module chipset (	input logic [31:0] DataAdr,
+						input logic MemWrite,
+						output logic WEram, WEtimer, S0, S1);
+						
+endmodule
+
+						
+
+						

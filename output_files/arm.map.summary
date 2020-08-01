@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Sun Jul 26 21:30:25 2020
+Analysis & Elaboration Status : Successful - Sat Aug 01 10:08:14 2020
 Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 Revision Name : arm
-Top-level Entity Name : testbench
+Top-level Entity Name : chipset_tb
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge

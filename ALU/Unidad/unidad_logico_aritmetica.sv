@@ -7,9 +7,10 @@ module unidad_logico_aritmetica
 		output logic flagCero,
 		output logic flagOverflow,
 		output logic flagCarry);
+
 			
 			logic [N-1:0] and_resultado, or_resultado, xor_resultado, not_resultado;
-			logic [N-1:0] correr_izq_al_resultado, correr_der_al_resultado, correr_izq_bl_resultado, correr_der_bl_resultado;
+			logic [N-1:0] correr_izq_al_resultado, correr_der_al_resultado, correr_izq_bl_resultado, correr_der_bl_resultado, corrimiento_circular_resultado;
 			logic [N-1:0] suma_resultado, resta_resultado;
 			logic carry_out_suma;
 			logic carry_out_resta;
@@ -36,9 +37,10 @@ module unidad_logico_aritmetica
 			correr_izquierda_aritmetico #(N) LAShiftA(operador1, correr_izq_aa_resultado);
 			correr_derecha_aritmetico #(N) RBShiftA(operador2, correr_der_ba_resultado);
 			correr_izquierda_aritmetico #(N) LBShiftA(operador2, correr_izq_ba_resultado);
+			corrimiento_circular #(N) CirShift(operador1,operador2,corrimiento_circular_resultado);
 			
 			mux3a8 #(N) MuxA(suma_resultado, resta_resultado, correr_der_aa_resultado, correr_izq_aa_resultado, 
-			correr_der_ba_resultado, correr_izq_ba_resultado, 1'bz, 1'bz, ALUControl[2:0], resultado2);
+			correr_der_ba_resultado, correr_izq_ba_resultado,corrimiento_circular_resultado, 32'b0, ALUControl[2:0], resultado2);
 			
 			mux1a2 #(N) MuxR(resultado1, resultado2, ALUControl[3], resultadoFinal);
 			

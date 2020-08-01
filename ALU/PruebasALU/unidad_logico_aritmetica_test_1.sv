@@ -90,7 +90,17 @@ module unidad_logico_aritmetica_test_1();
 	
 	#15;
 	assert(resultado === 4'b1100) $display("Prueba B LEFT SHIFT ARITHMETIC correcta"); else $display("Deteccion de error en la operacion B LEFT SHIFT ARITHMETIC");
-		
+	
+	ALUControl = 4'b0111; //Corrimiento circular
+	
+	//numero1 = 8'b0011;
+	//numero2 = 4'b0011;
+	
+	//#15;
+	//assert(resultado === 4'b0110) $display("Prueba CORRIMIENTO CIRCULAR correcta"); else $display("Deteccion de error en la operacion CORRIMIENTO CIRCULAR");
+	
+	
+	
 	end
 	
 endmodule 

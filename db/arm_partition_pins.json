@@ -4,411 +4,159 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "resultadoFinal[0]",
+					"name" : "rd[0]",
 					"strict" : false
 				},
 				{
-					"name" : "resultadoFinal[1]",
+					"name" : "rd[1]",
 					"strict" : false
 				},
 				{
-					"name" : "resultadoFinal[2]",
+					"name" : "rd[2]",
 					"strict" : false
 				},
 				{
-					"name" : "resultadoFinal[3]",
+					"name" : "rd[3]",
 					"strict" : false
 				},
 				{
-					"name" : "resultadoFinal[4]",
+					"name" : "rd[4]",
 					"strict" : false
 				},
 				{
-					"name" : "resultadoFinal[5]",
+					"name" : "rd[5]",
 					"strict" : false
 				},
 				{
-					"name" : "resultadoFinal[6]",
+					"name" : "rd[6]",
 					"strict" : false
 				},
 				{
-					"name" : "resultadoFinal[7]",
+					"name" : "rd[7]",
 					"strict" : false
 				},
 				{
-					"name" : "resultadoFinal[8]",
+					"name" : "rd[8]",
 					"strict" : false
 				},
 				{
-					"name" : "resultadoFinal[9]",
+					"name" : "rd[9]",
 					"strict" : false
 				},
 				{
-					"name" : "resultadoFinal[10]",
+					"name" : "rd[10]",
 					"strict" : false
 				},
 				{
-					"name" : "resultadoFinal[11]",
+					"name" : "rd[11]",
 					"strict" : false
 				},
 				{
-					"name" : "resultadoFinal[12]",
+					"name" : "rd[12]",
 					"strict" : false
 				},
 				{
-					"name" : "resultadoFinal[13]",
+					"name" : "rd[13]",
 					"strict" : false
 				},
 				{
-					"name" : "resultadoFinal[14]",
+					"name" : "rd[14]",
 					"strict" : false
 				},
 				{
-					"name" : "resultadoFinal[15]",
+					"name" : "rd[15]",
 					"strict" : false
 				},
 				{
-					"name" : "resultadoFinal[16]",
+					"name" : "rd[16]",
 					"strict" : false
 				},
 				{
-					"name" : "resultadoFinal[17]",
+					"name" : "rd[17]",
 					"strict" : false
 				},
 				{
-					"name" : "resultadoFinal[18]",
+					"name" : "rd[18]",
 					"strict" : false
 				},
 				{
-					"name" : "resultadoFinal[19]",
+					"name" : "rd[19]",
 					"strict" : false
 				},
 				{
-					"name" : "resultadoFinal[20]",
+					"name" : "rd[20]",
 					"strict" : false
 				},
 				{
-					"name" : "resultadoFinal[21]",
+					"name" : "rd[21]",
 					"strict" : false
 				},
 				{
-					"name" : "resultadoFinal[22]",
+					"name" : "rd[22]",
 					"strict" : false
 				},
 				{
-					"name" : "resultadoFinal[23]",
+					"name" : "rd[23]",
 					"strict" : false
 				},
 				{
-					"name" : "resultadoFinal[24]",
+					"name" : "rd[24]",
 					"strict" : false
 				},
 				{
-					"name" : "resultadoFinal[25]",
+					"name" : "rd[25]",
 					"strict" : false
 				},
 				{
-					"name" : "resultadoFinal[26]",
+					"name" : "rd[26]",
 					"strict" : false
 				},
 				{
-					"name" : "resultadoFinal[27]",
+					"name" : "rd[27]",
 					"strict" : false
 				},
 				{
-					"name" : "resultadoFinal[28]",
+					"name" : "rd[29]",
 					"strict" : false
 				},
 				{
-					"name" : "resultadoFinal[29]",
+					"name" : "rd[30]",
 					"strict" : false
 				},
 				{
-					"name" : "resultadoFinal[30]",
+					"name" : "rd[31]",
 					"strict" : false
 				},
 				{
-					"name" : "resultadoFinal[31]",
+					"name" : "a[2]",
 					"strict" : false
 				},
 				{
-					"name" : "flagNegativo",
+					"name" : "a[3]",
 					"strict" : false
 				},
 				{
-					"name" : "flagCero",
+					"name" : "a[4]",
 					"strict" : false
 				},
 				{
-					"name" : "flagOverflow",
+					"name" : "a[5]",
 					"strict" : false
 				},
 				{
-					"name" : "flagCarry",
+					"name" : "a[6]",
 					"strict" : false
 				},
 				{
-					"name" : "ALUControl[1]",
+					"name" : "a[7]",
 					"strict" : false
 				},
 				{
-					"name" : "operador2[0]",
+					"name" : "a[8]",
 					"strict" : false
 				},
 				{
-					"name" : "ALUControl[0]",
-					"strict" : false
-				},
-				{
-					"name" : "operador2[3]",
-					"strict" : false
-				},
-				{
-					"name" : "operador2[4]",
-					"strict" : false
-				},
-				{
-					"name" : "operador2[5]",
-					"strict" : false
-				},
-				{
-					"name" : "operador2[6]",
-					"strict" : false
-				},
-				{
-					"name" : "operador2[7]",
-					"strict" : false
-				},
-				{
-					"name" : "operador2[2]",
-					"strict" : false
-				},
-				{
-					"name" : "operador1[0]",
-					"strict" : false
-				},
-				{
-					"name" : "operador1[4]",
-					"strict" : false
-				},
-				{
-					"name" : "operador1[5]",
-					"strict" : false
-				},
-				{
-					"name" : "operador1[6]",
-					"strict" : false
-				},
-				{
-					"name" : "operador1[7]",
-					"strict" : false
-				},
-				{
-					"name" : "operador2[1]",
-					"strict" : false
-				},
-				{
-					"name" : "operador1[1]",
-					"strict" : false
-				},
-				{
-					"name" : "operador1[2]",
-					"strict" : false
-				},
-				{
-					"name" : "operador1[3]",
-					"strict" : false
-				},
-				{
-					"name" : "operador2[8]",
-					"strict" : false
-				},
-				{
-					"name" : "operador1[8]",
-					"strict" : false
-				},
-				{
-					"name" : "operador2[9]",
-					"strict" : false
-				},
-				{
-					"name" : "operador1[9]",
-					"strict" : false
-				},
-				{
-					"name" : "operador2[10]",
-					"strict" : false
-				},
-				{
-					"name" : "operador1[10]",
-					"strict" : false
-				},
-				{
-					"name" : "operador2[11]",
-					"strict" : false
-				},
-				{
-					"name" : "operador1[11]",
-					"strict" : false
-				},
-				{
-					"name" : "operador2[12]",
-					"strict" : false
-				},
-				{
-					"name" : "operador1[12]",
-					"strict" : false
-				},
-				{
-					"name" : "operador2[13]",
-					"strict" : false
-				},
-				{
-					"name" : "operador1[13]",
-					"strict" : false
-				},
-				{
-					"name" : "operador2[14]",
-					"strict" : false
-				},
-				{
-					"name" : "operador1[14]",
-					"strict" : false
-				},
-				{
-					"name" : "operador2[15]",
-					"strict" : false
-				},
-				{
-					"name" : "operador1[15]",
-					"strict" : false
-				},
-				{
-					"name" : "operador2[16]",
-					"strict" : false
-				},
-				{
-					"name" : "operador1[16]",
-					"strict" : false
-				},
-				{
-					"name" : "operador2[17]",
-					"strict" : false
-				},
-				{
-					"name" : "operador1[17]",
-					"strict" : false
-				},
-				{
-					"name" : "operador2[18]",
-					"strict" : false
-				},
-				{
-					"name" : "operador1[18]",
-					"strict" : false
-				},
-				{
-					"name" : "operador2[19]",
-					"strict" : false
-				},
-				{
-					"name" : "operador1[19]",
-					"strict" : false
-				},
-				{
-					"name" : "operador2[20]",
-					"strict" : false
-				},
-				{
-					"name" : "operador1[20]",
-					"strict" : false
-				},
-				{
-					"name" : "operador2[21]",
-					"strict" : false
-				},
-				{
-					"name" : "operador1[21]",
-					"strict" : false
-				},
-				{
-					"name" : "operador2[22]",
-					"strict" : false
-				},
-				{
-					"name" : "operador1[22]",
-					"strict" : false
-				},
-				{
-					"name" : "operador2[23]",
-					"strict" : false
-				},
-				{
-					"name" : "operador1[23]",
-					"strict" : false
-				},
-				{
-					"name" : "operador2[24]",
-					"strict" : false
-				},
-				{
-					"name" : "operador1[24]",
-					"strict" : false
-				},
-				{
-					"name" : "operador2[25]",
-					"strict" : false
-				},
-				{
-					"name" : "operador1[25]",
-					"strict" : false
-				},
-				{
-					"name" : "operador2[26]",
-					"strict" : false
-				},
-				{
-					"name" : "operador1[26]",
-					"strict" : false
-				},
-				{
-					"name" : "operador2[27]",
-					"strict" : false
-				},
-				{
-					"name" : "operador1[27]",
-					"strict" : false
-				},
-				{
-					"name" : "operador2[28]",
-					"strict" : false
-				},
-				{
-					"name" : "operador1[28]",
-					"strict" : false
-				},
-				{
-					"name" : "operador2[29]",
-					"strict" : false
-				},
-				{
-					"name" : "operador1[29]",
-					"strict" : false
-				},
-				{
-					"name" : "operador2[30]",
-					"strict" : false
-				},
-				{
-					"name" : "operador1[30]",
-					"strict" : false
-				},
-				{
-					"name" : "operador2[31]",
-					"strict" : false
-				},
-				{
-					"name" : "operador1[31]",
+					"name" : "a[9]",
 					"strict" : false
 				}
 			]

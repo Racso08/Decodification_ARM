@@ -1,18 +1,22 @@
 module pc_sel_test();
 
 
-	logic clk,InstructionAdr;
-	logic PC_output, instrMem_output;
+	logic clk,rst;
+	logic [31:0] instrMem_output,InstructionAdr;
 
-	PC_selection #(32) DUT(clk,InstructionAdr,PC_output, instrMem_output);
+	PC_selection #(32) DUT(clk,rst,InstructionAdr,instrMem_output);
 	
 	initial begin
+
+	
+		InstructionAdr = 32'd0;
 		
 		clk = 0;
 		
+		rst = 0;
+		
 	end
-	always begin
-		#50 CLK_TX = !CLK_TX;
-	end
+
+
 
 endmodule 

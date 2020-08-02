@@ -1,6 +1,5 @@
-<<<<<<< HEAD
-Analysis & Synthesis report for arm
-Sun Aug 02 14:05:29 2020
+Analysis & Elaboration report for arm
+Sun Aug 02 15:49:25 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -8,27 +7,14 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Parameter Settings for User Entity Instance: Top-level Entity: |unidad_logico_aritmetica
- 11. Parameter Settings for User Entity Instance: sumador:Add
- 12. Parameter Settings for User Entity Instance: restador:Minus
- 13. Parameter Settings for User Entity Instance: compuerta_xor:Xor
- 14. Parameter Settings for User Entity Instance: corrimiento_circular:CirShift
- 15. Parameter Settings for User Entity Instance: mux2a4:Mux
- 16. Parameter Settings for User Entity Instance: flag_cero:FCero
- 17. Port Connectivity Checks: "mux2a4:Mux"
- 18. Port Connectivity Checks: "sumador:Add"
- 19. Post-Synthesis Netlist Statistics for Top Partition
- 20. Elapsed Time Per Partition
- 21. Analysis & Synthesis Messages
- 22. Analysis & Synthesis Suppressed Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: PC_selection:DUT
+  5. Parameter Settings for User Entity Instance: PC_selection:DUT|register:PC
+  6. Analysis & Elaboration Settings
+  7. Port Connectivity Checks: "PC_selection:DUT"
+  8. Analysis & Elaboration Messages
+  9. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -51,114 +37,22 @@ refer to the applicable agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                  ;
-+---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Aug 02 14:05:29 2020       ;
-; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
-; Revision Name                   ; arm                                         ;
-; Top-level Entity Name           ; unidad_logico_aritmetica                    ;
-; Family                          ; Cyclone V                                   ;
-; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 0                                           ;
-; Total pins                      ; 102                                         ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 0                                           ;
-; Total HSSI RX PCSs              ; 0                                           ;
-; Total HSSI PMA RX Deserializers ; 0                                           ;
-; Total HSSI TX PCSs              ; 0                                           ;
-; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0                                           ;
-; Total DLLs                      ; 0                                           ;
-+---------------------------------+---------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                                   ;
-+---------------------------------------------------------------------------------+--------------------------+--------------------+
-; Option                                                                          ; Setting                  ; Default Value      ;
-+---------------------------------------------------------------------------------+--------------------------+--------------------+
-; Device                                                                          ; 5CEBA2F17A7              ;                    ;
-; Top-level entity name                                                           ; unidad_logico_aritmetica ; arm                ;
-; Family name                                                                     ; Cyclone V                ; Cyclone V          ;
-; Use smart compilation                                                           ; Off                      ; Off                ;
-; Enable parallel Assembler and Timing Analyzer during compilation                ; On                       ; On                 ;
-; Enable compact report table                                                     ; Off                      ; Off                ;
-; Restructure Multiplexers                                                        ; Auto                     ; Auto               ;
-; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                      ; Off                ;
-; Create Debugging Nodes for IP Cores                                             ; Off                      ; Off                ;
-; Preserve fewer node names                                                       ; On                       ; On                 ;
-; Intel FPGA IP Evaluation Mode                                                   ; Enable                   ; Enable             ;
-; Verilog Version                                                                 ; Verilog_2001             ; Verilog_2001       ;
-; VHDL Version                                                                    ; VHDL_1993                ; VHDL_1993          ;
-; State Machine Processing                                                        ; Auto                     ; Auto               ;
-; Safe State Machine                                                              ; Off                      ; Off                ;
-; Extract Verilog State Machines                                                  ; On                       ; On                 ;
-; Extract VHDL State Machines                                                     ; On                       ; On                 ;
-; Ignore Verilog initial constructs                                               ; Off                      ; Off                ;
-; Iteration limit for constant Verilog loops                                      ; 5000                     ; 5000               ;
-; Iteration limit for non-constant Verilog loops                                  ; 250                      ; 250                ;
-; Add Pass-Through Logic to Inferred RAMs                                         ; On                       ; On                 ;
-; Infer RAMs from Raw Logic                                                       ; On                       ; On                 ;
-; Parallel Synthesis                                                              ; On                       ; On                 ;
-; DSP Block Balancing                                                             ; Auto                     ; Auto               ;
-; NOT Gate Push-Back                                                              ; On                       ; On                 ;
-; Power-Up Don't Care                                                             ; On                       ; On                 ;
-; Remove Redundant Logic Cells                                                    ; Off                      ; Off                ;
-; Remove Duplicate Registers                                                      ; On                       ; On                 ;
-; Ignore CARRY Buffers                                                            ; Off                      ; Off                ;
-; Ignore CASCADE Buffers                                                          ; Off                      ; Off                ;
-; Ignore GLOBAL Buffers                                                           ; Off                      ; Off                ;
-; Ignore ROW GLOBAL Buffers                                                       ; Off                      ; Off                ;
-; Ignore LCELL Buffers                                                            ; Off                      ; Off                ;
-; Ignore SOFT Buffers                                                             ; On                       ; On                 ;
-; Limit AHDL Integers to 32 Bits                                                  ; Off                      ; Off                ;
-; Optimization Technique                                                          ; Balanced                 ; Balanced           ;
-; Carry Chain Length                                                              ; 70                       ; 70                 ;
-; Auto Carry Chains                                                               ; On                       ; On                 ;
-; Auto Open-Drain Pins                                                            ; On                       ; On                 ;
-; Perform WYSIWYG Primitive Resynthesis                                           ; Off                      ; Off                ;
-; Auto ROM Replacement                                                            ; On                       ; On                 ;
-; Auto RAM Replacement                                                            ; On                       ; On                 ;
-; Auto DSP Block Replacement                                                      ; On                       ; On                 ;
-; Auto Shift Register Replacement                                                 ; Auto                     ; Auto               ;
-; Allow Shift Register Merging across Hierarchies                                 ; Auto                     ; Auto               ;
-; Auto Clock Enable Replacement                                                   ; On                       ; On                 ;
-; Strict RAM Replacement                                                          ; Off                      ; Off                ;
-; Allow Synchronous Control Signals                                               ; On                       ; On                 ;
-; Force Use of Synchronous Clear Signals                                          ; Off                      ; Off                ;
-; Auto Resource Sharing                                                           ; Off                      ; Off                ;
-; Allow Any RAM Size For Recognition                                              ; Off                      ; Off                ;
-; Allow Any ROM Size For Recognition                                              ; Off                      ; Off                ;
-; Allow Any Shift Register Size For Recognition                                   ; Off                      ; Off                ;
-; Use LogicLock Constraints during Resource Balancing                             ; On                       ; On                 ;
-; Ignore translate_off and synthesis_off directives                               ; Off                      ; Off                ;
-; Timing-Driven Synthesis                                                         ; On                       ; On                 ;
-; Report Parameter Settings                                                       ; On                       ; On                 ;
-; Report Source Assignments                                                       ; On                       ; On                 ;
-; Report Connectivity Checks                                                      ; On                       ; On                 ;
-; Ignore Maximum Fan-Out Assignments                                              ; Off                      ; Off                ;
-; Synchronization Register Chain Length                                           ; 3                        ; 3                  ;
-; Power Optimization During Synthesis                                             ; Normal compilation       ; Normal compilation ;
-; HDL message level                                                               ; Level2                   ; Level2             ;
-; Suppress Register Optimization Related Messages                                 ; Off                      ; Off                ;
-; Number of Removed Registers Reported in Synthesis Report                        ; 5000                     ; 5000               ;
-; Number of Swept Nodes Reported in Synthesis Report                              ; 5000                     ; 5000               ;
-; Number of Inverted Registers Reported in Synthesis Report                       ; 100                      ; 100                ;
-; Clock MUX Protection                                                            ; On                       ; On                 ;
-; Auto Gated Clock Conversion                                                     ; Off                      ; Off                ;
-; Block Design Naming                                                             ; Auto                     ; Auto               ;
-; SDC constraint protection                                                       ; Off                      ; Off                ;
-; Synthesis Effort                                                                ; Auto                     ; Auto               ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                       ; On                 ;
-; Pre-Mapping Resynthesis Optimization                                            ; Off                      ; Off                ;
-; Analysis & Synthesis Message Level                                              ; Medium                   ; Medium             ;
-; Disable Register Merging Across Hierarchies                                     ; Auto                     ; Auto               ;
-; Resource Aware Inference For Block RAM                                          ; On                       ; On                 ;
-; Automatic Parallel Synthesis                                                    ; On                       ; On                 ;
-; Partial Reconfiguration Bitstream ID                                            ; Off                      ; Off                ;
-+---------------------------------------------------------------------------------+--------------------------+--------------------+
++-----------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                              ;
++-------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Sun Aug 02 15:49:25 2020       ;
+; Quartus Prime Version         ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
+; Revision Name                 ; arm                                         ;
+; Top-level Entity Name         ; pc_sel_test                                 ;
+; Family                        ; Cyclone V                                   ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
+; Total registers               ; N/A until Partition Merge                   ;
+; Total pins                    ; N/A until Partition Merge                   ;
+; Total virtual pins            ; N/A until Partition Merge                   ;
+; Total block memory bits       ; N/A until Partition Merge                   ;
+; Total PLLs                    ; N/A until Partition Merge                   ;
+; Total DLLs                    ; N/A until Partition Merge                   ;
++-------------------------------+---------------------------------------------+
 
 
 +------------------------------------------+
@@ -177,374 +71,24 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                        ;
-+-----------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path        ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                             ; Library ;
-+-----------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------+---------+
-; Modules/mux2a4.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/mux2a4.sv                       ;         ;
-; ALU/Flags/flag_overflow.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Flags/flag_overflow.sv              ;         ;
-; ALU/Flags/flag_negativo.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Flags/flag_negativo.sv              ;         ;
-; ALU/Flags/flag_cero.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Flags/flag_cero.sv                  ;         ;
-; ALU/Flags/flag_carry.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Flags/flag_carry.sv                 ;         ;
-; ALU/Operaciones/sumador.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Operaciones/sumador.sv              ;         ;
-; ALU/Operaciones/restador.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Operaciones/restador.sv             ;         ;
-; ALU/Operaciones/corrimiento_circular.sv ; yes             ; User SystemVerilog HDL File  ; C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Operaciones/corrimiento_circular.sv ;         ;
-; ALU/Operaciones/compuerta_xor.sv        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Operaciones/compuerta_xor.sv        ;         ;
-; ALU/unidad_logico_aritmetica.sv         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/unidad_logico_aritmetica.sv         ;         ;
-+-----------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------+---------+
-
-
-+-------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                       ;
-+---------------------------------------------+---------------------+
-; Resource                                    ; Usage               ;
-+---------------------------------------------+---------------------+
-; Estimate of Logic utilization (ALMs needed) ; 92                  ;
-;                                             ;                     ;
-; Combinational ALUT usage for logic          ; 136                 ;
-;     -- 7 input functions                    ; 0                   ;
-;     -- 6 input functions                    ; 47                  ;
-;     -- 5 input functions                    ; 9                   ;
-;     -- 4 input functions                    ; 2                   ;
-;     -- <=3 input functions                  ; 78                  ;
-;                                             ;                     ;
-; Dedicated logic registers                   ; 0                   ;
-;                                             ;                     ;
-; I/O pins                                    ; 102                 ;
-;                                             ;                     ;
-; Total DSP Blocks                            ; 0                   ;
-;                                             ;                     ;
-; Maximum fan-out node                        ; ALUControl[1]~input ;
-; Maximum fan-out                             ; 40                  ;
-; Total fan-out                               ; 700                 ;
-; Average fan-out                             ; 2.06                ;
-+---------------------------------------------+---------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                             ;
-+------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------+--------------------------+--------------+
-; Compilation Hierarchy Node         ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                     ; Entity Name              ; Library Name ;
-+------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------+--------------------------+--------------+
-; |unidad_logico_aritmetica          ; 136 (0)             ; 0 (0)                     ; 0                 ; 0          ; 102  ; 0            ; |unidad_logico_aritmetica                               ; unidad_logico_aritmetica ; work         ;
-;    |compuerta_xor:Xor|             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |unidad_logico_aritmetica|compuerta_xor:Xor             ; compuerta_xor            ; work         ;
-;    |corrimiento_circular:CirShift| ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |unidad_logico_aritmetica|corrimiento_circular:CirShift ; corrimiento_circular     ; work         ;
-;    |flag_carry:FCarry|             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |unidad_logico_aritmetica|flag_carry:FCarry             ; flag_carry               ; work         ;
-;    |flag_cero:FCero|               ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |unidad_logico_aritmetica|flag_cero:FCero               ; flag_cero                ; work         ;
-;    |flag_negativo:Fnegativo|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |unidad_logico_aritmetica|flag_negativo:Fnegativo       ; flag_negativo            ; work         ;
-;    |flag_overflow:FOverflow|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |unidad_logico_aritmetica|flag_overflow:FOverflow       ; flag_overflow            ; work         ;
-;    |mux2a4:Mux|                    ; 48 (48)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |unidad_logico_aritmetica|mux2a4:Mux                    ; mux2a4                   ; work         ;
-;    |restador:Minus|                ; 33 (33)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |unidad_logico_aritmetica|restador:Minus                ; restador                 ; work         ;
-;    |sumador:Add|                   ; 33 (33)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |unidad_logico_aritmetica|sumador:Add                   ; sumador                  ; work         ;
-+------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------+--------------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                        ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------+
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |unidad_logico_aritmetica|corrimiento_circular:CirShift|Selector0 ;
-; 4:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |unidad_logico_aritmetica|mux2a4:Mux|Mux23                        ;
-; 36:1               ; 8 bits    ; 192 LEs       ; 32 LEs               ; 160 LEs                ; No         ; |unidad_logico_aritmetica|mux2a4:Mux|Mux24                        ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |unidad_logico_aritmetica ;
-+----------------+-------+-----------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                            ;
-+----------------+-------+-----------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                  ;
-+----------------+-------+-----------------------------------------------------------------+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: PC_selection:DUT ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; N              ; 32    ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: sumador:Add ;
-+----------------+-------+---------------------------------+
-; Parameter Name ; Value ; Type                            ;
-+----------------+-------+---------------------------------+
-; N              ; 32    ; Signed Integer                  ;
-+----------------+-------+---------------------------------+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: PC_selection:DUT|register:PC ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; N              ; 32    ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: restador:Minus ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; N              ; 32    ; Signed Integer                     ;
-+----------------+-------+------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: compuerta_xor:Xor ;
-+----------------+-------+---------------------------------------+
-; Parameter Name ; Value ; Type                                  ;
-+----------------+-------+---------------------------------------+
-; N              ; 32    ; Signed Integer                        ;
-+----------------+-------+---------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: corrimiento_circular:CirShift ;
-+----------------+-------+---------------------------------------------------+
-; Parameter Name ; Value ; Type                                              ;
-+----------------+-------+---------------------------------------------------+
-; N              ; 8     ; Signed Integer                                    ;
-+----------------+-------+---------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mux2a4:Mux ;
-+----------------+-------+--------------------------------+
-; Parameter Name ; Value ; Type                           ;
-+----------------+-------+--------------------------------+
-; N              ; 32    ; Signed Integer                 ;
-+----------------+-------+--------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: flag_cero:FCero ;
-+----------------+-------+-------------------------------------+
-; Parameter Name ; Value ; Type                                ;
-+----------------+-------+-------------------------------------+
-; N              ; 32    ; Signed Integer                      ;
-+----------------+-------+-------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------+
-; Port Connectivity Checks: "mux2a4:Mux"           ;
-+----------------+-------+----------+--------------+
-; Port           ; Type  ; Severity ; Details      ;
-+----------------+-------+----------+--------------+
-; result4[31..8] ; Input ; Info     ; Stuck at GND ;
-+----------------+-------+----------+--------------+
-
-
-+-----------------------------------------+
-; Port Connectivity Checks: "sumador:Add" ;
-+------+-------+----------+---------------+
-; Port ; Type  ; Severity ; Details       ;
-+------+-------+----------+---------------+
-; cin  ; Input ; Info     ; Stuck at GND  ;
-+------+-------+----------+---------------+
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 136                         ;
-;     normal            ; 70                          ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 11                          ;
-;         4 data inputs ; 2                           ;
-;         5 data inputs ; 9                           ;
-;         6 data inputs ; 47                          ;
-;     shared            ; 66                          ;
-;         0 data inputs ; 2                           ;
-;         2 data inputs ; 64                          ;
-; boundary_port         ; 102                         ;
-;                       ;                             ;
-; Max LUT depth         ; 6.80                        ;
-; Average LUT depth     ; 5.71                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:02     ;
-+----------------+--------------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
-Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Sun Aug 02 14:05:06 2020
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ARM -c arm
-Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file arm.sv
-    Info (12023): Found entity 1: arm File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/arm.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file modules/mux2a4.sv
-    Info (12023): Found entity 1: mux2a4 File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/mux2a4.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file modules/mux3a8.sv
-    Info (12023): Found entity 1: mux3a8 File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/mux3a8.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file modules/mux1a2.sv
-    Info (12023): Found entity 1: mux1a2 File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/mux1a2.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file alu/flags/flag_overflow.sv
-    Info (12023): Found entity 1: flag_overflow File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Flags/flag_overflow.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file alu/flags/flag_negativo.sv
-    Info (12023): Found entity 1: flag_negativo File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Flags/flag_negativo.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file alu/flags/flag_cero.sv
-    Info (12023): Found entity 1: flag_cero File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Flags/flag_cero.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file alu/flags/flag_carry.sv
-    Info (12023): Found entity 1: flag_carry File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Flags/flag_carry.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file alu/operaciones/sumador.sv
-    Info (12023): Found entity 1: sumador File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Operaciones/sumador.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file alu/operaciones/restador.sv
-    Info (12023): Found entity 1: restador File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Operaciones/restador.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file alu/operaciones/corrimiento_circular.sv
-    Info (12023): Found entity 1: corrimiento_circular File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Operaciones/corrimiento_circular.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file alu/operaciones/compuerta_xor.sv
-    Info (12023): Found entity 1: compuerta_xor File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Operaciones/compuerta_xor.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file alu/unidad_logico_aritmetica.sv
-    Info (12023): Found entity 1: unidad_logico_aritmetica File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file tests/overflow_flag_test.sv
-    Info (12023): Found entity 1: overflow_flag_test File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Tests/overflow_flag_test.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file tests/corrimiento_circular_test.sv
-    Info (12023): Found entity 1: corrimiento_circular_test File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Tests/corrimiento_circular_test.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file tests/unidad_logico_aritmetica_test.sv
-    Info (12023): Found entity 1: unidad_logico_aritmetica_test File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Tests/unidad_logico_aritmetica_test.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file modules/register.sv
-    Info (12023): Found entity 1: register File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/register.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file modules/extender.sv
-    Info (12023): Found entity 1: extender File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/extender.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file modules/decoder.sv
-    Info (12023): Found entity 1: decoder File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/decoder.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file modules/chipset.sv
-    Info (12023): Found entity 1: chipset File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/chipset.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file tests/chipset_tb.sv
-    Info (12023): Found entity 1: chipset_tb File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Tests/chipset_tb.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file modules/intsructionmem.sv
-    Info (12023): Found entity 1: intsructionMem File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/intsructionMem.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file modules/pc_selection.sv
-    Info (12023): Found entity 1: PC_selection File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/PC_selection.sv Line: 1
-Critical Warning (10846): Verilog HDL Instantiation warning at PC_selection.sv(10): instance has no name File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/PC_selection.sv Line: 10
-Info (12127): Elaborating entity "unidad_logico_aritmetica" for the top level hierarchy
-Info (12128): Elaborating entity "sumador" for hierarchy "sumador:Add" File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 15
-Info (12128): Elaborating entity "restador" for hierarchy "restador:Minus" File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 16
-Info (12128): Elaborating entity "compuerta_xor" for hierarchy "compuerta_xor:Xor" File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 17
-Info (12128): Elaborating entity "corrimiento_circular" for hierarchy "corrimiento_circular:CirShift" File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 18
-Info (12128): Elaborating entity "mux2a4" for hierarchy "mux2a4:Mux" File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 20
-Info (12128): Elaborating entity "flag_negativo" for hierarchy "flag_negativo:Fnegativo" File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 22
-Info (12128): Elaborating entity "flag_cero" for hierarchy "flag_cero:FCero" File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 23
-Info (12128): Elaborating entity "flag_overflow" for hierarchy "flag_overflow:FOverflow" File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 24
-Info (12128): Elaborating entity "flag_carry" for hierarchy "flag_carry:FCarry" File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 25
-Info (286030): Timing-Driven Synthesis is running
-Info (144001): Generated suppressed messages file C:/Users/Isaac Porras/Desktop/Decodification_ARM/output_files/arm.map.smsg
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 238 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 66 input pins
-    Info (21059): Implemented 36 output pins
-    Info (21061): Implemented 136 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4802 megabytes
-    Info: Processing ended: Sun Aug 02 14:05:29 2020
-    Info: Elapsed time: 00:00:23
-    Info: Total CPU time (on all processors): 00:00:36
-
-
-+------------------------------------------+
-; Analysis & Synthesis Suppressed Messages ;
-+------------------------------------------+
-The suppressed messages can be found in C:/Users/Isaac Porras/Desktop/Decodification_ARM/output_files/arm.map.smsg.
-
-
-=======
-Analysis & Elaboration report for arm
-Sun Aug 02 14:20:25 2020
-Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-
-
----------------------
-; Table of Contents ;
----------------------
-  1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Analysis & Elaboration Settings
-  5. Port Connectivity Checks: "instructionMem:DUT"
-  6. Analysis & Elaboration Messages
-  7. Analysis & Elaboration Suppressed Messages
-
-
-
-----------------
-; Legal Notice ;
-----------------
-Copyright (C) 2019  Intel Corporation. All rights reserved.
-Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and any partner logic 
-functions, and any output files from any of the foregoing 
-(including device programming or simulation files), and any 
-associated documentation or information are expressly subject 
-to the terms and conditions of the Intel Program License 
-Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel FPGA IP License Agreement, or other applicable license
-agreement, including, without limitation, that your use is for
-the sole purpose of programming logic devices manufactured by
-Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
-
-
-
-+-----------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                              ;
-+-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Sun Aug 02 14:20:25 2020       ;
-; Quartus Prime Version         ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
-; Revision Name                 ; arm                                         ;
-; Top-level Entity Name         ; instructionMem_tb                           ;
-; Family                        ; Cyclone V                                   ;
-; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
-; Total registers               ; N/A until Partition Merge                   ;
-; Total pins                    ; N/A until Partition Merge                   ;
-; Total virtual pins            ; N/A until Partition Merge                   ;
-; Total block memory bits       ; N/A until Partition Merge                   ;
-; Total PLLs                    ; N/A until Partition Merge                   ;
-; Total DLLs                    ; N/A until Partition Merge                   ;
-+-------------------------------+---------------------------------------------+
-
-
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 6           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -553,7 +97,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CEBA2F17A7        ;                    ;
-; Top-level entity name                                                           ; instructionMem_tb  ; arm                ;
+; Top-level entity name                                                           ; pc_sel_test        ; arm                ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -634,13 +178,13 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "instructionMem:DUT"                                                                 ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; rd   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PC_selection:DUT"                                                                              ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port            ; Type   ; Severity ; Details                                                                             ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; instrMem_output ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +---------------------------------+
@@ -648,75 +192,80 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
-    Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Sun Aug 02 14:20:18 2020
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off arm -c arm --analysis_and_elaboration
+    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+    Info: Processing started: Sun Aug 02 15:49:09 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ARM -c arm --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file arm.sv
-    Info (12023): Found entity 1: arm File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/arm.sv Line: 1
+    Info (12023): Found entity 1: arm File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/arm.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modules/mux2a4.sv
-    Info (12023): Found entity 1: mux2a4 File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/mux2a4.sv Line: 1
+    Info (12023): Found entity 1: mux2a4 File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/mux2a4.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modules/mux3a8.sv
-    Info (12023): Found entity 1: mux3a8 File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/mux3a8.sv Line: 1
+    Info (12023): Found entity 1: mux3a8 File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/mux3a8.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modules/mux1a2.sv
-    Info (12023): Found entity 1: mux1a2 File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/mux1a2.sv Line: 1
+    Info (12023): Found entity 1: mux1a2 File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/mux1a2.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/flags/flag_overflow.sv
-    Info (12023): Found entity 1: flag_overflow File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_overflow.sv Line: 1
+    Info (12023): Found entity 1: flag_overflow File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Flags/flag_overflow.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/flags/flag_negativo.sv
-    Info (12023): Found entity 1: flag_negativo File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_negativo.sv Line: 1
+    Info (12023): Found entity 1: flag_negativo File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Flags/flag_negativo.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/flags/flag_cero.sv
-    Info (12023): Found entity 1: flag_cero File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_cero.sv Line: 1
+    Info (12023): Found entity 1: flag_cero File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Flags/flag_cero.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/flags/flag_carry.sv
-    Info (12023): Found entity 1: flag_carry File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_carry.sv Line: 1
+    Info (12023): Found entity 1: flag_carry File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Flags/flag_carry.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/operaciones/sumador.sv
-    Info (12023): Found entity 1: sumador File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/sumador.sv Line: 1
+    Info (12023): Found entity 1: sumador File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Operaciones/sumador.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/operaciones/restador.sv
-    Info (12023): Found entity 1: restador File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/restador.sv Line: 1
+    Info (12023): Found entity 1: restador File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Operaciones/restador.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/operaciones/corrimiento_circular.sv
-    Info (12023): Found entity 1: corrimiento_circular File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/corrimiento_circular.sv Line: 1
+    Info (12023): Found entity 1: corrimiento_circular File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Operaciones/corrimiento_circular.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/operaciones/compuerta_xor.sv
-    Info (12023): Found entity 1: compuerta_xor File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/compuerta_xor.sv Line: 1
+    Info (12023): Found entity 1: compuerta_xor File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Operaciones/compuerta_xor.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/unidad_logico_aritmetica.sv
-    Info (12023): Found entity 1: unidad_logico_aritmetica File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 1
+    Info (12023): Found entity 1: unidad_logico_aritmetica File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tests/overflow_flag_test.sv
-    Info (12023): Found entity 1: overflow_flag_test File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests/overflow_flag_test.sv Line: 1
+    Info (12023): Found entity 1: overflow_flag_test File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Tests/overflow_flag_test.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tests/corrimiento_circular_test.sv
-    Info (12023): Found entity 1: corrimiento_circular_test File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests/corrimiento_circular_test.sv Line: 1
+    Info (12023): Found entity 1: corrimiento_circular_test File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Tests/corrimiento_circular_test.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tests/unidad_logico_aritmetica_test.sv
-    Info (12023): Found entity 1: unidad_logico_aritmetica_test File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests/unidad_logico_aritmetica_test.sv Line: 1
+    Info (12023): Found entity 1: unidad_logico_aritmetica_test File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Tests/unidad_logico_aritmetica_test.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modules/register.sv
-    Info (12023): Found entity 1: register File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/register.sv Line: 1
+    Info (12023): Found entity 1: register File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/register.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modules/extender.sv
-    Info (12023): Found entity 1: extender File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/extender.sv Line: 1
+    Info (12023): Found entity 1: extender File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/extender.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modules/decoder.sv
-    Info (12023): Found entity 1: decoder File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/decoder.sv Line: 1
+    Info (12023): Found entity 1: decoder File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/decoder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modules/chipset.sv
-    Info (12023): Found entity 1: chipset File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/chipset.sv Line: 1
+    Info (12023): Found entity 1: chipset File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/chipset.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tests/chipset_tb.sv
-    Info (12023): Found entity 1: chipset_tb File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests/chipset_tb.sv Line: 1
+    Info (12023): Found entity 1: chipset_tb File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Tests/chipset_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file modules/pc_selection.sv
+    Info (12023): Found entity 1: PC_selection File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/PC_selection.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file tests/pc_sel_test.sv
+    Info (12023): Found entity 1: pc_sel_test File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Tests/pc_sel_test.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tests/instructionmem_tb.sv
-    Info (12023): Found entity 1: instructionMem_tb File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests/instructionMem_tb.sv Line: 1
+    Info (12023): Found entity 1: instructionMem_tb File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Tests/instructionMem_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modules/instructionmem.sv
-    Info (12023): Found entity 1: instructionMem File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/instructionMem.sv Line: 1
-Info (12127): Elaborating entity "instructionMem_tb" for the top level hierarchy
-Info (12128): Elaborating entity "instructionMem" for hierarchy "instructionMem:DUT" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests/instructionMem_tb.sv Line: 5
-Warning (10850): Verilog HDL warning at instructionMem.sv(8): number of words (55) in memory file does not match the number of elements in the address range [0:255] File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/instructionMem.sv Line: 8
-Warning (10030): Net "RAM.data_a" at instructionMem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/instructionMem.sv Line: 4
-Warning (10030): Net "RAM.waddr_a" at instructionMem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/instructionMem.sv Line: 4
-Warning (10030): Net "RAM.we_a" at instructionMem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/instructionMem.sv Line: 4
-Info (144001): Generated suppressed messages file C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/output_files/arm.map.smsg
+    Info (12023): Found entity 1: instructionMem File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/instructionMem.sv Line: 1
+Info (12127): Elaborating entity "pc_sel_test" for the top level hierarchy
+Info (12128): Elaborating entity "PC_selection" for hierarchy "PC_selection:DUT" File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Tests/pc_sel_test.sv Line: 7
+Info (12128): Elaborating entity "register" for hierarchy "PC_selection:DUT|register:PC" File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/PC_selection.sv Line: 7
+Info (12128): Elaborating entity "instructionMem" for hierarchy "PC_selection:DUT|instructionMem:Mem" File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/PC_selection.sv Line: 9
+Warning (10850): Verilog HDL warning at instructionMem.sv(7): number of words (55) in memory file does not match the number of elements in the address range [0:255] File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/instructionMem.sv Line: 7
+Warning (10030): Net "RAM.data_a" at instructionMem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/instructionMem.sv Line: 4
+Warning (10030): Net "RAM.waddr_a" at instructionMem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/instructionMem.sv Line: 4
+Warning (10030): Net "RAM.we_a" at instructionMem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/instructionMem.sv Line: 4
+Info (144001): Generated suppressed messages file C:/Users/Isaac Porras/Desktop/Decodification_ARM/output_files/arm.map.smsg
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 4776 megabytes
-    Info: Processing ended: Sun Aug 02 14:20:25 2020
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Processing ended: Sun Aug 02 15:49:25 2020
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:33
 
 
 +--------------------------------------------+
 ; Analysis & Elaboration Suppressed Messages ;
 +--------------------------------------------+
-The suppressed messages can be found in C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/output_files/arm.map.smsg.
+The suppressed messages can be found in C:/Users/Isaac Porras/Desktop/Decodification_ARM/output_files/arm.map.smsg.
 
 
->>>>>>> master

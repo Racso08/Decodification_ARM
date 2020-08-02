@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 Flow report for arm
-Sun Aug 02 14:05:29 2020
+Sun Aug 02 15:49:25 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -38,143 +37,13 @@ refer to the applicable agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------+
-; Flow Summary                                                                  ;
-+---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Sun Aug 02 14:05:29 2020       ;
-; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
-; Revision Name                   ; arm                                         ;
-; Top-level Entity Name           ; unidad_logico_aritmetica                    ;
-; Family                          ; Cyclone V                                   ;
-; Device                          ; 5CEBA2F17A7                                 ;
-; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 0                                           ;
-; Total pins                      ; 102                                         ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 0                                           ;
-; Total HSSI RX PCSs              ; 0                                           ;
-; Total HSSI PMA RX Deserializers ; 0                                           ;
-; Total HSSI TX PCSs              ; 0                                           ;
-; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0                                           ;
-; Total DLLs                      ; 0                                           ;
-+---------------------------------+---------------------------------------------+
-
-
-+-----------------------------------------+
-; Flow Settings                           ;
-+-------------------+---------------------+
-; Option            ; Setting             ;
-+-------------------+---------------------+
-; Start date & time ; 08/02/2020 14:05:07 ;
-; Main task         ; Compilation         ;
-; Revision Name     ; arm                 ;
-+-------------------+---------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                            ;
-+-------------------------------------+----------------------------------------+---------------+--------------------------+-----------------------------------+
-; Assignment Name                     ; Value                                  ; Default Value ; Entity Name              ; Section Id                        ;
-+-------------------------------------+----------------------------------------+---------------+--------------------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 220045545805507.159639870708820        ; --            ; --                       ; --                                ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --                       ; eda_board_design_timing           ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --                       ; eda_timing_analysis               ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --                       ; eda_board_design_boundary_scan    ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --                       ; eda_board_design_signal_integrity ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --                       ; eda_formal_verification           ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --                       ; eda_board_design_symbol           ;
-; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --            ; --                       ; eda_simulation                    ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --                       ; --                                ;
-; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --                       ; eda_simulation                    ;
-; MAX_CORE_JUNCTION_TEMP              ; 125                                    ; --            ; --                       ; --                                ;
-; MIN_CORE_JUNCTION_TEMP              ; -40                                    ; --            ; --                       ; --                                ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; unidad_logico_aritmetica ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; unidad_logico_aritmetica ; Top                               ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; unidad_logico_aritmetica ; Top                               ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --                       ; --                                ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --                       ; --                                ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --                       ; --                                ;
-; TOP_LEVEL_ENTITY                    ; unidad_logico_aritmetica               ; arm           ; --                       ; --                                ;
-+-------------------------------------+----------------------------------------+---------------+--------------------------+-----------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                        ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:21     ; 1.0                     ; 4794 MB             ; 00:00:36                           ;
-; Total                ; 00:00:21     ; --                      ; --                  ; 00:00:36                           ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-
-
-+------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                    ;
-+----------------------+------------------+------------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; LAPTOP-OJR01514  ; Windows 10 ; 10.0       ; x86_64         ;
-+----------------------+------------------+------------+------------+----------------+
-
-
-------------
-; Flow Log ;
-------------
-quartus_map --read_settings_files=on --write_settings_files=off ARM -c arm
-
-
-
-=======
-Flow report for arm
-Sun Aug 02 14:20:25 2020
-Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-
-
----------------------
-; Table of Contents ;
----------------------
-  1. Legal Notice
-  2. Flow Summary
-  3. Flow Settings
-  4. Flow Non-Default Global Settings
-  5. Flow Elapsed Time
-  6. Flow OS Summary
-  7. Flow Log
-  8. Flow Messages
-  9. Flow Suppressed Messages
-
-
-
-----------------
-; Legal Notice ;
-----------------
-Copyright (C) 2019  Intel Corporation. All rights reserved.
-Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and any partner logic 
-functions, and any output files from any of the foregoing 
-(including device programming or simulation files), and any 
-associated documentation or information are expressly subject 
-to the terms and conditions of the Intel Program License 
-Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel FPGA IP License Agreement, or other applicable license
-agreement, including, without limitation, that your use is for
-the sole purpose of programming logic devices manufactured by
-Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
-
-
-
 +---------------------------------------------------------------------------+
 ; Flow Summary                                                              ;
 +-----------------------------+---------------------------------------------+
-; Flow Status                 ; Successful - Sun Aug 02 14:20:25 2020       ;
-; Quartus Prime Version       ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
+; Flow Status                 ; Successful - Sun Aug 02 15:49:25 2020       ;
+; Quartus Prime Version       ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name               ; arm                                         ;
-; Top-level Entity Name       ; instructionMem_tb                           ;
+; Top-level Entity Name       ; pc_sel_test                                 ;
 ; Family                      ; Cyclone V                                   ;
 ; Device                      ; 5CEBA2F17A7                                 ;
 ; Timing Models               ; Final                                       ;
@@ -193,37 +62,37 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 08/02/2020 14:20:19 ;
+; Start date & time ; 08/02/2020 15:49:10 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; arm                 ;
 +-------------------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                     ;
-+-------------------------------------+----------------------------------------+---------------+-------------------+-----------------------------------+
-; Assignment Name                     ; Value                                  ; Default Value ; Entity Name       ; Section Id                        ;
-+-------------------------------------+----------------------------------------+---------------+-------------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 153951931695796.159639961930496        ; --            ; --                ; --                                ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --                ; eda_board_design_timing           ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --                ; eda_timing_analysis               ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --                ; eda_board_design_boundary_scan    ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --                ; eda_board_design_signal_integrity ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --                ; eda_formal_verification           ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --                ; eda_board_design_symbol           ;
-; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --            ; --                ; eda_simulation                    ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --                ; --                                ;
-; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --                ; eda_simulation                    ;
-; MAX_CORE_JUNCTION_TEMP              ; 125                                    ; --            ; --                ; --                                ;
-; MIN_CORE_JUNCTION_TEMP              ; -40                                    ; --            ; --                ; --                                ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; instructionMem_tb ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; instructionMem_tb ; Top                               ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; instructionMem_tb ; Top                               ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --                ; --                                ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --                ; --                                ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --                ; --                                ;
-; TOP_LEVEL_ENTITY                    ; instructionMem_tb                      ; arm           ; --                ; --                                ;
-+-------------------------------------+----------------------------------------+---------------+-------------------+-----------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                               ;
++-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
+; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
++-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
+; COMPILER_SIGNATURE_ID               ; 220045545805507.159640495021564        ; --            ; --          ; --                                ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_timing_analysis               ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_formal_verification           ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_symbol           ;
+; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --            ; --          ; eda_simulation                    ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --          ; --                                ;
+; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation                    ;
+; MAX_CORE_JUNCTION_TEMP              ; 125                                    ; --            ; --          ; --                                ;
+; MIN_CORE_JUNCTION_TEMP              ; -40                                    ; --            ; --          ; --                                ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; pc_sel_test ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; pc_sel_test ; Top                               ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; pc_sel_test ; Top                               ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --                                ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                                ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --                                ;
+; TOP_LEVEL_ENTITY                    ; pc_sel_test                            ; arm           ; --          ; --                                ;
++-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------+
@@ -231,8 +100,8 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:07     ; 1.0                     ; 4776 MB             ; 00:00:17                           ;
-; Total                  ; 00:00:07     ; --                      ; --                  ; 00:00:17                           ;
+; Analysis & Elaboration ; 00:00:16     ; 1.0                     ; 4776 MB             ; 00:00:33                           ;
+; Total                  ; 00:00:16     ; --                      ; --                  ; 00:00:33                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -241,15 +110,14 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+------------------+------------+------------+----------------+
 ; Module Name            ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +------------------------+------------------+------------+------------+----------------+
-; Analysis & Elaboration ; DESKTOP-VRFLMRQ  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Elaboration ; LAPTOP-OJR01514  ; Windows 10 ; 10.0       ; x86_64         ;
 +------------------------+------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off arm -c arm --analysis_and_elaboration
+quartus_map --read_settings_files=on --write_settings_files=off ARM -c arm --analysis_and_elaboration
 
 
 
->>>>>>> master

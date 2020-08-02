@@ -7,56 +7,106 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/simulation/modelsim
+Z0 dC:/Users/Isaac Porras/Desktop/Decodification_ARM/simulation/modelsim
 vinstructionMem
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1596399640
+Z2 !s110 1596404974
 !i10b 1
-!s100 BaI14PC051FLCm;eDzkAV1
-I?z>M4Oa^cAQ?Z90Bz>Y=o1
+!s100 VCc`zh76^;?n<IFlE_NSg2
+IM1;HmNJcU@jEdn`X?We]A1
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 !s105 instructionMem_sv_unit
 S1
 R0
-w1596399616
-8C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/instructionMem.sv
-FC:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/instructionMem.sv
+w1596399956
+8C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/instructionMem.sv
+FC:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/instructionMem.sv
 L0 1
 Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1596399640.000000
-!s107 C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/instructionMem.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules|C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/instructionMem.sv|
+Z5 !s108 1596404974.000000
+!s107 C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/instructionMem.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules|C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/instructionMem.sv|
 !i113 1
 Z6 o-sv -work work
-!s92 -sv -work work {+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules}
-Z7 tCvgOpt 0
+Z7 !s92 -sv -work work {+incdir+C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules}
+Z8 tCvgOpt 0
 ninstruction@mem
-vinstructionMem_tb
+vpc_sel_test
 R1
 R2
 !i10b 1
-!s100 SYA@lACo^>Mc07JL_CU[]3
-I[DTO?DLc_?EGiA8J9<NTD0
+!s100 1ZCj`N@j3zBXo8^^>nXiS2
+I=Nhm?dYlX?R=H4UfF1lTn2
 R3
-!s105 instructionMem_tb_sv_unit
+!s105 pc_sel_test_sv_unit
 S1
 R0
-w1596399105
-8C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests/instructionMem_tb.sv
-FC:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests/instructionMem_tb.sv
+w1596403038
+8C:/Users/Isaac Porras/Desktop/Decodification_ARM/Tests/pc_sel_test.sv
+FC:/Users/Isaac Porras/Desktop/Decodification_ARM/Tests/pc_sel_test.sv
 L0 1
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests/instructionMem_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests|C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests/instructionMem_tb.sv|
+!s107 C:/Users/Isaac Porras/Desktop/Decodification_ARM/Tests/pc_sel_test.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Isaac Porras/Desktop/Decodification_ARM/Tests|C:/Users/Isaac Porras/Desktop/Decodification_ARM/Tests/pc_sel_test.sv|
 !i113 1
 R6
-!s92 -sv -work work {+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests}
+!s92 -sv -work work {+incdir+C:/Users/Isaac Porras/Desktop/Decodification_ARM/Tests}
+R8
+vPC_selection
+R1
+R2
+!i10b 1
+!s100 lBUa]H3VAgQIO?7U:HFSe2
+IM68jM>0W]7gAW4jWeL2A82
+R3
+!s105 PC_selection_sv_unit
+S1
+R0
+w1596402989
+8C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/PC_selection.sv
+FC:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/PC_selection.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/PC_selection.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules|C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/PC_selection.sv|
+!i113 1
+R6
 R7
-ninstruction@mem_tb
+R8
+n@p@c_selection
+vregister
+R1
+R2
+!i10b 1
+!s100 GZe2RYILng<Y]0JYR:6@R0
+IJ^M4770_aQ]6P7SzJFV@k0
+R3
+!s105 register_sv_unit
+S1
+R0
+w1596396483
+8C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/register.sv
+FC:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/register.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/register.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules|C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/register.sv|
+!i113 1
+R6
+R7
+R8

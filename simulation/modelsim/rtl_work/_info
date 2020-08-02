@@ -8,278 +8,55 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/simulation/modelsim
-vcompuerta_xor
+vinstructionMem
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1596384824
+Z2 !s110 1596399640
 !i10b 1
-!s100 ?^zDb]SGZFS;R`zZKm3L`2
-ISMHDZ3Gh2?PQ5<:oVaJ[S1
+!s100 BaI14PC051FLCm;eDzkAV1
+I?z>M4Oa^cAQ?Z90Bz>Y=o1
 Z3 VDg1SIo80bB@j0V0VzS_@n1
-!s105 compuerta_xor_sv_unit
+!s105 instructionMem_sv_unit
 S1
 R0
-w1596382683
-8C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/compuerta_xor.sv
-FC:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/compuerta_xor.sv
+w1596399616
+8C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/instructionMem.sv
+FC:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/instructionMem.sv
 L0 1
 Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1596384824.000000
-!s107 C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/compuerta_xor.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones|C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/compuerta_xor.sv|
+Z5 !s108 1596399640.000000
+!s107 C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/instructionMem.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules|C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/instructionMem.sv|
 !i113 1
 Z6 o-sv -work work
-Z7 !s92 -sv -work work {+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones}
-Z8 tCvgOpt 0
-vcorrimiento_circular
-R1
-R2
-!i10b 1
-!s100 YTUVIoH_4MNR9EzF]VVU20
-IjFbU@79SAg95Y9;LhCo1d1
-R3
-!s105 corrimiento_circular_sv_unit
-S1
-R0
-w1596383347
-8C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/corrimiento_circular.sv
-FC:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/corrimiento_circular.sv
-L0 1
-R4
-r1
-!s85 0
-31
-R5
-!s107 C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/corrimiento_circular.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones|C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/corrimiento_circular.sv|
-!i113 1
-R6
-R7
-R8
-vflag_carry
-R1
-R2
-!i10b 1
-!s100 _4>?XbkROD@emZS14gVid3
-ITGGXDgP8Pk>8OQ_7k?CzY0
-R3
-!s105 flag_carry_sv_unit
-S1
-R0
-w1596382665
-8C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_carry.sv
-FC:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_carry.sv
-L0 1
-R4
-r1
-!s85 0
-31
-Z9 !s108 1596384823.000000
-!s107 C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_carry.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags|C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_carry.sv|
-!i113 1
-R6
-Z10 !s92 -sv -work work {+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags}
-R8
-vflag_cero
-R1
-Z11 !s110 1596384823
-!i10b 1
-!s100 9]aRkV>cD<g94<6H[B>6C0
-IQ44V`<UAbEbK?Hd>Ch<Ne3
-R3
-!s105 flag_cero_sv_unit
-S1
-R0
-w1596382094
-8C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_cero.sv
-FC:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_cero.sv
-L0 1
-R4
-r1
-!s85 0
-31
-R9
-!s107 C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_cero.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags|C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_cero.sv|
-!i113 1
-R6
-R10
-R8
-vflag_negativo
-R1
-R11
-!i10b 1
-!s100 Ziial<dJ?:;UWY>[4f<lj3
-InAUdSXCa3Z[U<f=l[ckWA0
-R3
-!s105 flag_negativo_sv_unit
-S1
-R0
-w1596382656
-8C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_negativo.sv
-FC:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_negativo.sv
-L0 1
-R4
-r1
-!s85 0
-31
-R9
-!s107 C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_negativo.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags|C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_negativo.sv|
-!i113 1
-R6
-R10
-R8
-vflag_overflow
-R1
-R11
-!i10b 1
-!s100 ebaB=m6ClJ0O9:fPz=[212
-IVH@nBI9Z]RMI;echUYml72
-R3
-!s105 flag_overflow_sv_unit
-S1
-R0
-w1596383550
-8C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_overflow.sv
-FC:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_overflow.sv
-L0 1
-R4
-r1
-!s85 0
-31
-R9
-!s107 C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_overflow.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags|C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_overflow.sv|
-!i113 1
-R6
-R10
-R8
-vmux2a4
-R1
-R11
-!i10b 1
-!s100 Qd3UK?PMlfXNm[3ladJJQ0
-ICiaXERZM1b`YF4lQPNXPM1
-R3
-!s105 mux2a4_sv_unit
-S1
-R0
-w1596380635
-8C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/mux2a4.sv
-FC:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/mux2a4.sv
-L0 1
-R4
-r1
-!s85 0
-31
-R9
-!s107 C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/mux2a4.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules|C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/mux2a4.sv|
-!i113 1
-R6
 !s92 -sv -work work {+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules}
-R8
-vrestador
+Z7 tCvgOpt 0
+ninstruction@mem
+vinstructionMem_tb
 R1
 R2
 !i10b 1
-!s100 IkRX00>jmhb272OYbLjf_2
-IQ6Tc=fX>d[P5S_QBjYL9N3
+!s100 SYA@lACo^>Mc07JL_CU[]3
+I[DTO?DLc_?EGiA8J9<NTD0
 R3
-!s105 restador_sv_unit
+!s105 instructionMem_tb_sv_unit
 S1
 R0
-w1596382676
-8C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/restador.sv
-FC:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/restador.sv
+w1596399105
+8C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests/instructionMem_tb.sv
+FC:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests/instructionMem_tb.sv
 L0 1
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/restador.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones|C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/restador.sv|
-!i113 1
-R6
-R7
-R8
-vsumador
-R1
-R2
-!i10b 1
-!s100 Qf162f6JFOe6cbR:1ALG@3
-IZk9_3WAEbe_T>2AohnLkW2
-R3
-!s105 sumador_sv_unit
-S1
-R0
-w1596382671
-8C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/sumador.sv
-FC:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/sumador.sv
-L0 1
-R4
-r1
-!s85 0
-31
-R5
-!s107 C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/sumador.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones|C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/sumador.sv|
-!i113 1
-R6
-R7
-R8
-vunidad_logico_aritmetica
-R1
-R2
-!i10b 1
-!s100 1@jG;:1JEaC[AYYFT8CFX0
-IiQk?5mZHU0<P_GaR<3b9k0
-R3
-!s105 unidad_logico_aritmetica_sv_unit
-S1
-R0
-w1596384522
-8C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv
-FC:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv
-L0 1
-R4
-r1
-!s85 0
-31
-R5
-!s107 C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU|C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv|
-!i113 1
-R6
-!s92 -sv -work work {+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU}
-R8
-vunidad_logico_aritmetica_test
-R1
-R2
-!i10b 1
-!s100 <:>NGEINbYJbMHHd0PBEW1
-Ia6cF2W_o:D03A]b`OIbef1
-R3
-!s105 unidad_logico_aritmetica_test_sv_unit
-S1
-R0
-w1596384739
-8C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests/unidad_logico_aritmetica_test.sv
-FC:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests/unidad_logico_aritmetica_test.sv
-L0 1
-R4
-r1
-!s85 0
-31
-R5
-!s107 C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests/unidad_logico_aritmetica_test.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests|C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests/unidad_logico_aritmetica_test.sv|
+!s107 C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests/instructionMem_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests|C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests/instructionMem_tb.sv|
 !i113 1
 R6
 !s92 -sv -work work {+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests}
-R8
+R7
+ninstruction@mem_tb

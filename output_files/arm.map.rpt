@@ -1,6 +1,6 @@
 Analysis & Synthesis report for arm
-Sun Aug 02 10:36:01 2020
-Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+Sun Aug 02 14:05:29 2020
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
 ---------------------
@@ -34,9 +34,9 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2019  Intel Corporation. All rights reserved.
+Copyright (C) 2018  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and any partner logic 
+and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -46,16 +46,15 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
+refer to the applicable agreement for further details.
 
 
 
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Aug 02 10:36:01 2020       ;
-; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
+; Analysis & Synthesis Status     ; Successful - Sun Aug 02 14:05:29 2020       ;
+; Quartus Prime Version           ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                   ; arm                                         ;
 ; Top-level Entity Name           ; unidad_logico_aritmetica                    ;
 ; Family                          ; Cyclone V                                   ;
@@ -166,8 +165,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 6           ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -177,22 +176,22 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                          ;
-+-----------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path        ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                               ; Library ;
-+-----------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
-; Modules/mux2a4.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/mux2a4.sv                       ;         ;
-; ALU/Flags/flag_overflow.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_overflow.sv              ;         ;
-; ALU/Flags/flag_negativo.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_negativo.sv              ;         ;
-; ALU/Flags/flag_cero.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_cero.sv                  ;         ;
-; ALU/Flags/flag_carry.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_carry.sv                 ;         ;
-; ALU/Operaciones/sumador.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/sumador.sv              ;         ;
-; ALU/Operaciones/restador.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/restador.sv             ;         ;
-; ALU/Operaciones/corrimiento_circular.sv ; yes             ; User SystemVerilog HDL File  ; C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/corrimiento_circular.sv ;         ;
-; ALU/Operaciones/compuerta_xor.sv        ; yes             ; User SystemVerilog HDL File  ; C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/compuerta_xor.sv        ;         ;
-; ALU/unidad_logico_aritmetica.sv         ; yes             ; User SystemVerilog HDL File  ; C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv         ;         ;
-+-----------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                        ;
++-----------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path        ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                             ; Library ;
++-----------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------+---------+
+; Modules/mux2a4.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/mux2a4.sv                       ;         ;
+; ALU/Flags/flag_overflow.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Flags/flag_overflow.sv              ;         ;
+; ALU/Flags/flag_negativo.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Flags/flag_negativo.sv              ;         ;
+; ALU/Flags/flag_cero.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Flags/flag_cero.sv                  ;         ;
+; ALU/Flags/flag_carry.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Flags/flag_carry.sv                 ;         ;
+; ALU/Operaciones/sumador.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Operaciones/sumador.sv              ;         ;
+; ALU/Operaciones/restador.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Operaciones/restador.sv             ;         ;
+; ALU/Operaciones/corrimiento_circular.sv ; yes             ; User SystemVerilog HDL File  ; C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Operaciones/corrimiento_circular.sv ;         ;
+; ALU/Operaciones/compuerta_xor.sv        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Operaciones/compuerta_xor.sv        ;         ;
+; ALU/unidad_logico_aritmetica.sv         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/unidad_logico_aritmetica.sv         ;         ;
++-----------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------+---------+
 
 
 +-------------------------------------------------------------------+
@@ -382,7 +381,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -391,79 +390,86 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Sun Aug 02 10:35:52 2020
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off arm -c arm
+    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+    Info: Processing started: Sun Aug 02 14:05:06 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ARM -c arm
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file decoder.sv
-    Info (12023): Found entity 1: decoder File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/decoder.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file chipset_tb.sv
-    Info (12023): Found entity 1: chipset_tb File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/chipset_tb.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file chipset.sv
-    Info (12023): Found entity 1: chipset File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/chipset.sv Line: 1
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file arm.sv
-    Info (12023): Found entity 1: arm File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/arm.sv Line: 1
+    Info (12023): Found entity 1: arm File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/arm.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modules/mux2a4.sv
-    Info (12023): Found entity 1: mux2a4 File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/mux2a4.sv Line: 1
+    Info (12023): Found entity 1: mux2a4 File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/mux2a4.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modules/mux3a8.sv
-    Info (12023): Found entity 1: mux3a8 File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/mux3a8.sv Line: 1
+    Info (12023): Found entity 1: mux3a8 File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/mux3a8.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modules/mux1a2.sv
-    Info (12023): Found entity 1: mux1a2 File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/mux1a2.sv Line: 1
+    Info (12023): Found entity 1: mux1a2 File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/mux1a2.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/flags/flag_overflow.sv
-    Info (12023): Found entity 1: flag_overflow File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_overflow.sv Line: 1
+    Info (12023): Found entity 1: flag_overflow File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Flags/flag_overflow.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/flags/flag_negativo.sv
-    Info (12023): Found entity 1: flag_negativo File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_negativo.sv Line: 1
+    Info (12023): Found entity 1: flag_negativo File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Flags/flag_negativo.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/flags/flag_cero.sv
-    Info (12023): Found entity 1: flag_cero File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_cero.sv Line: 1
+    Info (12023): Found entity 1: flag_cero File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Flags/flag_cero.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/flags/flag_carry.sv
-    Info (12023): Found entity 1: flag_carry File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_carry.sv Line: 1
+    Info (12023): Found entity 1: flag_carry File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Flags/flag_carry.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/operaciones/sumador.sv
-    Info (12023): Found entity 1: sumador File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/sumador.sv Line: 1
+    Info (12023): Found entity 1: sumador File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Operaciones/sumador.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/operaciones/restador.sv
-    Info (12023): Found entity 1: restador File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/restador.sv Line: 1
+    Info (12023): Found entity 1: restador File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Operaciones/restador.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/operaciones/corrimiento_circular.sv
-    Info (12023): Found entity 1: corrimiento_circular File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/corrimiento_circular.sv Line: 1
+    Info (12023): Found entity 1: corrimiento_circular File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Operaciones/corrimiento_circular.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/operaciones/compuerta_xor.sv
-    Info (12023): Found entity 1: compuerta_xor File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/compuerta_xor.sv Line: 1
+    Info (12023): Found entity 1: compuerta_xor File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/Operaciones/compuerta_xor.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/unidad_logico_aritmetica.sv
-    Info (12023): Found entity 1: unidad_logico_aritmetica File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 1
+    Info (12023): Found entity 1: unidad_logico_aritmetica File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tests/overflow_flag_test.sv
-    Info (12023): Found entity 1: overflow_flag_test File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests/overflow_flag_test.sv Line: 1
+    Info (12023): Found entity 1: overflow_flag_test File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Tests/overflow_flag_test.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tests/corrimiento_circular_test.sv
-    Info (12023): Found entity 1: corrimiento_circular_test File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests/corrimiento_circular_test.sv Line: 1
+    Info (12023): Found entity 1: corrimiento_circular_test File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Tests/corrimiento_circular_test.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tests/unidad_logico_aritmetica_test.sv
-    Info (12023): Found entity 1: unidad_logico_aritmetica_test File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests/unidad_logico_aritmetica_test.sv Line: 1
+    Info (12023): Found entity 1: unidad_logico_aritmetica_test File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Tests/unidad_logico_aritmetica_test.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modules/register.sv
-    Info (12023): Found entity 1: register File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/register.sv Line: 1
+    Info (12023): Found entity 1: register File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/register.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file modules/extender.sv
+    Info (12023): Found entity 1: extender File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/extender.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file modules/decoder.sv
+    Info (12023): Found entity 1: decoder File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/decoder.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file modules/chipset.sv
+    Info (12023): Found entity 1: chipset File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/chipset.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file tests/chipset_tb.sv
+    Info (12023): Found entity 1: chipset_tb File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Tests/chipset_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file modules/intsructionmem.sv
+    Info (12023): Found entity 1: intsructionMem File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/intsructionMem.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file modules/pc_selection.sv
+    Info (12023): Found entity 1: PC_selection File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/PC_selection.sv Line: 1
+Critical Warning (10846): Verilog HDL Instantiation warning at PC_selection.sv(10): instance has no name File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/PC_selection.sv Line: 10
 Info (12127): Elaborating entity "unidad_logico_aritmetica" for the top level hierarchy
-Info (12128): Elaborating entity "sumador" for hierarchy "sumador:Add" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 15
-Info (12128): Elaborating entity "restador" for hierarchy "restador:Minus" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 16
-Info (12128): Elaborating entity "compuerta_xor" for hierarchy "compuerta_xor:Xor" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 17
-Info (12128): Elaborating entity "corrimiento_circular" for hierarchy "corrimiento_circular:CirShift" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 18
-Info (12128): Elaborating entity "mux2a4" for hierarchy "mux2a4:Mux" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 20
-Info (12128): Elaborating entity "flag_negativo" for hierarchy "flag_negativo:Fnegativo" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 22
-Info (12128): Elaborating entity "flag_cero" for hierarchy "flag_cero:FCero" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 23
-Info (12128): Elaborating entity "flag_overflow" for hierarchy "flag_overflow:FOverflow" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 24
-Info (12128): Elaborating entity "flag_carry" for hierarchy "flag_carry:FCarry" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 25
+Info (12128): Elaborating entity "sumador" for hierarchy "sumador:Add" File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 15
+Info (12128): Elaborating entity "restador" for hierarchy "restador:Minus" File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 16
+Info (12128): Elaborating entity "compuerta_xor" for hierarchy "compuerta_xor:Xor" File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 17
+Info (12128): Elaborating entity "corrimiento_circular" for hierarchy "corrimiento_circular:CirShift" File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 18
+Info (12128): Elaborating entity "mux2a4" for hierarchy "mux2a4:Mux" File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 20
+Info (12128): Elaborating entity "flag_negativo" for hierarchy "flag_negativo:Fnegativo" File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 22
+Info (12128): Elaborating entity "flag_cero" for hierarchy "flag_cero:FCero" File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 23
+Info (12128): Elaborating entity "flag_overflow" for hierarchy "flag_overflow:FOverflow" File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 24
+Info (12128): Elaborating entity "flag_carry" for hierarchy "flag_carry:FCarry" File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 25
 Info (286030): Timing-Driven Synthesis is running
-Info (144001): Generated suppressed messages file C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/output_files/arm.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/Isaac Porras/Desktop/Decodification_ARM/output_files/arm.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 238 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 66 input pins
     Info (21059): Implemented 36 output pins
     Info (21061): Implemented 136 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4831 megabytes
-    Info: Processing ended: Sun Aug 02 10:36:01 2020
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:18
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4802 megabytes
+    Info: Processing ended: Sun Aug 02 14:05:29 2020
+    Info: Elapsed time: 00:00:23
+    Info: Total CPU time (on all processors): 00:00:36
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/output_files/arm.map.smsg.
+The suppressed messages can be found in C:/Users/Isaac Porras/Desktop/Decodification_ARM/output_files/arm.map.smsg.
 
 

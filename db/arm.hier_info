@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 |testbench
 
 
@@ -2730,5 +2731,12 @@ rd[28] <= RAM.DATAOUT28
 rd[29] <= RAM.DATAOUT29
 rd[30] <= RAM.DATAOUT30
 rd[31] <= RAM.DATAOUT31
+=======
+|flag_negativo
+ultimo_bit => resultado.IN1
+ALUControl[0] => Equal0.IN1
+ALUControl[1] => Equal0.IN0
+resultado << resultado.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> master
 
 

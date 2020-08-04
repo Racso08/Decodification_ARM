@@ -1,3 +1,9 @@
-Warning (10273): Verilog HDL warning at decoder.sv(32): extended using "x" or "z" File: C:/arm/decoder.sv Line: 32
-Warning (10273): Verilog HDL warning at decoder.sv(46): extended using "x" or "z" File: C:/arm/decoder.sv Line: 46
-Warning (10273): Verilog HDL warning at extend.sv(16): extended using "x" or "z" File: C:/arm/extend.sv Line: 16
+<<<<<<< HEAD
+Warning (10273): Verilog HDL warning at extender.sv(16): extended using "x" or "z" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/extender.sv Line: 16
+Warning (10273): Verilog HDL warning at decoder.sv(32): extended using "x" or "z" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/decoder.sv Line: 32
+Warning (10273): Verilog HDL warning at decoder.sv(46): extended using "x" or "z" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/decoder.sv Line: 46
+=======
+Warning (10273): Verilog HDL warning at extender.sv(16): extended using "x" or "z" File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/extender.sv Line: 16
+Warning (10273): Verilog HDL warning at decoder.sv(32): extended using "x" or "z" File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/decoder.sv Line: 32
+Warning (10273): Verilog HDL warning at decoder.sv(46): extended using "x" or "z" File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/decoder.sv Line: 46
+>>>>>>> master

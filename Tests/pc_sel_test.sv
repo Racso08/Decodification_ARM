@@ -16,13 +16,9 @@ module pc_sel_test();
 		rst = 0;
 		
 	end
-<<<<<<< HEAD
+	
 	always begin
 		#50 clk = !clk;
 	end
-=======
-
-
->>>>>>> master
 
 endmodule 

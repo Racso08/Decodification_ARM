@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
 # do arm_run_msim_rtl_verilog.do
 # if {[file exists rtl_work]} {
@@ -11,351 +10,270 @@
 # Copying C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-<<<<<<< HEAD
-# vlog -sv -work work +incdir+C:/arm/ALU/Modules {C:/arm/ALU/Modules/mux2a4.sv}
+# vlog -sv -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM/Modules {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/controller.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:53:59 on Aug 03,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm/ALU/Modules" C:/arm/ALU/Modules/mux2a4.sv 
-# -- Compiling module mux2a4
-# 
-# Top level modules:
-# 	mux2a4
-# End time: 20:53:59 on Aug 03,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/arm/ALU/Flags {C:/arm/ALU/Flags/flag_overflow.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:53:59 on Aug 03,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm/ALU/Flags" C:/arm/ALU/Flags/flag_overflow.sv 
-# -- Compiling module flag_overflow
-# 
-# Top level modules:
-# 	flag_overflow
-# End time: 20:54:00 on Aug 03,2020, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/arm/ALU/Flags {C:/arm/ALU/Flags/flag_negativo.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:54:00 on Aug 03,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm/ALU/Flags" C:/arm/ALU/Flags/flag_negativo.sv 
-# -- Compiling module flag_negativo
-# 
-# Top level modules:
-# 	flag_negativo
-# End time: 20:54:00 on Aug 03,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/arm/ALU/Flags {C:/arm/ALU/Flags/flag_cero.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:54:00 on Aug 03,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm/ALU/Flags" C:/arm/ALU/Flags/flag_cero.sv 
-# -- Compiling module flag_cero
-# 
-# Top level modules:
-# 	flag_cero
-# End time: 20:54:00 on Aug 03,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/arm/ALU/Flags {C:/arm/ALU/Flags/flag_carry.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:54:00 on Aug 03,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm/ALU/Flags" C:/arm/ALU/Flags/flag_carry.sv 
-# -- Compiling module flag_carry
-# 
-# Top level modules:
-# 	flag_carry
-# End time: 20:54:00 on Aug 03,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/arm/ALU/Operaciones {C:/arm/ALU/Operaciones/sumador.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:54:00 on Aug 03,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm/ALU/Operaciones" C:/arm/ALU/Operaciones/sumador.sv 
-# -- Compiling module sumador
-# 
-# Top level modules:
-# 	sumador
-# End time: 20:54:01 on Aug 03,2020, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/arm/ALU/Operaciones {C:/arm/ALU/Operaciones/restador.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:54:01 on Aug 03,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm/ALU/Operaciones" C:/arm/ALU/Operaciones/restador.sv 
-# -- Compiling module restador
-# 
-# Top level modules:
-# 	restador
-# End time: 20:54:01 on Aug 03,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/arm/ALU/Operaciones {C:/arm/ALU/Operaciones/corrimiento_circular.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:54:01 on Aug 03,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm/ALU/Operaciones" C:/arm/ALU/Operaciones/corrimiento_circular.sv 
-# -- Compiling module corrimiento_circular
-# 
-# Top level modules:
-# 	corrimiento_circular
-# End time: 20:54:01 on Aug 03,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/arm/ALU/Operaciones {C:/arm/ALU/Operaciones/compuerta_xor.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:54:01 on Aug 03,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm/ALU/Operaciones" C:/arm/ALU/Operaciones/compuerta_xor.sv 
-# -- Compiling module compuerta_xor
-# 
-# Top level modules:
-# 	compuerta_xor
-# End time: 20:54:01 on Aug 03,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/arm/ALU {C:/arm/ALU/unidad_logico_aritmetica.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:54:01 on Aug 03,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm/ALU" C:/arm/ALU/unidad_logico_aritmetica.sv 
-# -- Compiling module unidad_logico_aritmetica
-# 
-# Top level modules:
-# 	unidad_logico_aritmetica
-# End time: 20:54:01 on Aug 03,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/arm {C:/arm/controller.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:54:02 on Aug 03,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm" C:/arm/controller.sv 
+# Start time: 11:19:24 on Aug 04,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules" C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/controller.sv 
 # -- Compiling module controller
 # 
 # Top level modules:
 # 	controller
-# End time: 20:54:02 on Aug 03,2020, Elapsed time: 0:00:00
-=======
-# vlog -sv -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM/Tests {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests/dataMem_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:08:58 on Aug 02,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests" C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests/dataMem_tb.sv 
-# -- Compiling module dataMem_tb
-# 
-# Top level modules:
-# 	dataMem_tb
-# End time: 15:08:58 on Aug 02,2020, Elapsed time: 0:00:00
->>>>>>> master
+# End time: 11:19:24 on Aug 04,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM/Modules {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/dataMem.sv}
+# vlog -sv -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM/Modules {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/condlogic.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-<<<<<<< HEAD
-# Start time: 20:54:02 on Aug 03,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm" C:/arm/arm.sv 
-# -- Compiling module arm
-# 
-# Top level modules:
-# 	arm
-# End time: 20:54:02 on Aug 03,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/arm {C:/arm/decoder.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:54:02 on Aug 03,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm" C:/arm/decoder.sv 
-# -- Compiling module decoder
-# 
-# Top level modules:
-# 	decoder
-# End time: 20:54:02 on Aug 03,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/arm {C:/arm/condlogic.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:54:02 on Aug 03,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm" C:/arm/condlogic.sv 
+# Start time: 11:19:24 on Aug 04,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules" C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/condlogic.sv 
 # -- Compiling module condlogic
 # 
 # Top level modules:
 # 	condlogic
-# End time: 20:54:03 on Aug 03,2020, Elapsed time: 0:00:01
+# End time: 11:19:24 on Aug 04,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/arm {C:/arm/condcheck.sv}
+# vlog -sv -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM/Modules {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/condcheck.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:54:03 on Aug 03,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm" C:/arm/condcheck.sv 
+# Start time: 11:19:25 on Aug 04,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules" C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/condcheck.sv 
 # -- Compiling module condcheck
 # 
 # Top level modules:
 # 	condcheck
-# End time: 20:54:03 on Aug 03,2020, Elapsed time: 0:00:00
+# End time: 11:19:25 on Aug 04,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/arm {C:/arm/datapath.sv}
+# vlog -sv -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/arm.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:54:03 on Aug 03,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm" C:/arm/datapath.sv 
-# -- Compiling module datapath
+# Start time: 11:19:25 on Aug 04,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM" C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/arm.sv 
+# -- Compiling module arm
 # 
 # Top level modules:
-# 	datapath
-# End time: 20:54:03 on Aug 03,2020, Elapsed time: 0:00:00
+# 	arm
+# End time: 11:19:25 on Aug 04,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/arm {C:/arm/regfile.sv}
+# vlog -sv -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM/Modules {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/mux3a8.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:54:03 on Aug 03,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm" C:/arm/regfile.sv 
-# -- Compiling module regfile
+# Start time: 11:19:25 on Aug 04,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules" C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/mux3a8.sv 
+# -- Compiling module mux3a8
 # 
 # Top level modules:
-# 	regfile
-# End time: 20:54:03 on Aug 03,2020, Elapsed time: 0:00:00
+# 	mux3a8
+# End time: 11:19:25 on Aug 04,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/arm {C:/arm/adder.sv}
+# vlog -sv -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM/ALU/Flags {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_overflow.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:54:03 on Aug 03,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm" C:/arm/adder.sv 
-# -- Compiling module adder
+# Start time: 11:19:25 on Aug 04,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags" C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_overflow.sv 
+# -- Compiling module flag_overflow
 # 
 # Top level modules:
-# 	adder
-# End time: 20:54:03 on Aug 03,2020, Elapsed time: 0:00:00
+# 	flag_overflow
+# End time: 11:19:25 on Aug 04,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/arm {C:/arm/extend.sv}
+# vlog -sv -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM/ALU/Flags {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_negativo.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:54:03 on Aug 03,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm" C:/arm/extend.sv 
-# -- Compiling module extend
+# Start time: 11:19:25 on Aug 04,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags" C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_negativo.sv 
+# -- Compiling module flag_negativo
 # 
 # Top level modules:
-# 	extend
-# End time: 20:54:04 on Aug 03,2020, Elapsed time: 0:00:01
+# 	flag_negativo
+# End time: 11:19:25 on Aug 04,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/arm {C:/arm/flopr.sv}
+# vlog -sv -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM/ALU/Flags {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_cero.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:54:04 on Aug 03,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm" C:/arm/flopr.sv 
-# -- Compiling module flopr
+# Start time: 11:19:25 on Aug 04,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags" C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_cero.sv 
+# -- Compiling module flag_cero
 # 
 # Top level modules:
-# 	flopr
-# End time: 20:54:04 on Aug 03,2020, Elapsed time: 0:00:00
+# 	flag_cero
+# End time: 11:19:25 on Aug 04,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/arm {C:/arm/flopenr.sv}
+# vlog -sv -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM/ALU/Flags {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_carry.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:54:04 on Aug 03,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm" C:/arm/flopenr.sv 
-# -- Compiling module flopenr
+# Start time: 11:19:25 on Aug 04,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags" C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_carry.sv 
+# -- Compiling module flag_carry
 # 
 # Top level modules:
-# 	flopenr
-# End time: 20:54:04 on Aug 03,2020, Elapsed time: 0:00:00
+# 	flag_carry
+# End time: 11:19:25 on Aug 04,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/arm {C:/arm/mux2.sv}
+# vlog -sv -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM/ALU/Operaciones {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/sumador.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:54:04 on Aug 03,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm" C:/arm/mux2.sv 
-# -- Compiling module mux2
+# Start time: 11:19:25 on Aug 04,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones" C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/sumador.sv 
+# -- Compiling module sumador
 # 
 # Top level modules:
-# 	mux2
-# End time: 20:54:04 on Aug 03,2020, Elapsed time: 0:00:00
+# 	sumador
+# End time: 11:19:25 on Aug 04,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/arm {C:/arm/testbench.sv}
+# vlog -sv -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM/ALU/Operaciones {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/restador.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:54:04 on Aug 03,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm" C:/arm/testbench.sv 
-# -- Compiling module testbench
+# Start time: 11:19:25 on Aug 04,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones" C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/restador.sv 
+# -- Compiling module restador
 # 
 # Top level modules:
-# 	testbench
-# End time: 20:54:05 on Aug 03,2020, Elapsed time: 0:00:01
+# 	restador
+# End time: 11:19:26 on Aug 04,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/arm {C:/arm/top.sv}
+# vlog -sv -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM/ALU/Operaciones {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/corrimiento_circular.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:54:05 on Aug 03,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm" C:/arm/top.sv 
+# Start time: 11:19:26 on Aug 04,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones" C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/corrimiento_circular.sv 
+# -- Compiling module corrimiento_circular
+# 
+# Top level modules:
+# 	corrimiento_circular
+# End time: 11:19:26 on Aug 04,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM/ALU/Operaciones {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/compuerta_xor.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:19:26 on Aug 04,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones" C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/compuerta_xor.sv 
+# -- Compiling module compuerta_xor
+# 
+# Top level modules:
+# 	compuerta_xor
+# End time: 11:19:26 on Aug 04,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM/ALU {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:19:26 on Aug 04,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU" C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv 
+# -- Compiling module unidad_logico_aritmetica
+# 
+# Top level modules:
+# 	unidad_logico_aritmetica
+# End time: 11:19:26 on Aug 04,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM/Modules {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/decoder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:19:26 on Aug 04,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules" C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/decoder.sv 
+# -- Compiling module decoder
+# 
+# Top level modules:
+# 	decoder
+# End time: 11:19:26 on Aug 04,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM/Modules {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:19:26 on Aug 04,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules" C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv 
 # -- Compiling module top
 # 
 # Top level modules:
 # 	top
-# End time: 20:54:05 on Aug 03,2020, Elapsed time: 0:00:00
+# End time: 11:19:26 on Aug 04,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/arm {C:/arm/dmem.sv}
+# vlog -sv -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM/Modules {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/flopenr.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:54:05 on Aug 03,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm" C:/arm/dmem.sv 
+# Start time: 11:19:26 on Aug 04,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules" C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/flopenr.sv 
+# -- Compiling module flopenr
+# 
+# Top level modules:
+# 	flopenr
+# End time: 11:19:26 on Aug 04,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM/Modules {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/datapath.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:19:26 on Aug 04,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules" C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/datapath.sv 
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	datapath
+# End time: 11:19:26 on Aug 04,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM/Modules {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/dmem.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:19:26 on Aug 04,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules" C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/dmem.sv 
 # -- Compiling module dmem
 # 
 # Top level modules:
 # 	dmem
-# End time: 20:54:05 on Aug 03,2020, Elapsed time: 0:00:00
-=======
-# Start time: 15:08:58 on Aug 02,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules" C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/dataMem.sv 
-# -- Compiling module dataMem
+# End time: 11:19:26 on Aug 04,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM/Modules {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/flopr.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:19:26 on Aug 04,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules" C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/flopr.sv 
+# -- Compiling module flopr
 # 
 # Top level modules:
-# 	dataMem
-# End time: 15:08:59 on Aug 02,2020, Elapsed time: 0:00:01
+# 	flopr
+# End time: 11:19:26 on Aug 04,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# 
-vsim work.dataMem_tb
-# vsim work.dataMem_tb 
-# Start time: 15:09:01 on Aug 02,2020
-# Loading sv_std.std
-# Loading work.dataMem_tb
-# Loading work.dataMem
-add wave -position end  sim:/dataMem_tb/address
-add wave -position end  sim:/dataMem_tb/writeData
-add wave -position end  sim:/dataMem_tb/readData
-add wave -position end  sim:/dataMem_tb/clk
-add wave -position end  sim:/dataMem_tb/writeEnable
-run 100
-# End time: 15:17:18 on Aug 02,2020, Elapsed time: 0:08:17
-# Errors: 0, Warnings: 0
-=======
-# Reading D:/ProgramData/intelFPGA_lite/18.0/modelsim_ase/tcl/vsim/pref.tcl
-# do arm_run_msim_rtl_verilog.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
-# vmap work rtl_work 
-# Copying D:/ProgramData/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
-# Modifying modelsim.ini
-# 
-# vlog -sv -work work +incdir+C:/Users/Isaac\ Porras/Desktop/Decodification_ARM/Modules {C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/register.sv}
+# vlog -sv -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM/Modules {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/mux2.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:49:34 on Aug 02,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules" C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/register.sv 
-# -- Compiling module register
+# Start time: 11:19:26 on Aug 04,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules" C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/mux2.sv 
+# -- Compiling module mux2
 # 
 # Top level modules:
-# 	register
-# End time: 15:49:34 on Aug 02,2020, Elapsed time: 0:00:00
+# 	mux2
+# End time: 11:19:26 on Aug 04,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Isaac\ Porras/Desktop/Decodification_ARM/Modules {C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/PC_selection.sv}
+# vlog -sv -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM/Modules {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/regfile.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:49:34 on Aug 02,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules" C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/PC_selection.sv 
-# -- Compiling module PC_selection
+# Start time: 11:19:26 on Aug 04,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules" C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/regfile.sv 
+# -- Compiling module regfile
 # 
 # Top level modules:
-# 	PC_selection
-# End time: 15:49:34 on Aug 02,2020, Elapsed time: 0:00:00
+# 	regfile
+# End time: 11:19:26 on Aug 04,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Isaac\ Porras/Desktop/Decodification_ARM/Tests {C:/Users/Isaac Porras/Desktop/Decodification_ARM/Tests/pc_sel_test.sv}
+# vlog -sv -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM/Modules {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/adder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:49:34 on Aug 02,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Isaac Porras/Desktop/Decodification_ARM/Tests" C:/Users/Isaac Porras/Desktop/Decodification_ARM/Tests/pc_sel_test.sv 
-# -- Compiling module pc_sel_test
+# Start time: 11:19:26 on Aug 04,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules" C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/adder.sv 
+# -- Compiling module adder
 # 
 # Top level modules:
-# 	pc_sel_test
-# End time: 15:49:34 on Aug 02,2020, Elapsed time: 0:00:00
->>>>>>> master
+# 	adder
+# End time: 11:19:27 on Aug 04,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Isaac\ Porras/Desktop/Decodification_ARM/Modules {C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/instructionMem.sv}
+# vlog -sv -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM/Modules {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/extend.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-<<<<<<< HEAD
-# Start time: 20:54:05 on Aug 03,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/arm" C:/arm/imem.sv 
+# Start time: 11:19:27 on Aug 04,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules" C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/extend.sv 
+# -- Compiling module extend
+# 
+# Top level modules:
+# 	extend
+# End time: 11:19:27 on Aug 04,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM/Tests {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests/testbench.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:19:27 on Aug 04,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests" C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 11:19:27 on Aug 04,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM/Modules {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/imem.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:19:27 on Aug 04,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules" C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/imem.sv 
 # -- Compiling module imem
 # 
 # Top level modules:
 # 	imem
-# End time: 20:54:05 on Aug 03,2020, Elapsed time: 0:00:00
+# End time: 11:19:27 on Aug 04,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vsim work.testbench
 # vsim work.testbench 
-# Start time: 20:54:26 on Aug 03,2020
+# Start time: 11:19:34 on Aug 04,2020
 # Loading sv_std.std
 # Loading work.testbench
 # Loading work.top
@@ -376,47 +294,61 @@ vsim work.testbench
 # Loading work.restador
 # Loading work.compuerta_xor
 # Loading work.corrimiento_circular
-# Loading work.mux2a4
+# Loading work.mux3a8
 # Loading work.flag_negativo
 # Loading work.flag_cero
 # Loading work.flag_overflow
 # Loading work.flag_carry
 # Loading work.imem
 # Loading work.dmem
+# ** Warning: (vsim-3015) C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/datapath.sv(37): [PCDPC] - Port size (3) does not match connection size (2) for port 'ALUControl'. The port definition is at: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/arm/dp/alu File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv
+# ** Warning: (vsim-3017) C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv(20): [TFMPC] - Too few port connections. Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/arm/dp/alu/Mux File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/mux3a8.sv
+# ** Warning: (vsim-3015) C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv(20): [PCDPC] - Port size (32) does not match connection size (3) for port 'result6'. The port definition is at: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/mux3a8.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/arm/dp/alu/Mux File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/mux3a8.sv
+# ** Warning: (vsim-3722) C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv(20): [TFMPC] - Missing connection for port 'result8'.
+# ** Warning: (vsim-3722) C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv(20): [TFMPC] - Missing connection for port 'control'.
+# ** Warning: (vsim-3722) C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv(20): [TFMPC] - Missing connection for port 'out'.
+add wave -position end  sim:/testbench/clk
+add wave -position end  sim:/testbench/reset
+add wave -position end  sim:/testbench/WriteData
+add wave -position end  sim:/testbench/DataAdr
+add wave -position end  sim:/testbench/MemWrite
+add wave -position end  sim:/testbench/dut/Instr
+add wave -position end  sim:/testbench/dut/ReadData
+add wave -position end  sim:/testbench/dut/PC
+run -all
+restart
+# ** Warning: (vsim-3015) C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/datapath.sv(37): [PCDPC] - Port size (3) does not match connection size (2) for port 'ALUControl'. The port definition is at: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/arm/dp/alu File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv
+# ** Warning: (vsim-3017) C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv(20): [TFMPC] - Too few port connections. Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/arm/dp/alu/Mux File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/mux3a8.sv
+# ** Warning: (vsim-3015) C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv(20): [PCDPC] - Port size (32) does not match connection size (3) for port 'result6'. The port definition is at: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/mux3a8.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/arm/dp/alu/Mux File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/mux3a8.sv
+# ** Warning: (vsim-3722) C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv(20): [TFMPC] - Missing connection for port 'result8'.
+# ** Warning: (vsim-3722) C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv(20): [TFMPC] - Missing connection for port 'control'.
+# ** Warning: (vsim-3722) C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv(20): [TFMPC] - Missing connection for port 'out'.
+run 500
+add wave -position end  sim:/testbench/dut/arm/dp/rf/we3
 add wave -position end  sim:/testbench/dut/arm/dp/rf/ra1
 add wave -position end  sim:/testbench/dut/arm/dp/rf/ra2
-add wave -position end  sim:/testbench/dut/imem/rd
-run -all
-# Break key hit
-# Break in Module regfile at C:/arm/regfile.sv line 13
-# End time: 21:03:33 on Aug 03,2020, Elapsed time: 0:09:07
-# Errors: 0, Warnings: 0
-=======
-# Start time: 15:49:34 on Aug 02,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules" C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/instructionMem.sv 
-# -- Compiling module instructionMem
-# 
-# Top level modules:
-# 	instructionMem
-# End time: 15:49:34 on Aug 02,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-vsim work.pc_sel_test
-# vsim work.pc_sel_test 
-# Start time: 15:49:49 on Aug 02,2020
-# Loading sv_std.std
-# Loading work.pc_sel_test
-# Loading work.PC_selection
-# Loading work.register
-# Loading work.instructionMem
-add wave -position insertpoint sim:/pc_sel_test/*
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Isaac Porras  Hostname: LAPTOP-OJR01514  ProcessID: 12432
-#           Attempting to use alternate WLF file "./wlft22rdhw".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft22rdhw
-run
-# End time: 16:04:06 on Aug 02,2020, Elapsed time: 0:14:17
-# Errors: 0, Warnings: 2
->>>>>>> master
->>>>>>> master
+add wave -position end  sim:/testbench/dut/arm/dp/rf/wa3
+add wave -position end  sim:/testbench/dut/arm/dp/rf/wd3
+add wave -position end  sim:/testbench/dut/arm/dp/rf/r15
+add wave -position end  sim:/testbench/dut/arm/dp/rf/rd1
+add wave -position end  sim:/testbench/dut/arm/dp/rf/rd2
+add wave -position end  sim:/testbench/dut/arm/dp/rf/rf
+restart
+# ** Warning: (vsim-3015) C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/datapath.sv(37): [PCDPC] - Port size (3) does not match connection size (2) for port 'ALUControl'. The port definition is at: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/arm/dp/alu File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv
+# ** Warning: (vsim-3017) C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv(20): [TFMPC] - Too few port connections. Expected 10, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/arm/dp/alu/Mux File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/mux3a8.sv
+# ** Warning: (vsim-3015) C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv(20): [PCDPC] - Port size (32) does not match connection size (3) for port 'result6'. The port definition is at: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/mux3a8.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/arm/dp/alu/Mux File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/mux3a8.sv
+# ** Warning: (vsim-3722) C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv(20): [TFMPC] - Missing connection for port 'result8'.
+# ** Warning: (vsim-3722) C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv(20): [TFMPC] - Missing connection for port 'control'.
+# ** Warning: (vsim-3722) C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv(20): [TFMPC] - Missing connection for port 'out'.
+run 1000
+# End time: 11:25:01 on Aug 04,2020, Elapsed time: 0:05:27
+# Errors: 0, Warnings: 18

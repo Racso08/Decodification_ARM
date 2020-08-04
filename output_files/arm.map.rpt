@@ -1,5 +1,5 @@
-Analysis & Synthesis report for arm
-Tue Aug 04 11:14:49 2020
+Analysis & Elaboration report for arm
+Tue Aug 04 11:18:46 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -7,41 +7,35 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Parameter Settings for User Entity Instance: arm:arm|controller:c|condlogic:cl|flopenr:flagreg1
- 11. Parameter Settings for User Entity Instance: arm:arm|controller:c|condlogic:cl|flopenr:flagreg0
- 12. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:pcmux
- 13. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|flopr:pcreg
- 14. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|adder:pcadd1
- 15. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|adder:pcadd2
- 16. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:ra1mux
- 17. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:ra2mux
- 18. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:resmux
- 19. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:srcbmux
- 20. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|unidad_logico_aritmetica:alu
- 21. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|unidad_logico_aritmetica:alu|sumador:Add
- 22. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|unidad_logico_aritmetica:alu|restador:Minus
- 23. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|unidad_logico_aritmetica:alu|compuerta_xor:Xor
- 24. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|unidad_logico_aritmetica:alu|corrimiento_circular:CirShift
- 25. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|unidad_logico_aritmetica:alu|mux3a8:Mux
- 26. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|unidad_logico_aritmetica:alu|flag_cero:FCero
- 27. Port Connectivity Checks: "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|mux3a8:Mux"
- 28. Port Connectivity Checks: "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|sumador:Add"
- 29. Port Connectivity Checks: "arm:arm|datapath:dp|unidad_logico_aritmetica:alu"
- 30. Port Connectivity Checks: "arm:arm|datapath:dp|mux2:ra1mux"
- 31. Port Connectivity Checks: "arm:arm|datapath:dp|adder:pcadd2"
- 32. Port Connectivity Checks: "arm:arm|datapath:dp|adder:pcadd1"
- 33. Post-Synthesis Netlist Statistics for Top Partition
- 34. Elapsed Time Per Partition
- 35. Analysis & Synthesis Messages
- 36. Analysis & Synthesis Suppressed Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: top:dut|arm:arm|controller:c|condlogic:cl|flopenr:flagreg1
+  5. Parameter Settings for User Entity Instance: top:dut|arm:arm|controller:c|condlogic:cl|flopenr:flagreg0
+  6. Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|mux2:pcmux
+  7. Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|flopr:pcreg
+  8. Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|adder:pcadd1
+  9. Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|adder:pcadd2
+ 10. Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|mux2:ra1mux
+ 11. Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|mux2:ra2mux
+ 12. Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|mux2:resmux
+ 13. Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|mux2:srcbmux
+ 14. Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu
+ 15. Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|sumador:Add
+ 16. Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|restador:Minus
+ 17. Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|compuerta_xor:Xor
+ 18. Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|corrimiento_circular:CirShift
+ 19. Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|mux3a8:Mux
+ 20. Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|flag_cero:FCero
+ 21. Analysis & Elaboration Settings
+ 22. Port Connectivity Checks: "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|mux3a8:Mux"
+ 23. Port Connectivity Checks: "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|sumador:Add"
+ 24. Port Connectivity Checks: "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu"
+ 25. Port Connectivity Checks: "top:dut|arm:arm|datapath:dp|mux2:ra1mux"
+ 26. Port Connectivity Checks: "top:dut|arm:arm|datapath:dp|adder:pcadd2"
+ 27. Port Connectivity Checks: "top:dut|arm:arm|datapath:dp|adder:pcadd1"
+ 28. Port Connectivity Checks: "top:dut"
+ 29. Analysis & Elaboration Messages
+ 30. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -65,36 +59,217 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                  ;
-+---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Aug 04 11:14:49 2020       ;
-; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
-; Revision Name                   ; arm                                         ;
-; Top-level Entity Name           ; top                                         ;
-; Family                          ; Cyclone V                                   ;
-; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 545                                         ;
-; Total pins                      ; 67                                          ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 0                                           ;
-; Total HSSI RX PCSs              ; 0                                           ;
-; Total HSSI PMA RX Deserializers ; 0                                           ;
-; Total HSSI TX PCSs              ; 0                                           ;
-; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0                                           ;
-; Total DLLs                      ; 0                                           ;
-+---------------------------------+---------------------------------------------+
++-----------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                              ;
++-------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Tue Aug 04 11:18:46 2020       ;
+; Quartus Prime Version         ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
+; Revision Name                 ; arm                                         ;
+; Top-level Entity Name         ; testbench                                   ;
+; Family                        ; Cyclone V                                   ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
+; Total registers               ; N/A until Partition Merge                   ;
+; Total pins                    ; N/A until Partition Merge                   ;
+; Total virtual pins            ; N/A until Partition Merge                   ;
+; Total block memory bits       ; N/A until Partition Merge                   ;
+; Total PLLs                    ; N/A until Partition Merge                   ;
+; Total DLLs                    ; N/A until Partition Merge                   ;
++-------------------------------+---------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|controller:c|condlogic:cl|flopenr:flagreg1 ;
++----------------+-------+--------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------+
+; WIDTH          ; 2     ; Signed Integer                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|controller:c|condlogic:cl|flopenr:flagreg0 ;
++----------------+-------+--------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------+
+; WIDTH          ; 2     ; Signed Integer                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|mux2:pcmux ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|flopr:pcreg ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|adder:pcadd1 ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|adder:pcadd2 ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|mux2:ra1mux ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; WIDTH          ; 4     ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|mux2:ra2mux ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; WIDTH          ; 4     ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|mux2:resmux ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|mux2:srcbmux ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|sumador:Add ;
++----------------+-------+------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                           ;
++----------------+-------+------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|restador:Minus ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                              ;
++----------------+-------+---------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|compuerta_xor:Xor ;
++----------------+-------+------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                           ;
++----------------+-------+------------------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                                 ;
++----------------+-------+------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|corrimiento_circular:CirShift ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                       ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                                                                             ;
++----------------+-------+------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|mux3a8:Mux ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|flag_cero:FCero ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                             ;
+; Analysis & Elaboration Settings                                                                                           ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CEBA2F17A7        ;                    ;
-; Top-level entity name                                                           ; top                ; arm                ;
+; Top-level entity name                                                           ; testbench          ; arm                ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -175,311 +350,8 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 6           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 6           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processor 3            ;   0.0%      ;
-;     Processor 4            ;   0.0%      ;
-;     Processor 5            ;   0.0%      ;
-;     Processor 6            ;   0.0%      ;
-+----------------------------+-------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                          ;
-+-----------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path        ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                               ; Library ;
-+-----------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
-; Modules/controller.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/controller.sv                   ;         ;
-; Modules/condlogic.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/condlogic.sv                    ;         ;
-; Modules/condcheck.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/condcheck.sv                    ;         ;
-; arm.sv                                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/arm.sv                                  ;         ;
-; Modules/mux3a8.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/mux3a8.sv                       ;         ;
-; ALU/Flags/flag_overflow.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_overflow.sv              ;         ;
-; ALU/Flags/flag_negativo.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_negativo.sv              ;         ;
-; ALU/Flags/flag_cero.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_cero.sv                  ;         ;
-; ALU/Flags/flag_carry.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Flags/flag_carry.sv                 ;         ;
-; ALU/Operaciones/sumador.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/sumador.sv              ;         ;
-; ALU/Operaciones/restador.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/restador.sv             ;         ;
-; ALU/Operaciones/corrimiento_circular.sv ; yes             ; User SystemVerilog HDL File  ; C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/corrimiento_circular.sv ;         ;
-; ALU/Operaciones/compuerta_xor.sv        ; yes             ; User SystemVerilog HDL File  ; C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/Operaciones/compuerta_xor.sv        ;         ;
-; ALU/unidad_logico_aritmetica.sv         ; yes             ; User SystemVerilog HDL File  ; C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv         ;         ;
-; Modules/decoder.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/decoder.sv                      ;         ;
-; Modules/imem.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/imem.sv                         ;         ;
-; Modules/top.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv                          ;         ;
-; Modules/flopenr.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/flopenr.sv                      ;         ;
-; Modules/datapath.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/datapath.sv                     ;         ;
-; Modules/dmem.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/dmem.sv                         ;         ;
-; Modules/flopr.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/flopr.sv                        ;         ;
-; Modules/mux2.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/mux2.sv                         ;         ;
-; Modules/regfile.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/regfile.sv                      ;         ;
-; Modules/adder.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/adder.sv                        ;         ;
-; Modules/extend.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/extend.sv                       ;         ;
-; /arm/hex.txt                            ; yes             ; Auto-Found File              ; /arm/hex.txt                                                                                                               ;         ;
-+-----------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
-
-
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 383       ;
-;                                             ;           ;
-; Combinational ALUT usage for logic          ; 333       ;
-;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 158       ;
-;     -- 5 input functions                    ; 38        ;
-;     -- 4 input functions                    ; 2         ;
-;     -- <=3 input functions                  ; 135       ;
-;                                             ;           ;
-; Dedicated logic registers                   ; 545       ;
-;                                             ;           ;
-; I/O pins                                    ; 67        ;
-;                                             ;           ;
-; Total DSP Blocks                            ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 545       ;
-; Total fan-out                               ; 3762      ;
-; Average fan-out                             ; 3.72      ;
-+---------------------------------------------+-----------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                            ;
-+--------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------+-------------+--------------+
-; Compilation Hierarchy Node     ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                     ; Entity Name ; Library Name ;
-+--------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------+-------------+--------------+
-; |top                           ; 333 (0)             ; 545 (0)                   ; 0                 ; 0          ; 67   ; 0            ; |top                                                    ; top         ; work         ;
-;    |arm:arm|                   ; 315 (0)             ; 513 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |top|arm:arm                                            ; arm         ; work         ;
-;       |controller:c|           ; 7 (0)               ; 1 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|arm:arm|controller:c                               ; controller  ; work         ;
-;          |condlogic:cl|        ; 6 (4)               ; 1 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|arm:arm|controller:c|condlogic:cl                  ; condlogic   ; work         ;
-;             |flopenr:flagreg1| ; 2 (2)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |top|arm:arm|controller:c|condlogic:cl|flopenr:flagreg1 ; flopenr     ; work         ;
-;          |decoder:dec|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|arm:arm|controller:c|decoder:dec                   ; decoder     ; work         ;
-;       |datapath:dp|            ; 308 (0)             ; 512 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |top|arm:arm|datapath:dp                                ; datapath    ; work         ;
-;          |adder:pcadd1|        ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|arm:arm|datapath:dp|adder:pcadd1                   ; adder       ; work         ;
-;          |adder:pcadd2|        ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|arm:arm|datapath:dp|adder:pcadd2                   ; adder       ; work         ;
-;          |flopr:pcreg|         ; 0 (0)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |top|arm:arm|datapath:dp|flopr:pcreg                    ; flopr       ; work         ;
-;          |mux2:ra2mux|         ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|arm:arm|datapath:dp|mux2:ra2mux                    ; mux2        ; work         ;
-;          |mux2:resmux|         ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|arm:arm|datapath:dp|mux2:resmux                    ; mux2        ; work         ;
-;          |regfile:rf|          ; 214 (214)           ; 480 (480)                 ; 0                 ; 0          ; 0    ; 0            ; |top|arm:arm|datapath:dp|regfile:rf                     ; regfile     ; work         ;
-;    |dmem:dmem|                 ; 0 (0)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |top|dmem:dmem                                          ; dmem        ; work         ;
-;    |imem:imem|                 ; 18 (18)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|imem:imem                                          ; imem        ; work         ;
-+--------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------+-------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                           ;
-+---------------------------------------------------------+--------------------+
-; Register name                                           ; Reason for Removal ;
-+---------------------------------------------------------+--------------------+
-; arm:arm|controller:c|condlogic:cl|flopenr:flagreg0|q[1] ; Lost fanout        ;
-; arm:arm|controller:c|condlogic:cl|flopenr:flagreg1|q[1] ; Lost fanout        ;
-; arm:arm|controller:c|condlogic:cl|flopenr:flagreg0|q[0] ; Lost fanout        ;
-; Total Number of Removed Registers = 3                   ;                    ;
-+---------------------------------------------------------+--------------------+
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 545   ;
-; Number of registers using Synchronous Clear  ; 482   ;
-; Number of registers using Synchronous Load   ; 30    ;
-; Number of registers using Asynchronous Clear ; 33    ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 514   ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+-------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arm:arm|controller:c|condlogic:cl|flopenr:flagreg1 ;
-+----------------+-------+------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                   ;
-+----------------+-------+------------------------------------------------------------------------+
-; WIDTH          ; 2     ; Signed Integer                                                         ;
-+----------------+-------+------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arm:arm|controller:c|condlogic:cl|flopenr:flagreg0 ;
-+----------------+-------+------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                   ;
-+----------------+-------+------------------------------------------------------------------------+
-; WIDTH          ; 2     ; Signed Integer                                                         ;
-+----------------+-------+------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:pcmux ;
-+----------------+-------+----------------------------------------------------+
-; Parameter Name ; Value ; Type                                               ;
-+----------------+-------+----------------------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                                     ;
-+----------------+-------+----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|flopr:pcreg ;
-+----------------+-------+-----------------------------------------------------+
-; Parameter Name ; Value ; Type                                                ;
-+----------------+-------+-----------------------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                                      ;
-+----------------+-------+-----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|adder:pcadd1 ;
-+----------------+-------+------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                 ;
-+----------------+-------+------------------------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                                       ;
-+----------------+-------+------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|adder:pcadd2 ;
-+----------------+-------+------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                 ;
-+----------------+-------+------------------------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                                       ;
-+----------------+-------+------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:ra1mux ;
-+----------------+-------+-----------------------------------------------------+
-; Parameter Name ; Value ; Type                                                ;
-+----------------+-------+-----------------------------------------------------+
-; WIDTH          ; 4     ; Signed Integer                                      ;
-+----------------+-------+-----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:ra2mux ;
-+----------------+-------+-----------------------------------------------------+
-; Parameter Name ; Value ; Type                                                ;
-+----------------+-------+-----------------------------------------------------+
-; WIDTH          ; 4     ; Signed Integer                                      ;
-+----------------+-------+-----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:resmux ;
-+----------------+-------+-----------------------------------------------------+
-; Parameter Name ; Value ; Type                                                ;
-+----------------+-------+-----------------------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                                      ;
-+----------------+-------+-----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:srcbmux ;
-+----------------+-------+------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                 ;
-+----------------+-------+------------------------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                                       ;
-+----------------+-------+------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|unidad_logico_aritmetica:alu ;
-+----------------+-------+----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                 ;
-+----------------+-------+----------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                       ;
-+----------------+-------+----------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|unidad_logico_aritmetica:alu|sumador:Add ;
-+----------------+-------+----------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                             ;
-+----------------+-------+----------------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                                   ;
-+----------------+-------+----------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|unidad_logico_aritmetica:alu|restador:Minus ;
-+----------------+-------+-------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                ;
-+----------------+-------+-------------------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                                      ;
-+----------------+-------+-------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|unidad_logico_aritmetica:alu|compuerta_xor:Xor ;
-+----------------+-------+----------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                   ;
-+----------------+-------+----------------------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                                         ;
-+----------------+-------+----------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|unidad_logico_aritmetica:alu|corrimiento_circular:CirShift ;
-+----------------+-------+----------------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                               ;
-+----------------+-------+----------------------------------------------------------------------------------------------------+
-; N              ; 8     ; Signed Integer                                                                                     ;
-+----------------+-------+----------------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|unidad_logico_aritmetica:alu|mux3a8:Mux ;
-+----------------+-------+---------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                            ;
-+----------------+-------+---------------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                                  ;
-+----------------+-------+---------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|unidad_logico_aritmetica:alu|flag_cero:FCero ;
-+----------------+-------+--------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                 ;
-+----------------+-------+--------------------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                                       ;
-+----------------+-------+--------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|mux3a8:Mux"                                                                                                ;
+; Port Connectivity Checks: "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|mux3a8:Mux"                                                                                        ;
 +----------------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port           ; Type   ; Severity ; Details                                                                                                                                           ;
 +----------------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -491,17 +363,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|sumador:Add" ;
-+------+-------+----------+----------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                        ;
-+------+-------+----------+----------------------------------------------------------------+
-; cin  ; Input ; Info     ; Stuck at GND                                                   ;
-+------+-------+----------+----------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|sumador:Add" ;
++------+-------+----------+------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                ;
++------+-------+----------+------------------------------------------------------------------------+
+; cin  ; Input ; Info     ; Stuck at GND                                                           ;
++------+-------+----------+------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "arm:arm|datapath:dp|unidad_logico_aritmetica:alu"                                                                                                       ;
+; Port Connectivity Checks: "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu"                                                                                               ;
 +------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port       ; Type  ; Severity ; Details                                                                                                                                            ;
 +------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -509,82 +381,57 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------+
-; Port Connectivity Checks: "arm:arm|datapath:dp|mux2:ra1mux" ;
-+------+-------+----------+-----------------------------------+
-; Port ; Type  ; Severity ; Details                           ;
-+------+-------+----------+-----------------------------------+
-; d1   ; Input ; Info     ; Stuck at VCC                      ;
-+------+-------+----------+-----------------------------------+
++---------------------------------------------------------------------+
+; Port Connectivity Checks: "top:dut|arm:arm|datapath:dp|mux2:ra1mux" ;
++------+-------+----------+-------------------------------------------+
+; Port ; Type  ; Severity ; Details                                   ;
++------+-------+----------+-------------------------------------------+
+; d1   ; Input ; Info     ; Stuck at VCC                              ;
++------+-------+----------+-------------------------------------------+
 
 
-+--------------------------------------------------------------+
-; Port Connectivity Checks: "arm:arm|datapath:dp|adder:pcadd2" ;
-+----------+-------+----------+--------------------------------+
-; Port     ; Type  ; Severity ; Details                        ;
-+----------+-------+----------+--------------------------------+
-; b[31..3] ; Input ; Info     ; Stuck at GND                   ;
-; b[1..0]  ; Input ; Info     ; Stuck at GND                   ;
-; b[2]     ; Input ; Info     ; Stuck at VCC                   ;
-+----------+-------+----------+--------------------------------+
++----------------------------------------------------------------------+
+; Port Connectivity Checks: "top:dut|arm:arm|datapath:dp|adder:pcadd2" ;
++----------+-------+----------+----------------------------------------+
+; Port     ; Type  ; Severity ; Details                                ;
++----------+-------+----------+----------------------------------------+
+; b[31..3] ; Input ; Info     ; Stuck at GND                           ;
+; b[1..0]  ; Input ; Info     ; Stuck at GND                           ;
+; b[2]     ; Input ; Info     ; Stuck at VCC                           ;
++----------+-------+----------+----------------------------------------+
 
 
-+--------------------------------------------------------------+
-; Port Connectivity Checks: "arm:arm|datapath:dp|adder:pcadd1" ;
-+----------+-------+----------+--------------------------------+
-; Port     ; Type  ; Severity ; Details                        ;
-+----------+-------+----------+--------------------------------+
-; b[31..3] ; Input ; Info     ; Stuck at GND                   ;
-; b[1..0]  ; Input ; Info     ; Stuck at GND                   ;
-; b[2]     ; Input ; Info     ; Stuck at VCC                   ;
-+----------+-------+----------+--------------------------------+
++----------------------------------------------------------------------+
+; Port Connectivity Checks: "top:dut|arm:arm|datapath:dp|adder:pcadd1" ;
++----------+-------+----------+----------------------------------------+
+; Port     ; Type  ; Severity ; Details                                ;
++----------+-------+----------+----------------------------------------+
+; b[31..3] ; Input ; Info     ; Stuck at GND                           ;
+; b[1..0]  ; Input ; Info     ; Stuck at GND                           ;
+; b[2]     ; Input ; Info     ; Stuck at VCC                           ;
++----------+-------+----------+----------------------------------------+
 
 
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_ff             ; 545                         ;
-;     CLR               ; 1                           ;
-;     CLR SLD           ; 30                          ;
-;     ENA               ; 32                          ;
-;     ENA CLR SCLR      ; 2                           ;
-;     ENA SCLR          ; 480                         ;
-; arriav_lcell_comb     ; 334                         ;
-;     arith             ; 60                          ;
-;         1 data inputs ; 60                          ;
-;     normal            ; 274                         ;
-;         0 data inputs ; 1                           ;
-;         2 data inputs ; 6                           ;
-;         3 data inputs ; 69                          ;
-;         4 data inputs ; 2                           ;
-;         5 data inputs ; 38                          ;
-;         6 data inputs ; 158                         ;
-; boundary_port         ; 67                          ;
-;                       ;                             ;
-; Max LUT depth         ; 5.90                        ;
-; Average LUT depth     ; 3.69                        ;
-+-----------------------+-----------------------------+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "top:dut"                                                                                 ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; clk       ; Input  ; Info     ; Stuck at GND                                                                        ;
+; WriteData ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; DataAdr   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; MemWrite  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
+Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Tue Aug 04 11:14:40 2020
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off arm -c arm
+    Info: Processing started: Tue Aug 04 11:18:39 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off arm -c arm --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file modules/controller.sv
@@ -669,10 +516,15 @@ Info (12021): Found 1 design units, including 1 entities, in source file modules
     Info (12023): Found entity 1: adder File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/adder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modules/extend.sv
     Info (12023): Found entity 1: extend File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/extend.sv Line: 1
-Info (12127): Elaborating entity "top" for the top level hierarchy
-Info (12128): Elaborating entity "arm" for hierarchy "arm:arm" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 8
-Info (12128): Elaborating entity "controller" for hierarchy "arm:arm|controller:c" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/arm.sv Line: 15
-Info (12128): Elaborating entity "decoder" for hierarchy "arm:arm|controller:c|decoder:dec" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/controller.sv Line: 17
+Info (12021): Found 1 design units, including 1 entities, in source file tests/testbench.sv
+    Info (12023): Found entity 1: testbench File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests/testbench.sv Line: 1
+Info (12127): Elaborating entity "testbench" for the top level hierarchy
+Warning (10175): Verilog HDL warning at testbench.sv(31): ignoring unsupported system task File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests/testbench.sv Line: 31
+Warning (10175): Verilog HDL warning at testbench.sv(34): ignoring unsupported system task File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests/testbench.sv Line: 34
+Info (12128): Elaborating entity "top" for hierarchy "top:dut" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests/testbench.sv Line: 9
+Info (12128): Elaborating entity "arm" for hierarchy "top:dut|arm:arm" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 8
+Info (12128): Elaborating entity "controller" for hierarchy "top:dut|arm:arm|controller:c" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/arm.sv Line: 15
+Info (12128): Elaborating entity "decoder" for hierarchy "top:dut|arm:arm|controller:c|decoder:dec" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/controller.sv Line: 17
 Warning (10230): Verilog HDL assignment warning at decoder.sv(43): truncated value with size 3 to match size of target (2) File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/decoder.sv Line: 43
 Warning (10230): Verilog HDL assignment warning at decoder.sv(44): truncated value with size 3 to match size of target (2) File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/decoder.sv Line: 44
 Warning (10230): Verilog HDL assignment warning at decoder.sv(45): truncated value with size 3 to match size of target (2) File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/decoder.sv Line: 45
@@ -681,123 +533,77 @@ Warning (10230): Verilog HDL assignment warning at decoder.sv(48): truncated val
 Warning (10230): Verilog HDL assignment warning at decoder.sv(49): truncated value with size 3 to match size of target (2) File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/decoder.sv Line: 49
 Warning (10230): Verilog HDL assignment warning at decoder.sv(53): truncated value with size 3 to match size of target (2) File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/decoder.sv Line: 53
 Warning (10230): Verilog HDL assignment warning at decoder.sv(62): truncated value with size 3 to match size of target (2) File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/decoder.sv Line: 62
-Info (12128): Elaborating entity "condlogic" for hierarchy "arm:arm|controller:c|condlogic:cl" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/controller.sv Line: 21
-Info (12128): Elaborating entity "flopenr" for hierarchy "arm:arm|controller:c|condlogic:cl|flopenr:flagreg1" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/condlogic.sv Line: 12
-Info (12128): Elaborating entity "condcheck" for hierarchy "arm:arm|controller:c|condlogic:cl|condcheck:cc" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/condlogic.sv Line: 16
-Info (12128): Elaborating entity "datapath" for hierarchy "arm:arm|datapath:dp" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/arm.sv Line: 22
-Info (12128): Elaborating entity "mux2" for hierarchy "arm:arm|datapath:dp|mux2:pcmux" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/datapath.sv Line: 20
-Info (12128): Elaborating entity "flopr" for hierarchy "arm:arm|datapath:dp|flopr:pcreg" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/datapath.sv Line: 21
-Info (12128): Elaborating entity "adder" for hierarchy "arm:arm|datapath:dp|adder:pcadd1" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/datapath.sv Line: 22
-Info (12128): Elaborating entity "mux2" for hierarchy "arm:arm|datapath:dp|mux2:ra1mux" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/datapath.sv Line: 26
-Info (12128): Elaborating entity "regfile" for hierarchy "arm:arm|datapath:dp|regfile:rf" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/datapath.sv Line: 30
-Info (12128): Elaborating entity "extend" for hierarchy "arm:arm|datapath:dp|extend:ext" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/datapath.sv Line: 33
-Info (12128): Elaborating entity "unidad_logico_aritmetica" for hierarchy "arm:arm|datapath:dp|unidad_logico_aritmetica:alu" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/datapath.sv Line: 37
-Info (12128): Elaborating entity "sumador" for hierarchy "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|sumador:Add" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 15
-Info (12128): Elaborating entity "restador" for hierarchy "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|restador:Minus" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 16
-Info (12128): Elaborating entity "compuerta_xor" for hierarchy "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|compuerta_xor:Xor" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 17
-Info (12128): Elaborating entity "corrimiento_circular" for hierarchy "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|corrimiento_circular:CirShift" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 18
-Info (12128): Elaborating entity "mux3a8" for hierarchy "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|mux3a8:Mux" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 20
-Info (12128): Elaborating entity "flag_negativo" for hierarchy "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|flag_negativo:Fnegativo" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 22
-Info (12128): Elaborating entity "flag_cero" for hierarchy "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|flag_cero:FCero" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 23
-Info (12128): Elaborating entity "flag_overflow" for hierarchy "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|flag_overflow:FOverflow" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 24
-Info (12128): Elaborating entity "flag_carry" for hierarchy "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|flag_carry:FCarry" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 25
-Info (12128): Elaborating entity "imem" for hierarchy "imem:imem" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 9
+Info (12128): Elaborating entity "condlogic" for hierarchy "top:dut|arm:arm|controller:c|condlogic:cl" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/controller.sv Line: 21
+Info (12128): Elaborating entity "flopenr" for hierarchy "top:dut|arm:arm|controller:c|condlogic:cl|flopenr:flagreg1" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/condlogic.sv Line: 12
+Info (12128): Elaborating entity "condcheck" for hierarchy "top:dut|arm:arm|controller:c|condlogic:cl|condcheck:cc" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/condlogic.sv Line: 16
+Info (12128): Elaborating entity "datapath" for hierarchy "top:dut|arm:arm|datapath:dp" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/arm.sv Line: 22
+Info (12128): Elaborating entity "mux2" for hierarchy "top:dut|arm:arm|datapath:dp|mux2:pcmux" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/datapath.sv Line: 20
+Info (12128): Elaborating entity "flopr" for hierarchy "top:dut|arm:arm|datapath:dp|flopr:pcreg" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/datapath.sv Line: 21
+Info (12128): Elaborating entity "adder" for hierarchy "top:dut|arm:arm|datapath:dp|adder:pcadd1" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/datapath.sv Line: 22
+Info (12128): Elaborating entity "mux2" for hierarchy "top:dut|arm:arm|datapath:dp|mux2:ra1mux" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/datapath.sv Line: 26
+Info (12128): Elaborating entity "regfile" for hierarchy "top:dut|arm:arm|datapath:dp|regfile:rf" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/datapath.sv Line: 30
+Info (12128): Elaborating entity "extend" for hierarchy "top:dut|arm:arm|datapath:dp|extend:ext" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/datapath.sv Line: 33
+Info (12128): Elaborating entity "unidad_logico_aritmetica" for hierarchy "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/datapath.sv Line: 37
+Info (12128): Elaborating entity "sumador" for hierarchy "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|sumador:Add" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 15
+Info (12128): Elaborating entity "restador" for hierarchy "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|restador:Minus" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 16
+Info (12128): Elaborating entity "compuerta_xor" for hierarchy "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|compuerta_xor:Xor" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 17
+Info (12128): Elaborating entity "corrimiento_circular" for hierarchy "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|corrimiento_circular:CirShift" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 18
+Info (12128): Elaborating entity "mux3a8" for hierarchy "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|mux3a8:Mux" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 20
+Info (12128): Elaborating entity "flag_negativo" for hierarchy "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|flag_negativo:Fnegativo" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 22
+Info (12128): Elaborating entity "flag_cero" for hierarchy "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|flag_cero:FCero" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 23
+Info (12128): Elaborating entity "flag_overflow" for hierarchy "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|flag_overflow:FOverflow" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 24
+Info (12128): Elaborating entity "flag_carry" for hierarchy "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|flag_carry:FCarry" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 25
+Info (12128): Elaborating entity "imem" for hierarchy "top:dut|imem:imem" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 9
 Warning (10850): Verilog HDL warning at imem.sv(7): number of words (55) in memory file does not match the number of elements in the address range [0:256] File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/imem.sv Line: 7
 Warning (10030): Net "RAM.data_a" at imem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/imem.sv Line: 4
 Warning (10030): Net "RAM.waddr_a" at imem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/imem.sv Line: 4
 Warning (10030): Net "RAM.we_a" at imem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/imem.sv Line: 4
-Info (12128): Elaborating entity "dmem" for hierarchy "dmem:dmem" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 10
+Info (12128): Elaborating entity "dmem" for hierarchy "top:dut|dmem:dmem" File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 10
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[31]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
-    Warning (12110): Net "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[30]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
-    Warning (12110): Net "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[29]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
-    Warning (12110): Net "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[28]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
-    Warning (12110): Net "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[27]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
-    Warning (12110): Net "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[26]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
-    Warning (12110): Net "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[25]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
-    Warning (12110): Net "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[24]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
-    Warning (12110): Net "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[23]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
-    Warning (12110): Net "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[22]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
-    Warning (12110): Net "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[21]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
-    Warning (12110): Net "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[20]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
-    Warning (12110): Net "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[19]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
-    Warning (12110): Net "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[18]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
-    Warning (12110): Net "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[17]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
-    Warning (12110): Net "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[16]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
-    Warning (12110): Net "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[15]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
-    Warning (12110): Net "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[14]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
-    Warning (12110): Net "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[13]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
-    Warning (12110): Net "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[12]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
-    Warning (12110): Net "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[11]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
-    Warning (12110): Net "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[10]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
-    Warning (12110): Net "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[9]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
-    Warning (12110): Net "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[8]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
-    Warning (12110): Net "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[7]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
-    Warning (12110): Net "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[6]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
-    Warning (12110): Net "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[5]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
-    Warning (12110): Net "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[4]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
-    Warning (12110): Net "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[3]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
-    Warning (12110): Net "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[2]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
-    Warning (12110): Net "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[1]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
-    Warning (12110): Net "arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[0]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
-Info (276014): Found 2 instances of uninferred RAM logic
-    Info (276004): RAM logic "dmem:dmem|RAM" is uninferred due to inappropriate RAM size File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/dmem.sv Line: 5
-    Info (276007): RAM logic "arm:arm|datapath:dp|regfile:rf|rf" is uninferred due to asynchronous read logic File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/regfile.sv Line: 7
-Critical Warning (127005): Memory depth (512) in the design file differs from memory depth (257) in the Memory Initialization File "C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/db/arm.ram0_imem_37c714.hdl.mif" -- setting initial value for remaining addresses to 0
-Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/db/arm.ram0_imem_37c714.hdl.mif" contains "don't care" values -- overwriting them with 0s
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[31]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[30]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[29]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[28]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[27]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[26]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[25]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[24]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[23]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[22]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[21]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[20]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[19]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[18]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[17]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[16]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[15]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[14]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[13]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[12]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[11]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[10]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[9]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[8]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[7]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[6]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[5]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[4]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[3]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[2]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[1]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
+    Warning (12110): Net "top:dut|arm:arm|datapath:dp|unidad_logico_aritmetica:alu|resultadoFinal[0]" is missing source, defaulting to GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ALU/unidad_logico_aritmetica.sv Line: 3
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "DataAdr[0]" is stuck at GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 2
-    Warning (13410): Pin "DataAdr[1]" is stuck at GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 2
-    Warning (13410): Pin "DataAdr[2]" is stuck at GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 2
-    Warning (13410): Pin "DataAdr[3]" is stuck at GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 2
-    Warning (13410): Pin "DataAdr[4]" is stuck at GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 2
-    Warning (13410): Pin "DataAdr[5]" is stuck at GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 2
-    Warning (13410): Pin "DataAdr[6]" is stuck at GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 2
-    Warning (13410): Pin "DataAdr[7]" is stuck at GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 2
-    Warning (13410): Pin "DataAdr[8]" is stuck at GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 2
-    Warning (13410): Pin "DataAdr[9]" is stuck at GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 2
-    Warning (13410): Pin "DataAdr[10]" is stuck at GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 2
-    Warning (13410): Pin "DataAdr[11]" is stuck at GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 2
-    Warning (13410): Pin "DataAdr[12]" is stuck at GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 2
-    Warning (13410): Pin "DataAdr[13]" is stuck at GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 2
-    Warning (13410): Pin "DataAdr[14]" is stuck at GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 2
-    Warning (13410): Pin "DataAdr[15]" is stuck at GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 2
-    Warning (13410): Pin "DataAdr[16]" is stuck at GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 2
-    Warning (13410): Pin "DataAdr[17]" is stuck at GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 2
-    Warning (13410): Pin "DataAdr[18]" is stuck at GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 2
-    Warning (13410): Pin "DataAdr[19]" is stuck at GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 2
-    Warning (13410): Pin "DataAdr[20]" is stuck at GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 2
-    Warning (13410): Pin "DataAdr[21]" is stuck at GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 2
-    Warning (13410): Pin "DataAdr[22]" is stuck at GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 2
-    Warning (13410): Pin "DataAdr[23]" is stuck at GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 2
-    Warning (13410): Pin "DataAdr[24]" is stuck at GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 2
-    Warning (13410): Pin "DataAdr[25]" is stuck at GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 2
-    Warning (13410): Pin "DataAdr[26]" is stuck at GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 2
-    Warning (13410): Pin "DataAdr[27]" is stuck at GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 2
-    Warning (13410): Pin "DataAdr[28]" is stuck at GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 2
-    Warning (13410): Pin "DataAdr[29]" is stuck at GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 2
-    Warning (13410): Pin "DataAdr[30]" is stuck at GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 2
-    Warning (13410): Pin "DataAdr[31]" is stuck at GND File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/top.sv Line: 2
-Info (286030): Timing-Driven Synthesis is running
-Info (17049): 3 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/output_files/arm.map.smsg
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 944 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 65 output pins
-    Info (21061): Implemented 877 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 82 warnings
-    Info: Peak virtual memory: 4862 megabytes
-    Info: Processing ended: Tue Aug 04 11:14:49 2020
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:19
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 49 warnings
+    Info: Peak virtual memory: 4778 megabytes
+    Info: Processing ended: Tue Aug 04 11:18:46 2020
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:16
 
 
-+------------------------------------------+
-; Analysis & Synthesis Suppressed Messages ;
-+------------------------------------------+
++--------------------------------------------+
+; Analysis & Elaboration Suppressed Messages ;
++--------------------------------------------+
 The suppressed messages can be found in C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/output_files/arm.map.smsg.
 
 

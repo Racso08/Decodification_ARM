@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CEBA2F17A7
-set_global_assignment -name TOP_LEVEL_ENTITY chipset_tb
+set_global_assignment -name TOP_LEVEL_ENTITY testbench
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 19.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "20:24:15  JULY 26, 2020"
 set_global_assignment -name LAST_QUARTUS_VERSION "19.1.0 Lite Edition"
@@ -56,6 +56,19 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name SYSTEMVERILOG_FILE unidad_logico_aritmetica_test.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ALU/Modules/mux2a4.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ALU/Flags/flag_overflow.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ALU/Flags/flag_negativo.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ALU/Flags/flag_cero.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ALU/Flags/flag_carry.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ALU/Operaciones/sumador.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ALU/Operaciones/restador.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ALU/Operaciones/corrimiento_circular.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ALU/Operaciones/compuerta_xor.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ALU/unidad_logico_aritmetica.sv
 set_global_assignment -name SYSTEMVERILOG_FILE controller.sv
 set_global_assignment -name SYSTEMVERILOG_FILE arm.sv
 set_global_assignment -name SYSTEMVERILOG_FILE decoder.sv
@@ -72,8 +85,6 @@ set_global_assignment -name SYSTEMVERILOG_FILE testbench.sv
 set_global_assignment -name SYSTEMVERILOG_FILE top.sv
 set_global_assignment -name SYSTEMVERILOG_FILE dmem.sv
 set_global_assignment -name SYSTEMVERILOG_FILE imem.sv
-set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
-set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name SOURCE_FILE memfile.dat
 set_global_assignment -name SYSTEMVERILOG_FILE chipset.sv
 set_global_assignment -name SYSTEMVERILOG_FILE chipset_tb.sv

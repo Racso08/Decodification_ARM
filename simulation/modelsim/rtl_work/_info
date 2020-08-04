@@ -8,53 +8,653 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/arm/simulation/modelsim
-vchipset
+vadder
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1596298116
+Z2 !s110 1596509643
 !i10b 1
-!s100 8GYYC@6G11fk]=WM_J:Pf0
-IZ6YcALAC8JahRdjLj6F2m0
+!s100 mKSgACg:2S7l;zdhf:>::1
+IhY6coF1gSXz_Xbd>HREa42
 Z3 VDg1SIo80bB@j0V0VzS_@n1
-!s105 chipset_sv_unit
+!s105 adder_sv_unit
 S1
 R0
-w1596297246
-8C:/arm/chipset.sv
-FC:/arm/chipset.sv
+w1595817556
+8C:/arm/adder.sv
+FC:/arm/adder.sv
 L0 1
 Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1596298116.000000
-!s107 C:/arm/chipset.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/arm|C:/arm/chipset.sv|
+Z5 !s108 1596509643.000000
+!s107 C:/arm/adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/arm|C:/arm/adder.sv|
 !i113 1
 Z6 o-sv -work work
 Z7 !s92 -sv -work work +incdir+C:/arm
 Z8 tCvgOpt 0
-vchipset_tb
+varm
+R1
+Z9 !s110 1596509642
+!i10b 1
+!s100 Nlk7hOhAnLSYJX^6aXGYk1
+IGS1;g10_Q7Keg>NC08aMb0
+R3
+!s105 arm_sv_unit
+S1
+R0
+w1595816851
+8C:/arm/arm.sv
+FC:/arm/arm.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z10 !s108 1596509642.000000
+!s107 C:/arm/arm.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/arm|C:/arm/arm.sv|
+!i113 1
+R6
+R7
+R8
+vcompuerta_xor
+R1
+Z11 !s110 1596509641
+!i10b 1
+!s100 =1VN`2bSZMA_KbXWN1R]z0
+IURXTGFEF^5m2S6:l1HL2N2
+R3
+!s105 compuerta_xor_sv_unit
+S1
+R0
+Z12 w1596496394
+8C:/arm/ALU/Operaciones/compuerta_xor.sv
+FC:/arm/ALU/Operaciones/compuerta_xor.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z13 !s108 1596509641.000000
+!s107 C:/arm/ALU/Operaciones/compuerta_xor.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/arm/ALU/Operaciones|C:/arm/ALU/Operaciones/compuerta_xor.sv|
+!i113 1
+R6
+Z14 !s92 -sv -work work +incdir+C:/arm/ALU/Operaciones
+R8
+vcondcheck
 R1
 R2
 !i10b 1
-!s100 g7h6BPENf8c=EF5ZV34oj1
-I<4Vj[16G]1F<dP5ld?oXU1
+!s100 k8Y4TPJCFO=bGNGfdA[Ce2
+IIS9OLiLmZ>NWER]iM2a5O1
 R3
-!s105 chipset_tb_sv_unit
+!s105 condcheck_sv_unit
 S1
 R0
-w1596298069
-8C:/arm/chipset_tb.sv
-FC:/arm/chipset_tb.sv
+R12
+8C:/arm/condcheck.sv
+FC:/arm/condcheck.sv
 L0 1
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/arm/chipset_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/arm|C:/arm/chipset_tb.sv|
+!s107 C:/arm/condcheck.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/arm|C:/arm/condcheck.sv|
 !i113 1
 R6
 R7
+R8
+vcondlogic
+R1
+R9
+!i10b 1
+!s100 Id5B>jP3iYGzl=DAb2J6h1
+I^^7l:RV=oiEX4mX7kYIcE2
+R3
+!s105 condlogic_sv_unit
+S1
+R0
+R12
+8C:/arm/condlogic.sv
+FC:/arm/condlogic.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/arm/condlogic.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/arm|C:/arm/condlogic.sv|
+!i113 1
+R6
+R7
+R8
+vcontroller
+R1
+R9
+!i10b 1
+!s100 bha>ENLBEO6i5OcK7c1A?0
+IdTLc<GMJRIj0[R];@nMIE1
+R3
+!s105 controller_sv_unit
+S1
+R0
+R12
+8C:/arm/controller.sv
+FC:/arm/controller.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/arm/controller.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/arm|C:/arm/controller.sv|
+!i113 1
+R6
+R7
+R8
+vcorrimiento_circular
+R1
+R11
+!i10b 1
+!s100 nMA06:<52Q;l;SPeJo2?03
+IRGg_=8NTbz4S@hde8Z_:X2
+R3
+!s105 corrimiento_circular_sv_unit
+S1
+R0
+R12
+8C:/arm/ALU/Operaciones/corrimiento_circular.sv
+FC:/arm/ALU/Operaciones/corrimiento_circular.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R13
+!s107 C:/arm/ALU/Operaciones/corrimiento_circular.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/arm/ALU/Operaciones|C:/arm/ALU/Operaciones/corrimiento_circular.sv|
+!i113 1
+R6
+R14
+R8
+vdatapath
+R1
+R2
+!i10b 1
+!s100 [0W_KPa8=l]5@e]mbR]LY2
+ImFaaEllKQ=JTi`dNg_ZzR1
+R3
+!s105 datapath_sv_unit
+S1
+R0
+w1595820583
+8C:/arm/datapath.sv
+FC:/arm/datapath.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/arm/datapath.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/arm|C:/arm/datapath.sv|
+!i113 1
+R6
+R7
+R8
+vdecoder
+R1
+R9
+!i10b 1
+!s100 9ViWE:7R?MD<N79e6L_kc2
+IaR8d>Q:YHE4_T0>QhT7Y13
+R3
+!s105 decoder_sv_unit
+S1
+R0
+w1596508609
+8C:/arm/decoder.sv
+FC:/arm/decoder.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/arm/decoder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/arm|C:/arm/decoder.sv|
+!i113 1
+R6
+R7
+R8
+vdmem
+R1
+Z15 !s110 1596509645
+!i10b 1
+!s100 eGk@_DNfHH]]7GnH[hW8Y0
+I4H3]n]>;=QA32hHaib]a70
+R3
+!s105 dmem_sv_unit
+S1
+R0
+w1595818032
+8C:/arm/dmem.sv
+FC:/arm/dmem.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z16 !s108 1596509645.000000
+!s107 C:/arm/dmem.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/arm|C:/arm/dmem.sv|
+!i113 1
+R6
+R7
+R8
+vextend
+R1
+Z17 !s110 1596509644
+!i10b 1
+!s100 V@;bd:mazMQ_0cXNK<PmE2
+Ig>C3W@]m]Y79aM9Q7j8Zm1
+R3
+!s105 extend_sv_unit
+S1
+R0
+w1595817612
+8C:/arm/extend.sv
+FC:/arm/extend.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/arm/extend.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/arm|C:/arm/extend.sv|
+!i113 1
+R6
+R7
+R8
+vflag_carry
+R1
+Z18 !s110 1596509640
+!i10b 1
+!s100 <54jIck>>DnTM;@mYT<UT3
+IQZh4nA9E^_bL@JcFE^aBi1
+R3
+!s105 flag_carry_sv_unit
+S1
+R0
+R12
+8C:/arm/ALU/Flags/flag_carry.sv
+FC:/arm/ALU/Flags/flag_carry.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z19 !s108 1596509640.000000
+!s107 C:/arm/ALU/Flags/flag_carry.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/arm/ALU/Flags|C:/arm/ALU/Flags/flag_carry.sv|
+!i113 1
+R6
+Z20 !s92 -sv -work work +incdir+C:/arm/ALU/Flags
+R8
+vflag_cero
+R1
+R18
+!i10b 1
+!s100 2kf2;3i[m09P<=7nl29b]2
+I;UdAhH2MUMH=E4ni;NXPb0
+R3
+!s105 flag_cero_sv_unit
+S1
+R0
+R12
+8C:/arm/ALU/Flags/flag_cero.sv
+FC:/arm/ALU/Flags/flag_cero.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R19
+!s107 C:/arm/ALU/Flags/flag_cero.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/arm/ALU/Flags|C:/arm/ALU/Flags/flag_cero.sv|
+!i113 1
+R6
+R20
+R8
+vflag_negativo
+R1
+R18
+!i10b 1
+!s100 lgz_2d5ghoUj`hj;G`kR^3
+IeVG0EKo6cZSk^6Lo?=3Ug2
+R3
+!s105 flag_negativo_sv_unit
+S1
+R0
+R12
+8C:/arm/ALU/Flags/flag_negativo.sv
+FC:/arm/ALU/Flags/flag_negativo.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R19
+!s107 C:/arm/ALU/Flags/flag_negativo.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/arm/ALU/Flags|C:/arm/ALU/Flags/flag_negativo.sv|
+!i113 1
+R6
+R20
+R8
+vflag_overflow
+R1
+Z21 !s110 1596509639
+!i10b 1
+!s100 NY0D7;OkNi;@Peh@ZB`343
+IVZQTk:g^2HW?h=771=X4d0
+R3
+!s105 flag_overflow_sv_unit
+S1
+R0
+R12
+8C:/arm/ALU/Flags/flag_overflow.sv
+FC:/arm/ALU/Flags/flag_overflow.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z22 !s108 1596509639.000000
+!s107 C:/arm/ALU/Flags/flag_overflow.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/arm/ALU/Flags|C:/arm/ALU/Flags/flag_overflow.sv|
+!i113 1
+R6
+R20
+R8
+vflopenr
+R1
+R17
+!i10b 1
+!s100 K[Dhl7L;W1b<fdMZ`bm?E3
+IFPN3KA3PdE4d<6lAJLlg_2
+R3
+!s105 flopenr_sv_unit
+S1
+R0
+w1595817726
+8C:/arm/flopenr.sv
+FC:/arm/flopenr.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z23 !s108 1596509644.000000
+!s107 C:/arm/flopenr.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/arm|C:/arm/flopenr.sv|
+!i113 1
+R6
+R7
+R8
+vflopr
+R1
+R17
+!i10b 1
+!s100 GV<NSjC8B7Roh4DKleAhM1
+I?Wz>zEBAikQOnWQk=Y]SO3
+R3
+!s105 flopr_sv_unit
+S1
+R0
+w1595817677
+8C:/arm/flopr.sv
+FC:/arm/flopr.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R23
+!s107 C:/arm/flopr.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/arm|C:/arm/flopr.sv|
+!i113 1
+R6
+R7
+R8
+vimem
+R1
+R15
+!i10b 1
+!s100 5C_b]RM?mPVhDSSdVFhA52
+IBeD;gkQLzmXbd<GT>3WfC3
+R3
+!s105 imem_sv_unit
+S1
+R0
+w1596506841
+8C:/arm/imem.sv
+FC:/arm/imem.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R16
+!s107 C:/arm/imem.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/arm|C:/arm/imem.sv|
+!i113 1
+R6
+R7
+R8
+vmux2
+R1
+R17
+!i10b 1
+!s100 c?Y[`1W_=2V?X?^];Vl9N0
+I[IDW3z99gX58E]NMEd<OS3
+R3
+!s105 mux2_sv_unit
+S1
+R0
+w1595817763
+8C:/arm/mux2.sv
+FC:/arm/mux2.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R23
+!s107 C:/arm/mux2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/arm|C:/arm/mux2.sv|
+!i113 1
+R6
+R7
+R8
+vmux2a4
+R1
+R21
+!i10b 1
+!s100 1Ja]QdKf5RReJGOFc=9oS1
+IBiK8l=iUM`R@ClIlX_jA]1
+R3
+!s105 mux2a4_sv_unit
+S1
+R0
+w1596497643
+8C:/arm/ALU/Modules/mux2a4.sv
+FC:/arm/ALU/Modules/mux2a4.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R22
+!s107 C:/arm/ALU/Modules/mux2a4.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/arm/ALU/Modules|C:/arm/ALU/Modules/mux2a4.sv|
+!i113 1
+R6
+!s92 -sv -work work +incdir+C:/arm/ALU/Modules
+R8
+vregfile
+R1
+R2
+!i10b 1
+!s100 :<?mI1`d?:KX5iiLQV9eD0
+IKVb6O57=<a<=::_Y3:FGH0
+R3
+!s105 regfile_sv_unit
+S1
+R0
+w1595817512
+8C:/arm/regfile.sv
+FC:/arm/regfile.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/arm/regfile.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/arm|C:/arm/regfile.sv|
+!i113 1
+R6
+R7
+R8
+vrestador
+R1
+R11
+!i10b 1
+!s100 l8QmoYQhQKD::Pd:7>5DM1
+I7l`PTFm`484HLJ_b^=f`=3
+R3
+!s105 restador_sv_unit
+S1
+R0
+R12
+8C:/arm/ALU/Operaciones/restador.sv
+FC:/arm/ALU/Operaciones/restador.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R13
+!s107 C:/arm/ALU/Operaciones/restador.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/arm/ALU/Operaciones|C:/arm/ALU/Operaciones/restador.sv|
+!i113 1
+R6
+R14
+R8
+vsumador
+R1
+R18
+!i10b 1
+!s100 kXICC46zcoBDKTlz:108[2
+I0^Kg>Dh22mK?QnGPeHk3S1
+R3
+!s105 sumador_sv_unit
+S1
+R0
+R12
+8C:/arm/ALU/Operaciones/sumador.sv
+FC:/arm/ALU/Operaciones/sumador.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R19
+!s107 C:/arm/ALU/Operaciones/sumador.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/arm/ALU/Operaciones|C:/arm/ALU/Operaciones/sumador.sv|
+!i113 1
+R6
+R14
+R8
+vtestbench
+R1
+R17
+!i10b 1
+!s100 96onO72CYFEiBV;@:Y@]01
+I?Il=^WBC5=Rm8BPbgf4_H0
+R3
+!s105 testbench_sv_unit
+S1
+R0
+w1596502593
+8C:/arm/testbench.sv
+FC:/arm/testbench.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R23
+!s107 C:/arm/testbench.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/arm|C:/arm/testbench.sv|
+!i113 1
+R6
+R7
+R8
+vtop
+R1
+R15
+!i10b 1
+!s100 MlIFGDahLnniF0bd^]5532
+I_XA?DCCm1Yf:8joT1_To;2
+R3
+!s105 top_sv_unit
+S1
+R0
+w1595817991
+8C:/arm/top.sv
+FC:/arm/top.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R16
+!s107 C:/arm/top.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/arm|C:/arm/top.sv|
+!i113 1
+R6
+R7
+R8
+vunidad_logico_aritmetica
+R1
+R11
+!i10b 1
+!s100 Q]HSXi0eC4C>o2NfVFHh03
+IHengPoz[^UU0U]RQ1fC`f3
+R3
+!s105 unidad_logico_aritmetica_sv_unit
+S1
+R0
+R12
+8C:/arm/ALU/unidad_logico_aritmetica.sv
+FC:/arm/ALU/unidad_logico_aritmetica.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R13
+!s107 C:/arm/ALU/unidad_logico_aritmetica.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/arm/ALU|C:/arm/ALU/unidad_logico_aritmetica.sv|
+!i113 1
+R6
+!s92 -sv -work work +incdir+C:/arm/ALU
 R8

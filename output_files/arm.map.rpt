@@ -1,6 +1,11 @@
 Analysis & Elaboration report for arm
+<<<<<<< HEAD
 Tue Aug 04 08:32:40 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+=======
+Sun Aug 02 15:49:25 2020
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+>>>>>>> master
 
 
 ---------------------
@@ -9,9 +14,18 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
   1. Legal Notice
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
+<<<<<<< HEAD
   4. Analysis & Elaboration Settings
   5. Analysis & Elaboration Messages
   6. Analysis & Elaboration Suppressed Messages
+=======
+  4. Parameter Settings for User Entity Instance: PC_selection:DUT
+  5. Parameter Settings for User Entity Instance: PC_selection:DUT|register:PC
+  6. Analysis & Elaboration Settings
+  7. Port Connectivity Checks: "PC_selection:DUT"
+  8. Analysis & Elaboration Messages
+  9. Analysis & Elaboration Suppressed Messages
+>>>>>>> master
 
 
 
@@ -38,10 +52,17 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
+<<<<<<< HEAD
 ; Analysis & Elaboration Status ; Successful - Tue Aug 04 08:32:40 2020       ;
 ; Quartus Prime Version         ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                 ; arm                                         ;
 ; Top-level Entity Name         ; flag_negativo                               ;
+=======
+; Analysis & Elaboration Status ; Successful - Sun Aug 02 15:49:25 2020       ;
+; Quartus Prime Version         ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
+; Revision Name                 ; arm                                         ;
+; Top-level Entity Name         ; pc_sel_test                                 ;
+>>>>>>> master
 ; Family                        ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
 ; Total registers               ; N/A until Partition Merge                   ;
@@ -69,13 +90,40 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
+<<<<<<< HEAD
+=======
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: PC_selection:DUT ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; N              ; 32    ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: PC_selection:DUT|register:PC ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; N              ; 32    ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
+>>>>>>> master
 +---------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Elaboration Settings                                                                                           ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CEBA2F17A7        ;                    ;
+<<<<<<< HEAD
 ; Top-level entity name                                                           ; flag_negativo      ; arm                ;
+=======
+; Top-level entity name                                                           ; pc_sel_test        ; arm                ;
+>>>>>>> master
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -156,14 +204,32 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
+<<<<<<< HEAD
+=======
++---------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PC_selection:DUT"                                                                              ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port            ; Type   ; Severity ; Details                                                                             ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; instrMem_output ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
+>>>>>>> master
 +---------------------------------+
 ; Analysis & Elaboration Messages ;
 +---------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
+<<<<<<< HEAD
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
     Info: Processing started: Tue Aug 04 08:32:33 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off arm -c arm --analysis_and_elaboration
+=======
+    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+    Info: Processing started: Sun Aug 02 15:49:09 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ARM -c arm --analysis_and_elaboration
+>>>>>>> master
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file arm.sv
@@ -207,6 +273,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file modules
 Info (12021): Found 1 design units, including 1 entities, in source file modules/chipset.sv
     Info (12023): Found entity 1: chipset File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/chipset.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tests/chipset_tb.sv
+<<<<<<< HEAD
     Info (12023): Found entity 1: chipset_tb File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests/chipset_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file modules/pc_selection.sv
     Info (12023): Found entity 1: PC_selection File: C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/PC_selection.sv Line: 1
@@ -230,11 +297,40 @@ Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 2 warnings
     Info: Processing ended: Tue Aug 04 08:32:40 2020
     Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:17
+=======
+    Info (12023): Found entity 1: chipset_tb File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Tests/chipset_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file modules/pc_selection.sv
+    Info (12023): Found entity 1: PC_selection File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/PC_selection.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file tests/pc_sel_test.sv
+    Info (12023): Found entity 1: pc_sel_test File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Tests/pc_sel_test.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file tests/instructionmem_tb.sv
+    Info (12023): Found entity 1: instructionMem_tb File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Tests/instructionMem_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file modules/instructionmem.sv
+    Info (12023): Found entity 1: instructionMem File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/instructionMem.sv Line: 1
+Info (12127): Elaborating entity "pc_sel_test" for the top level hierarchy
+Info (12128): Elaborating entity "PC_selection" for hierarchy "PC_selection:DUT" File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Tests/pc_sel_test.sv Line: 7
+Info (12128): Elaborating entity "register" for hierarchy "PC_selection:DUT|register:PC" File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/PC_selection.sv Line: 7
+Info (12128): Elaborating entity "instructionMem" for hierarchy "PC_selection:DUT|instructionMem:Mem" File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/PC_selection.sv Line: 9
+Warning (10850): Verilog HDL warning at instructionMem.sv(7): number of words (55) in memory file does not match the number of elements in the address range [0:255] File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/instructionMem.sv Line: 7
+Warning (10030): Net "RAM.data_a" at instructionMem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/instructionMem.sv Line: 4
+Warning (10030): Net "RAM.waddr_a" at instructionMem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/instructionMem.sv Line: 4
+Warning (10030): Net "RAM.we_a" at instructionMem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/instructionMem.sv Line: 4
+Info (144001): Generated suppressed messages file C:/Users/Isaac Porras/Desktop/Decodification_ARM/output_files/arm.map.smsg
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4776 megabytes
+    Info: Processing ended: Sun Aug 02 15:49:25 2020
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:33
+>>>>>>> master
 
 
 +--------------------------------------------+
 ; Analysis & Elaboration Suppressed Messages ;
 +--------------------------------------------+
+<<<<<<< HEAD
 The suppressed messages can be found in C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/output_files/arm.map.smsg.
+=======
+The suppressed messages can be found in C:/Users/Isaac Porras/Desktop/Decodification_ARM/output_files/arm.map.smsg.
+>>>>>>> master
 
 

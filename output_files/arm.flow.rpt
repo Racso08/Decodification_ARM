@@ -1,6 +1,11 @@
 Flow report for arm
+<<<<<<< HEAD
 Tue Aug 04 08:32:40 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+=======
+Sun Aug 02 15:49:25 2020
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+>>>>>>> master
 
 
 ---------------------
@@ -33,18 +38,29 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
+<<<<<<< HEAD
 refer to the applicable agreement for further details, at
 https://fpgasoftware.intel.com/eula.
+=======
+refer to the applicable agreement for further details.
+>>>>>>> master
 
 
 
 +---------------------------------------------------------------------------+
 ; Flow Summary                                                              ;
 +-----------------------------+---------------------------------------------+
+<<<<<<< HEAD
 ; Flow Status                 ; Successful - Tue Aug 04 08:32:40 2020       ;
 ; Quartus Prime Version       ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name               ; arm                                         ;
 ; Top-level Entity Name       ; flag_negativo                               ;
+=======
+; Flow Status                 ; Successful - Sun Aug 02 15:49:25 2020       ;
+; Quartus Prime Version       ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
+; Revision Name               ; arm                                         ;
+; Top-level Entity Name       ; pc_sel_test                                 ;
+>>>>>>> master
 ; Family                      ; Cyclone V                                   ;
 ; Device                      ; 5CEBA2F17A7                                 ;
 ; Timing Models               ; Final                                       ;
@@ -63,12 +79,17 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
+<<<<<<< HEAD
 ; Start date & time ; 08/04/2020 08:32:33 ;
+=======
+; Start date & time ; 08/02/2020 15:49:10 ;
+>>>>>>> master
 ; Main task         ; Compilation         ;
 ; Revision Name     ; arm                 ;
 +-------------------+---------------------+
 
 
+<<<<<<< HEAD
 +--------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Flow Non-Default Global Settings                                                                                                                 ;
 +-------------------------------------+----------------------------------------+---------------+---------------+-----------------------------------+
@@ -94,6 +115,33 @@ https://fpgasoftware.intel.com/eula.
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --            ; --                                ;
 ; TOP_LEVEL_ENTITY                    ; flag_negativo                          ; arm           ; --            ; --                                ;
 +-------------------------------------+----------------------------------------+---------------+---------------+-----------------------------------+
+=======
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                               ;
++-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
+; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
++-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
+; COMPILER_SIGNATURE_ID               ; 220045545805507.159640495021564        ; --            ; --          ; --                                ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_timing_analysis               ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_formal_verification           ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_symbol           ;
+; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --            ; --          ; eda_simulation                    ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --          ; --                                ;
+; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation                    ;
+; MAX_CORE_JUNCTION_TEMP              ; 125                                    ; --            ; --          ; --                                ;
+; MIN_CORE_JUNCTION_TEMP              ; -40                                    ; --            ; --          ; --                                ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; pc_sel_test ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; pc_sel_test ; Top                               ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; pc_sel_test ; Top                               ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --                                ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                                ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --                                ;
+; TOP_LEVEL_ENTITY                    ; pc_sel_test                            ; arm           ; --          ; --                                ;
++-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
+>>>>>>> master
 
 
 +----------------------------------------------------------------------------------------------------------------------------+
@@ -101,8 +149,13 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
+<<<<<<< HEAD
 ; Analysis & Elaboration ; 00:00:07     ; 1.0                     ; 4775 MB             ; 00:00:17                           ;
 ; Total                  ; 00:00:07     ; --                      ; --                  ; 00:00:17                           ;
+=======
+; Analysis & Elaboration ; 00:00:16     ; 1.0                     ; 4776 MB             ; 00:00:33                           ;
+; Total                  ; 00:00:16     ; --                      ; --                  ; 00:00:33                           ;
+>>>>>>> master
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -111,14 +164,22 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+------------------+------------+------------+----------------+
 ; Module Name            ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +------------------------+------------------+------------+------------+----------------+
+<<<<<<< HEAD
 ; Analysis & Elaboration ; DESKTOP-VRFLMRQ  ; Windows 10 ; 10.0       ; x86_64         ;
+=======
+; Analysis & Elaboration ; LAPTOP-OJR01514  ; Windows 10 ; 10.0       ; x86_64         ;
+>>>>>>> master
 +------------------------+------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
+<<<<<<< HEAD
 quartus_map --read_settings_files=on --write_settings_files=off arm -c arm --analysis_and_elaboration
+=======
+quartus_map --read_settings_files=on --write_settings_files=off ARM -c arm --analysis_and_elaboration
+>>>>>>> master
 
 
 

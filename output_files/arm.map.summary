@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 Analysis & Elaboration Status : Successful - Tue Aug 04 08:32:40 2020
 Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 Revision Name : arm
 Top-level Entity Name : flag_negativo
+=======
+Analysis & Elaboration Status : Successful - Sun Aug 02 15:49:25 2020
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Revision Name : arm
+Top-level Entity Name : pc_sel_test
+>>>>>>> master
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge

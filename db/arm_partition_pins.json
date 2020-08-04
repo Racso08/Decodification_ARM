@@ -4,19 +4,179 @@
 			"name" : "Top",
 			"pins" : [
 				{
+<<<<<<< HEAD
 					"name" : "resultado",
 					"strict" : false
 				},
 				{
 					"name" : "ultimo_bit",
+=======
+					"name" : "instrMem_output[0]",
 					"strict" : false
 				},
 				{
-					"name" : "ALUControl[0]",
+					"name" : "instrMem_output[1]",
 					"strict" : false
 				},
 				{
+					"name" : "instrMem_output[2]",
+					"strict" : false
+				},
+				{
+					"name" : "instrMem_output[3]",
+					"strict" : false
+				},
+				{
+					"name" : "instrMem_output[4]",
+					"strict" : false
+				},
+				{
+					"name" : "instrMem_output[5]",
+					"strict" : false
+				},
+				{
+					"name" : "instrMem_output[6]",
+					"strict" : false
+				},
+				{
+					"name" : "instrMem_output[7]",
+					"strict" : false
+				},
+				{
+					"name" : "instrMem_output[8]",
+					"strict" : false
+				},
+				{
+					"name" : "instrMem_output[9]",
+					"strict" : false
+				},
+				{
+					"name" : "instrMem_output[10]",
+					"strict" : false
+				},
+				{
+					"name" : "instrMem_output[11]",
+					"strict" : false
+				},
+				{
+					"name" : "instrMem_output[12]",
+					"strict" : false
+				},
+				{
+					"name" : "instrMem_output[13]",
+					"strict" : false
+				},
+				{
+					"name" : "instrMem_output[14]",
+					"strict" : false
+				},
+				{
+					"name" : "instrMem_output[15]",
+					"strict" : false
+				},
+				{
+					"name" : "instrMem_output[16]",
+					"strict" : false
+				},
+				{
+					"name" : "instrMem_output[17]",
+					"strict" : false
+				},
+				{
+					"name" : "instrMem_output[18]",
+					"strict" : false
+				},
+				{
+					"name" : "instrMem_output[19]",
+					"strict" : false
+				},
+				{
+					"name" : "instrMem_output[20]",
+					"strict" : false
+				},
+				{
+					"name" : "instrMem_output[21]",
+					"strict" : false
+				},
+				{
+					"name" : "instrMem_output[22]",
+					"strict" : false
+				},
+				{
+					"name" : "instrMem_output[23]",
+					"strict" : false
+				},
+				{
+					"name" : "instrMem_output[24]",
+					"strict" : false
+				},
+				{
+					"name" : "instrMem_output[25]",
+					"strict" : false
+				},
+				{
+					"name" : "instrMem_output[26]",
+					"strict" : false
+				},
+				{
+					"name" : "instrMem_output[27]",
+					"strict" : false
+				},
+				{
+					"name" : "instrMem_output[29]",
+					"strict" : false
+				},
+				{
+					"name" : "instrMem_output[30]",
+					"strict" : false
+				},
+				{
+					"name" : "instrMem_output[31]",
+					"strict" : false
+				},
+				{
+					"name" : "InstructionAdr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "InstructionAdr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "InstructionAdr[4]",
+					"strict" : false
+				},
+				{
+					"name" : "InstructionAdr[5]",
+					"strict" : false
+				},
+				{
+					"name" : "InstructionAdr[6]",
+>>>>>>> master
+					"strict" : false
+				},
+				{
+					"name" : "InstructionAdr[7]",
+					"strict" : false
+				},
+				{
+<<<<<<< HEAD
 					"name" : "ALUControl[1]",
+=======
+					"name" : "InstructionAdr[9]",
+					"strict" : false
+				},
+				{
+					"name" : "InstructionAdr[8]",
+>>>>>>> master
 					"strict" : false
 				}
 			]

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
 # do arm_run_msim_rtl_verilog.do
 # if {[file exists rtl_work]} {
@@ -45,3 +46,75 @@ add wave -position end  sim:/dataMem_tb/writeEnable
 run 100
 # End time: 15:17:18 on Aug 02,2020, Elapsed time: 0:08:17
 # Errors: 0, Warnings: 0
+=======
+# Reading D:/ProgramData/intelFPGA_lite/18.0/modelsim_ase/tcl/vsim/pref.tcl
+# do arm_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying D:/ProgramData/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/Isaac\ Porras/Desktop/Decodification_ARM/Modules {C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/register.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:49:34 on Aug 02,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules" C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/register.sv 
+# -- Compiling module register
+# 
+# Top level modules:
+# 	register
+# End time: 15:49:34 on Aug 02,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Isaac\ Porras/Desktop/Decodification_ARM/Modules {C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/PC_selection.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:49:34 on Aug 02,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules" C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/PC_selection.sv 
+# -- Compiling module PC_selection
+# 
+# Top level modules:
+# 	PC_selection
+# End time: 15:49:34 on Aug 02,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Isaac\ Porras/Desktop/Decodification_ARM/Tests {C:/Users/Isaac Porras/Desktop/Decodification_ARM/Tests/pc_sel_test.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:49:34 on Aug 02,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Isaac Porras/Desktop/Decodification_ARM/Tests" C:/Users/Isaac Porras/Desktop/Decodification_ARM/Tests/pc_sel_test.sv 
+# -- Compiling module pc_sel_test
+# 
+# Top level modules:
+# 	pc_sel_test
+# End time: 15:49:34 on Aug 02,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Isaac\ Porras/Desktop/Decodification_ARM/Modules {C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/instructionMem.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:49:34 on Aug 02,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules" C:/Users/Isaac Porras/Desktop/Decodification_ARM/Modules/instructionMem.sv 
+# -- Compiling module instructionMem
+# 
+# Top level modules:
+# 	instructionMem
+# End time: 15:49:34 on Aug 02,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.pc_sel_test
+# vsim work.pc_sel_test 
+# Start time: 15:49:49 on Aug 02,2020
+# Loading sv_std.std
+# Loading work.pc_sel_test
+# Loading work.PC_selection
+# Loading work.register
+# Loading work.instructionMem
+add wave -position insertpoint sim:/pc_sel_test/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Isaac Porras  Hostname: LAPTOP-OJR01514  ProcessID: 12432
+#           Attempting to use alternate WLF file "./wlft22rdhw".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft22rdhw
+run
+# End time: 16:04:06 on Aug 02,2020, Elapsed time: 0:14:17
+# Errors: 0, Warnings: 2
+>>>>>>> master

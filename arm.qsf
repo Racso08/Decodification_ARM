@@ -37,25 +37,6 @@
 # -------------------------------------------------------------------------- #
 
 
-set_global_assignment -name SYSTEMVERILOG_FILE unidad_logico_aritmetica_test.sv
-set_global_assignment -name SYSTEMVERILOG_FILE controller.sv
-set_global_assignment -name SYSTEMVERILOG_FILE decoder.sv
-set_global_assignment -name SYSTEMVERILOG_FILE condlogic.sv
-set_global_assignment -name SYSTEMVERILOG_FILE condcheck.sv
-set_global_assignment -name SYSTEMVERILOG_FILE datapath.sv
-set_global_assignment -name SYSTEMVERILOG_FILE regfile.sv
-set_global_assignment -name SYSTEMVERILOG_FILE adder.sv
-set_global_assignment -name SYSTEMVERILOG_FILE extend.sv
-set_global_assignment -name SYSTEMVERILOG_FILE flopr.sv
-set_global_assignment -name SYSTEMVERILOG_FILE flopenr.sv
-set_global_assignment -name SYSTEMVERILOG_FILE mux2.sv
-set_global_assignment -name SYSTEMVERILOG_FILE testbench.sv
-set_global_assignment -name SYSTEMVERILOG_FILE top.sv
-set_global_assignment -name SYSTEMVERILOG_FILE dmem.sv
-set_global_assignment -name SYSTEMVERILOG_FILE imem.sv
-set_global_assignment -name SOURCE_FILE memfile.dat
-set_global_assignment -name SYSTEMVERILOG_FILE chipset.sv
-set_global_assignment -name SYSTEMVERILOG_FILE chipset_tb.sv
 # -------------------------------------------------------------------------- #
 #
 # Copyright (C) 2019  Intel Corporation. All rights reserved.
@@ -117,6 +98,15 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name SYSTEMVERILOG_FILE unidad_logico_aritmetica_test.sv
+set_global_assignment -name SYSTEMVERILOG_FILE imem.sv
+set_global_assignment -name SOURCE_FILE memfile.dat
+set_global_assignment -name SYSTEMVERILOG_FILE chipset.sv
+set_global_assignment -name SYSTEMVERILOG_FILE chipset_tb.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Modules/controller.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Modules/condlogic.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Modules/condcheck.sv
@@ -147,8 +137,4 @@ set_global_assignment -name SYSTEMVERILOG_FILE Tests/instructionMem_tb.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Modules/dataMem.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Tests/dataMem_tb.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Modules/messageMem.sv
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name SYSTEMVERILOG_FILE Modules/instructionMem.sv

@@ -39,20 +39,27 @@ always_comb
 
 if (ALUOp) begin // which DP Instr?
 	case(Funct[4:1])
-		4'b1000: ALUControl = 2'b00; // ADD
-		4'b1001: ALUControl = 2'b01; // SUB
-		4'b0010: ALUControl = 2'b10; // XOR
-		4'b1110: ALUControl = 2'b11; // ROR
-		default: ALUControl = 2'bx; // unimplemented
+		
+		4'b0100: ALUControl = 3'b000; // ADD
+		4'b0010: ALUControl = 3'b001; // SUB
+		4'b1010: ALUControl = 3'b001; // CMP
+		4'b0001: ALUControl = 3'b010; // XOR
+		
+		4'b1101 : if (Funct[5]) ALUControl = 3'b100;// MOVE
+		else ALUControl = 3'b011; // ROR
+		
+		//4'b1101: ALUControl = 3'b011; // ROR
+		//4'b1101: ALUControl = 3'b100  
+		default: ALUControl = 3'bx; // unimplemented
 	endcase
 	
 // update flags if S bit is set (C & V only for arith)
 	FlagW[1] = Funct[0];
 	FlagW[0] = Funct[0] &
-	(ALUControl == 2'b00 | ALUControl == 2'b01);
+	(ALUControl == 3'b000 | ALUControl == 3'b001);
 
 end else begin
-	ALUControl = 2'b00; // add for non-DP instructions
+	ALUControl = 3'b000; // add for non-DP instructions
 	FlagW = 2'b00; // don't update Flags
 
 end

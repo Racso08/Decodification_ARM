@@ -1,18 +1,20 @@
-module extend(	input logic [23:0] Instr,
-					input logic [1:0] ImmSrc,
+module extend(input logic [23:0] Instr,
+				  input logic [1:0] ImmSrc,
 					output logic [31:0] ExtImm);
-					
-always_comb
-	case(ImmSrc)
-		// 8-bit unsigned immediate
-		2'b00: ExtImm = {24'b0, Instr[7:0]};
-		
-		// 12-bit unsigned immediate
+
+	logic[31:0] newImm;
+	
+	circular_shift_ext circ_s({24'b0, Instr[7:0]}, Instr[11:8], newImm);
+	
+	always_comb
+		case(ImmSrc)
+		// sin signo de 8 bits
+		2'b00: ExtImm = newImm;
+		// sin signo
 		2'b01: ExtImm = {20'b0, Instr[11:0]};
-		
-		// 24-bit two's complement shifted branch
+		// complenta en caso de branch
 		2'b10: ExtImm = {{6{Instr[23]}}, Instr[23:0], 2'b00};
+		default: ExtImm = 0; //asigno 0 en caso de ninguno se cumpla
+		endcase
 		
-		default: ExtImm = 32'bx; // undefined
-	endcase
 endmodule 

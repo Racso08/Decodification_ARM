@@ -12,7 +12,7 @@ module pc_sel_test();
 		
 	end
 	always begin
-		#50 CLK_TX = !CLK_TX;
+		#50 clk = !clk;
 	end
 
 endmodule 

@@ -4,7 +4,7 @@ module instructionMem (input logic [31:0] a,
 	logic [31:0] RAM[255:0];
 
 	initial
-		$readmemh("C:/DecoHEX.txt", RAM);
-		assign rd = RAM[a[31:2]]; // word aligned
+		$readmemh("C:/Users/skryf/DecoHEX.txt", RAM);
+		assign rd = RAM[a[31:2]];
 
 endmodule 

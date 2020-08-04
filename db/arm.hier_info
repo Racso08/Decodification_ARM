@@ -1,0 +1,7 @@
+|flag_negativo
+ultimo_bit => resultado.IN1
+ALUControl[0] => Equal0.IN1
+ALUControl[1] => Equal0.IN0
+resultado << resultado.DB_MAX_OUTPUT_PORT_TYPE
+
+

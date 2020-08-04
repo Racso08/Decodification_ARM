@@ -1,7 +1,7 @@
 module chipset #(parameter N=32)(input logic [N-1:0] DataAdr,
 											input logic MemWrite,
-											output logic WEram, WEtimer, 
-											output logic select_zero, select_one);
+											output logic WEram, WEFF, 
+											output logic [1:0] select);
 						
 	always_comb
 		
@@ -10,36 +10,32 @@ module chipset #(parameter N=32)(input logic [N-1:0] DataAdr,
 		0:
 			begin
 			
-				if(DataAdr >= 'h4000 && DataAdr <= 'h4400)	//RAM
+				if(DataAdr >= 'h4000 && DataAdr <= 'h4400)	//ROM
 					begin
-						WEtimer = 0;
+						WEFF = 0;
 						WEram = 0;
-						select_zero = 1;
-						select_one = 0;
+						select = 2'b00;
 					end
 					
-				else if (DataAdr >= 'h4600 && DataAdr <= 'h5000)	//ROM
+				else if (DataAdr >= 'h4600 && DataAdr <= 'h5000)	//RAM
 					begin
-						WEtimer = 0;
+						WEFF = 0;
 						WEram = 0;
-						select_zero = 0;
-						select_one = 1;
+						select = 2'b01;
 					end
 					
-				else if (DataAdr >= 'h5200)	//Timer
+				else if (DataAdr >= 'h5200)	//FF
 					begin
-						WEtimer = 0;
+						WEFF = 0;
 						WEram = 0;
-						select_zero = 0;
-						select_one = 0;
+						select = 2'b10;
 					end
 				
 				else	//exception
 					begin
-						WEtimer = 'z;
+						WEFF = 'z;
 						WEram = 'z;
-						select_zero = 'z;
-						select_one ='z;
+						select = 'z;
 					end
 		
 			end
@@ -47,36 +43,32 @@ module chipset #(parameter N=32)(input logic [N-1:0] DataAdr,
 		1:
 			begin
 			
-				if(DataAdr >= 'h4000 && DataAdr <= 'h4400)	//RAM
+				if(DataAdr >= 'h4000 && DataAdr <= 'h4400)	//ROM
 					begin
-						WEtimer = 0;
+						WEFF = 0;
+						WEram = 0;
+						select = 2'b00;
+					end
+					
+				else if (DataAdr >= 'h4600 && DataAdr <= 'h5000)	//RAM
+					begin
+						WEFF = 0;
 						WEram = 1;
-						select_zero = 1;
-						select_one = 1;
+						select = 2'b01;
 					end
 					
-				else if (DataAdr >= 'h4600 && DataAdr <= 'h5000)	//ROM
+				else if (DataAdr >= 'h5200)	//FF
 					begin
-						WEtimer = 0;
+						WEFF = 1;
 						WEram = 0;
-						select_zero = 1;
-						select_one = 1;
-					end
-					
-				else if (DataAdr >= 'h5200)	//Timer
-					begin
-						WEtimer = 1;
-						WEram = 0;
-						select_zero = 1;
-						select_one = 1;
+						select = 2'b10;
 					end
 				
 				else	//exception
 					begin
-						WEtimer = 'z;
+						WEFF = 'z;
 						WEram = 'z;
-						select_zero = 'z;
-						select_one ='z;
+						select = 'z;
 					end
 		
 			end

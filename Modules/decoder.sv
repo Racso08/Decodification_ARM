@@ -15,8 +15,8 @@ always_comb
 	casex(Op)
 	
 		// Data-processing immediate
-		2'b00: if (Funct[5]) controls = 10'b0000101001;
-		
+		2'b00: if (Funct[5] && Funct[4:1] != 4'b1010) controls = 10'b0000101001;
+		else if (Funct[5] && Funct[4:1] == 4'b1010) controls = 10'b0000100001;
 		// Data-processing register
 		else controls = 10'b0000001001;
 		
@@ -39,11 +39,15 @@ assign {RegSrc, ImmSrc, ALUSrc, MemtoReg, RegW, MemW, Branch, ALUOp} = controls;
 always_comb
 
 if (ALUOp) begin // which DP Instr?
+
 	case(Funct[4:1])
 		
 		4'b0100: ALUControl = 3'b000; // ADD
 		4'b0010: ALUControl = 3'b001; // SUB
+		
 		4'b1010: ALUControl = 3'b001; // CMP
+		
+
 		4'b0001: ALUControl = 3'b010; // XOR
 		
 		4'b1101 : if (Funct[5]) ALUControl = 3'b100;// MOVE
@@ -59,7 +63,8 @@ if (ALUOp) begin // which DP Instr?
 	FlagW[0] = Funct[0] &
 	(ALUControl == 3'b000 | ALUControl == 3'b001);
 
-end else begin
+end 				 
+else begin
 	ALUControl = 3'b000; // add for non-DP instructions
 	FlagW = 2'b00; // don't update Flags
 

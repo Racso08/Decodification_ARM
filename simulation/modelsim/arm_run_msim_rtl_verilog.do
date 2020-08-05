@@ -5,8 +5,6 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog -vlog01compat -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/rom.v}
-vlog -vlog01compat -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/ram.v}
 vlog -sv -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM/Modules {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/controller.sv}
 vlog -sv -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM/Modules {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/condlogic.sv}
 vlog -sv -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM/Modules {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/condcheck.sv}
@@ -36,4 +34,6 @@ vlog -sv -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital
 vlog -sv -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM/Tests {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Tests/testbench.sv}
 vlog -sv -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM/Modules {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/circular_shift_ext.sv}
 vlog -sv -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM/Modules {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/imem.sv}
+vlog -sv -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM/Modules {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/rom.sv}
+vlog -sv -work work +incdir+C:/Users/skryf/Documents/Taller\ de\ Diseno\ Digital/Laboratorio\ 5/Decodification_ARM/Modules {C:/Users/skryf/Documents/Taller de Diseno Digital/Laboratorio 5/Decodification_ARM/Modules/ram.sv}
 

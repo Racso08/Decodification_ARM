@@ -22,7 +22,7 @@ ADDRESS_RADIX=UNS;
 DATA_RADIX=UNS;
 
 CONTENT BEGIN
-	0    :   0;
+	0    :   255;
 	1    :   243;
 	2    :   187;
 	3    :   156;

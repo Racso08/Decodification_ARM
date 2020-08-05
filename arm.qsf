@@ -78,7 +78,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CEBA2F17A7
-set_global_assignment -name TOP_LEVEL_ENTITY top
+set_global_assignment -name TOP_LEVEL_ENTITY testbench
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 19.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "20:24:15  JULY 26, 2020"
 set_global_assignment -name LAST_QUARTUS_VERSION "19.1.0 Lite Edition"
@@ -133,10 +133,9 @@ set_global_assignment -name SYSTEMVERILOG_FILE Modules/adder.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Modules/extend.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Tests/testbench.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Modules/circular_shift_ext.sv
-set_global_assignment -name MIF_FILE Modules/dataMemory.mif
-set_global_assignment -name MIF_FILE Modules/romMemory.mif
-set_global_assignment -name QIP_FILE rom.qip
-set_global_assignment -name QIP_FILE ram.qip
+set_global_assignment -name SYSTEMVERILOG_FILE Modules/rom.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modules/ram.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Tests/rom_tb.sv
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

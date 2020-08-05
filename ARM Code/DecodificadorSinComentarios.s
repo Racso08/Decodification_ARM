@@ -14,42 +14,39 @@ TipoDeco:	MOV		R0, #0x4000
 		BEQ		DecoNOT
 		CMP		R1, #3
 		BEQ		DecoROR
-		B		Inicio	
+		B		Inicio
 DecoXOR:	MOV		R1, #0x4600
-		MOV		R2, #1
-		MOV		R3, #0
-		LDRB		R4, [R0, R2]
-		ADD		R2, R2, #1	
-CicloXOR:	LDRB		R5, [R0, R2]
-		CMP		R5, #0xFF
+		ADD		R0, R0, #1
+		LDRB		R2, [R0]
+		ADD		R0, R0, #1
+CicloXOR:	LDRB		R3, [R0]
+		CMP		R3, #0xFF
 		BEQ		Fin
-		ADD		R2, R2, #1
-		EOR		R6, R5, R4
-		STRB		R6, [R1, R3]
-		ADD		R3, R3, #1
-		B		CicloXOR	
+		ADD		R0, R0, #1
+		EOR		R4, R3, R2
+		STRB		R4, [R1]
+		ADD		R1, R1, #1
+		B		CicloXOR
 DecoNOT:	MOV		R1, #0x4600
-		MOV		R2, #1
-		MOV		R3, #0
-		MOV		R4, #0xFF
-CicloNOT:	LDRB		R5, [R0, R2]
-		CMP		R5, #0xFF
+		ADD		R0, R0, #1
+		MOV		R2, #0xFF
+CicloNOT:	LDRB		R3, [R0]
+		CMP		R3, #0xFF
 		BEQ		Fin
-		ADD		R2, R2, #1
-		EOR		R6, R5, R4
-		STRB		R6, [R1, R3]
-		ADD		R3, R3, #1
+		ADD		R0, R0, #1
+		EOR		R4, R3, R2
+		STRB		R4, [R1]
+		ADD		R1, R1, #1
 		B		CicloNOT
 DecoROR:	MOV		R1, #0x4600
-		MOV		R2, #1
-		MOV		R3, #0
-		LDRB		R4, [R0, R2]
-		ADD		R2, R2, #1
-CicloROR:	LDRB		R5, [R0, R2]
-		CMP		R5, #0xFF
+		ADD		R0, R0, #1
+		LDRB		R2, [R0]
+		ADD		R0, R0, #1
+CicloROR:	LDRB		R3, [R0]
+		CMP		R3, #0xFF
 		BEQ		Fin
-		ADD		R2, R2, #1
-		ROR		R6, R5, R4
-		STRB		R6, [R1, R3]
-		ADD		R3, R3, #1
+		ADD		R0, R0, #1
+		ROR		R4, R3, R2
+		STRB		R4, [R1]
+		ADD		R1, R1, #1
 		B		CicloROR

@@ -1,0 +1,17 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "select_zero",
+					"strict" : false
+				},
+				{
+					"name" : "MemWrite",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

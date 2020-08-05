@@ -4,138 +4,263 @@
 			"name" : "Top",
 			"pins" : [
 				{
-<<<<<<< HEAD
-					"name" : "resultado",
+					"name" : "WriteData[0]",
 					"strict" : false
 				},
 				{
-					"name" : "ultimo_bit",
-=======
-					"name" : "instrMem_output[0]",
+					"name" : "WriteData[1]",
 					"strict" : false
 				},
 				{
-					"name" : "instrMem_output[1]",
+					"name" : "WriteData[2]",
 					"strict" : false
 				},
 				{
-					"name" : "instrMem_output[2]",
+					"name" : "WriteData[3]",
 					"strict" : false
 				},
 				{
-					"name" : "instrMem_output[3]",
+					"name" : "WriteData[4]",
 					"strict" : false
 				},
 				{
-					"name" : "instrMem_output[4]",
+					"name" : "WriteData[5]",
 					"strict" : false
 				},
 				{
-					"name" : "instrMem_output[5]",
+					"name" : "WriteData[6]",
 					"strict" : false
 				},
 				{
-					"name" : "instrMem_output[6]",
+					"name" : "WriteData[7]",
 					"strict" : false
 				},
 				{
-					"name" : "instrMem_output[7]",
+					"name" : "WriteData[8]",
 					"strict" : false
 				},
 				{
-					"name" : "instrMem_output[8]",
+					"name" : "WriteData[9]",
 					"strict" : false
 				},
 				{
-					"name" : "instrMem_output[9]",
+					"name" : "WriteData[10]",
 					"strict" : false
 				},
 				{
-					"name" : "instrMem_output[10]",
+					"name" : "WriteData[11]",
 					"strict" : false
 				},
 				{
-					"name" : "instrMem_output[11]",
+					"name" : "WriteData[12]",
 					"strict" : false
 				},
 				{
-					"name" : "instrMem_output[12]",
+					"name" : "WriteData[13]",
 					"strict" : false
 				},
 				{
-					"name" : "instrMem_output[13]",
+					"name" : "WriteData[14]",
 					"strict" : false
 				},
 				{
-					"name" : "instrMem_output[14]",
+					"name" : "WriteData[15]",
 					"strict" : false
 				},
 				{
-					"name" : "instrMem_output[15]",
+					"name" : "WriteData[16]",
 					"strict" : false
 				},
 				{
-					"name" : "instrMem_output[16]",
+					"name" : "WriteData[17]",
 					"strict" : false
 				},
 				{
-					"name" : "instrMem_output[17]",
+					"name" : "WriteData[18]",
 					"strict" : false
 				},
 				{
-					"name" : "instrMem_output[18]",
+					"name" : "WriteData[19]",
 					"strict" : false
 				},
 				{
-					"name" : "instrMem_output[19]",
+					"name" : "WriteData[20]",
 					"strict" : false
 				},
 				{
-					"name" : "instrMem_output[20]",
+					"name" : "WriteData[21]",
 					"strict" : false
 				},
 				{
-					"name" : "instrMem_output[21]",
+					"name" : "WriteData[22]",
 					"strict" : false
 				},
 				{
-					"name" : "instrMem_output[22]",
+					"name" : "WriteData[23]",
 					"strict" : false
 				},
 				{
-					"name" : "instrMem_output[23]",
+					"name" : "WriteData[24]",
 					"strict" : false
 				},
 				{
-					"name" : "instrMem_output[24]",
+					"name" : "WriteData[25]",
 					"strict" : false
 				},
 				{
-					"name" : "instrMem_output[25]",
+					"name" : "WriteData[26]",
 					"strict" : false
 				},
 				{
-					"name" : "instrMem_output[26]",
+					"name" : "WriteData[27]",
 					"strict" : false
 				},
 				{
-					"name" : "instrMem_output[27]",
+					"name" : "WriteData[28]",
 					"strict" : false
 				},
 				{
-					"name" : "instrMem_output[29]",
+					"name" : "WriteData[29]",
 					"strict" : false
 				},
 				{
-					"name" : "instrMem_output[30]",
+					"name" : "WriteData[30]",
 					"strict" : false
 				},
 				{
-					"name" : "instrMem_output[31]",
+					"name" : "WriteData[31]",
 					"strict" : false
 				},
 				{
-					"name" : "InstructionAdr[2]",
+					"name" : "DataAdr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DataAdr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DataAdr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DataAdr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DataAdr[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DataAdr[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DataAdr[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DataAdr[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DataAdr[8]",
+					"strict" : false
+				},
+				{
+					"name" : "DataAdr[9]",
+					"strict" : false
+				},
+				{
+					"name" : "DataAdr[10]",
+					"strict" : false
+				},
+				{
+					"name" : "DataAdr[11]",
+					"strict" : false
+				},
+				{
+					"name" : "DataAdr[12]",
+					"strict" : false
+				},
+				{
+					"name" : "DataAdr[13]",
+					"strict" : false
+				},
+				{
+					"name" : "DataAdr[14]",
+					"strict" : false
+				},
+				{
+					"name" : "DataAdr[15]",
+					"strict" : false
+				},
+				{
+					"name" : "DataAdr[16]",
+					"strict" : false
+				},
+				{
+					"name" : "DataAdr[17]",
+					"strict" : false
+				},
+				{
+					"name" : "DataAdr[18]",
+					"strict" : false
+				},
+				{
+					"name" : "DataAdr[19]",
+					"strict" : false
+				},
+				{
+					"name" : "DataAdr[20]",
+					"strict" : false
+				},
+				{
+					"name" : "DataAdr[21]",
+					"strict" : false
+				},
+				{
+					"name" : "DataAdr[22]",
+					"strict" : false
+				},
+				{
+					"name" : "DataAdr[23]",
+					"strict" : false
+				},
+				{
+					"name" : "DataAdr[24]",
+					"strict" : false
+				},
+				{
+					"name" : "DataAdr[25]",
+					"strict" : false
+				},
+				{
+					"name" : "DataAdr[26]",
+					"strict" : false
+				},
+				{
+					"name" : "DataAdr[27]",
+					"strict" : false
+				},
+				{
+					"name" : "DataAdr[28]",
+					"strict" : false
+				},
+				{
+					"name" : "DataAdr[29]",
+					"strict" : false
+				},
+				{
+					"name" : "DataAdr[30]",
+					"strict" : false
+				},
+				{
+					"name" : "DataAdr[31]",
+					"strict" : false
+				},
+				{
+					"name" : "MemWrite",
 					"strict" : false
 				},
 				{
@@ -143,40 +268,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "rst",
+					"name" : "reset",
 					"strict" : false
 				},
 				{
-					"name" : "InstructionAdr[3]",
-					"strict" : false
-				},
-				{
-					"name" : "InstructionAdr[4]",
-					"strict" : false
-				},
-				{
-					"name" : "InstructionAdr[5]",
-					"strict" : false
-				},
-				{
-					"name" : "InstructionAdr[6]",
->>>>>>> master
-					"strict" : false
-				},
-				{
-					"name" : "InstructionAdr[7]",
-					"strict" : false
-				},
-				{
-<<<<<<< HEAD
-					"name" : "ALUControl[1]",
-=======
-					"name" : "InstructionAdr[9]",
-					"strict" : false
-				},
-				{
-					"name" : "InstructionAdr[8]",
->>>>>>> master
+					"name" : "set",
 					"strict" : false
 				}
 			]

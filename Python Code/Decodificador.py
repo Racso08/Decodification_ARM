@@ -27,6 +27,7 @@ def decodificacionXOR(codificado):
     for y in codificado[2:len(descodificado)-1]:
         descodificado.append(hex(int(y,16) ^ llave))
 
+    print(descodificado)
     ASCII_descodificado = ''
 
     for z in descodificado:
@@ -61,6 +62,7 @@ def decodificacionNOT(codificado):
     for y in codificado[1:len(descodificado)-1]:
         descodificado.append(hex(~int(y,16)))
 
+    print(descodificado)
     ASCII_descodificado = ''
 
     for z in descodificado:
@@ -120,6 +122,7 @@ def decodificacionROR(codificado):
         
         descodificado.append(hex(int(byte,2)))
 
+    print(descodificado)
     ASCII_descodificado = ''
     for z in descodificado:
         bytes_object = bytes.fromhex(z[2:])
@@ -140,8 +143,8 @@ def decodificador(codificado):
         return decodificacionROR(codificado)
     
     
-print(codificacionROR("Hola me llamo Racso"))    
+print(codificacionROR("Hola me llamo Kevin"))    
 
-#print(decodificador(codificacionXOR("Hola me llamo Racso")))
+print(decodificador(codificacionROR("Hola me llamo Kevin")))
 #print(decodificador(codificacionNOT("Hola me llamo Racso")))
-print(decodificador(codificacionROR("Hola me llamo Racso")))
+#print(decodificador(codificacionROR("Hola me llamo Racso")))

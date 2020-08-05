@@ -40,14 +40,14 @@ always_comb
 if (ALUOp) begin // which DP Instr?
 	case(Funct[4:1])
 		4'b0100: ALUControl = 2'b00; // ADD
-		4'b0010: ALUControl = 2'b01; // SUB
-		4'b0000: ALUControl = 2'b10; // AND
-		4'b1100: ALUControl = 2'b11; // ORR
+		4'b1010: ALUControl = 2'b01; // CMP 
+		4'b0000: ALUControl = 2'b10; // XOR
+		4'b1100: ALUControl = 2'b11; // ROR
 		default: ALUControl = 2'bx; // unimplemented
 	endcase
 	
 // update flags if S bit is set (C & V only for arith)
-	FlagW[1] = Funct[0];
+	FlagW[1] = Funct[0]; 
 	FlagW[0] = Funct[0] &
 	(ALUControl == 2'b00 | ALUControl == 2'b01);
 

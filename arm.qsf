@@ -37,13 +37,48 @@
 # -------------------------------------------------------------------------- #
 
 
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2019  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+# Date created = 20:24:15  July 26, 2020
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		arm_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CEBA2F17A7
-<<<<<<< HEAD
-set_global_assignment -name TOP_LEVEL_ENTITY flag_negativo
-=======
-set_global_assignment -name TOP_LEVEL_ENTITY pc_sel_test
->>>>>>> master
+set_global_assignment -name TOP_LEVEL_ENTITY testbench
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 19.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "20:24:15  JULY 26, 2020"
 set_global_assignment -name LAST_QUARTUS_VERSION "19.1.0 Lite Edition"
@@ -63,10 +98,6 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name SYSTEMVERILOG_FILE Modules/controller.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Modules/condlogic.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Modules/condcheck.sv
@@ -87,23 +118,25 @@ set_global_assignment -name SYSTEMVERILOG_FILE Tests/overflow_flag_test.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Tests/corrimiento_circular_test.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Tests/unidad_logico_aritmetica_test.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Modules/register.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Modules/extender.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Modules/decoder.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Modules/chipset.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Tests/chipset_tb.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Modules/PC_selection.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Tests/pc_sel_test.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Tests/instructionMem_tb.sv
-<<<<<<< HEAD
-set_global_assignment -name SYSTEMVERILOG_FILE Modules/instructionMem.sv
-
-set_global_assignment -name SYSTEMVERILOG_FILE Modules/dataMem.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Tests/dataMem_tb.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Modules/messageMem.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modules/imem.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modules/top.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modules/flopenr.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modules/datapath.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modules/dmem.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modules/flopr.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modules/mux2.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modules/regfile.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modules/adder.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modules/extend.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Tests/testbench.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modules/circular_shift_ext.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modules/rom.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Modules/ram.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Tests/rom_tb.sv
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-=======
-set_global_assignment -name SYSTEMVERILOG_FILE Modules/instructionMem.sv
->>>>>>> master
